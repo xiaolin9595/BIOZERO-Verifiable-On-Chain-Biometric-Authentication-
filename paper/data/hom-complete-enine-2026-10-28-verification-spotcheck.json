@@ -1,0 +1,355 @@
+{
+  "overall": "PASS",
+  "scope": "SpotCheck N=128 eta=1,2,4,8 with three transactions each; FullCheck is companion output and not a new Fig3 point",
+  "checks": [
+    {
+      "name": "fresh setup labelled reconstructed",
+      "pass": true,
+      "detail": "Fresh local single-party benchmark setup; never use these keys in production."
+    },
+    {
+      "name": "fresh setup exported three matching verifiers",
+      "pass": true,
+      "detail": [
+        "contracts/generated/Groth16VerifierThreshold.sol",
+        "contracts/generated/Groth16Verifier128.sol",
+        "contracts/generated/Groth16Verifier512.sol"
+      ]
+    },
+    {
+      "name": "dimension fixed at N=128",
+      "pass": true,
+      "detail": 128
+    },
+    {
+      "name": "exact five cases only",
+      "pass": true,
+      "detail": [
+        "spot-eta-1",
+        "spot-eta-2",
+        "spot-eta-4",
+        "spot-eta-8",
+        "full-check"
+      ]
+    },
+    {
+      "name": "spot-eta-1 identity",
+      "pass": true,
+      "detail": {
+        "label": "spot-eta-1",
+        "eta": 1,
+        "samples": 7,
+        "repetitions": 3,
+        "gasUsed": [
+          4142022,
+          4124406,
+          4124094
+        ],
+        "medianGasUsed": 4124406,
+        "calldata": {
+          "bytes": 127844,
+          "zeroBytes": 1180,
+          "nonzeroBytes": 126664,
+          "gas": 2031344
+        },
+        "intrinsicGas": 2052344,
+        "medianExecutionGasAfterIntrinsic": 2072062,
+        "enrollmentGas": 192709,
+        "deploymentGas": 1180895,
+        "controls": {
+          "replayRejected": true,
+          "staleProofRejected": true,
+          "wrongEnrollmentRejected": true,
+          "tamperedResponseRejected": null
+        }
+      }
+    },
+    {
+      "name": "spot-eta-1 exactly three transactions",
+      "pass": true,
+      "detail": [
+        4142022,
+        4124406,
+        4124094
+      ]
+    },
+    {
+      "name": "spot-eta-1 mandatory controls",
+      "pass": true,
+      "detail": {
+        "replayRejected": true,
+        "staleProofRejected": true,
+        "wrongEnrollmentRejected": true,
+        "tamperedResponseRejected": null
+      }
+    },
+    {
+      "name": "spot-eta-1 tamper scope",
+      "pass": true,
+      "detail": {
+        "replayRejected": true,
+        "staleProofRejected": true,
+        "wrongEnrollmentRejected": true,
+        "tamperedResponseRejected": null
+      }
+    },
+    {
+      "name": "spot-eta-2 identity",
+      "pass": true,
+      "detail": {
+        "label": "spot-eta-2",
+        "eta": 2,
+        "samples": 14,
+        "repetitions": 3,
+        "gasUsed": [
+          5128552,
+          5110602,
+          5111068
+        ],
+        "medianGasUsed": 5111068,
+        "calldata": {
+          "bytes": 127844,
+          "zeroBytes": 1183,
+          "nonzeroBytes": 126661,
+          "gas": 2031308
+        },
+        "intrinsicGas": 2052308,
+        "medianExecutionGasAfterIntrinsic": 3058760,
+        "enrollmentGas": 192709,
+        "deploymentGas": 1180895,
+        "controls": {
+          "replayRejected": true,
+          "staleProofRejected": true,
+          "wrongEnrollmentRejected": true,
+          "tamperedResponseRejected": null
+        }
+      }
+    },
+    {
+      "name": "spot-eta-2 exactly three transactions",
+      "pass": true,
+      "detail": [
+        5128552,
+        5110602,
+        5111068
+      ]
+    },
+    {
+      "name": "spot-eta-2 mandatory controls",
+      "pass": true,
+      "detail": {
+        "replayRejected": true,
+        "staleProofRejected": true,
+        "wrongEnrollmentRejected": true,
+        "tamperedResponseRejected": null
+      }
+    },
+    {
+      "name": "spot-eta-2 tamper scope",
+      "pass": true,
+      "detail": {
+        "replayRejected": true,
+        "staleProofRejected": true,
+        "wrongEnrollmentRejected": true,
+        "tamperedResponseRejected": null
+      }
+    },
+    {
+      "name": "spot-eta-4 identity",
+      "pass": true,
+      "detail": {
+        "label": "spot-eta-4",
+        "eta": 4,
+        "samples": 28,
+        "repetitions": 3,
+        "gasUsed": [
+          7125435,
+          7105603,
+          7107781
+        ],
+        "medianGasUsed": 7107781,
+        "calldata": {
+          "bytes": 127844,
+          "zeroBytes": 1154,
+          "nonzeroBytes": 126690,
+          "gas": 2031656
+        },
+        "intrinsicGas": 2052656,
+        "medianExecutionGasAfterIntrinsic": 5055125,
+        "enrollmentGas": 192709,
+        "deploymentGas": 1180895,
+        "controls": {
+          "replayRejected": true,
+          "staleProofRejected": true,
+          "wrongEnrollmentRejected": true,
+          "tamperedResponseRejected": null
+        }
+      }
+    },
+    {
+      "name": "spot-eta-4 exactly three transactions",
+      "pass": true,
+      "detail": [
+        7125435,
+        7105603,
+        7107781
+      ]
+    },
+    {
+      "name": "spot-eta-4 mandatory controls",
+      "pass": true,
+      "detail": {
+        "replayRejected": true,
+        "staleProofRejected": true,
+        "wrongEnrollmentRejected": true,
+        "tamperedResponseRejected": null
+      }
+    },
+    {
+      "name": "spot-eta-4 tamper scope",
+      "pass": true,
+      "detail": {
+        "replayRejected": true,
+        "staleProofRejected": true,
+        "wrongEnrollmentRejected": true,
+        "tamperedResponseRejected": null
+      }
+    },
+    {
+      "name": "spot-eta-8 identity",
+      "pass": true,
+      "detail": {
+        "label": "spot-eta-8",
+        "eta": 8,
+        "samples": 56,
+        "repetitions": 3,
+        "gasUsed": [
+          11215082,
+          11196243,
+          11193881
+        ],
+        "medianGasUsed": 11196243,
+        "calldata": {
+          "bytes": 127844,
+          "zeroBytes": 1166,
+          "nonzeroBytes": 126678,
+          "gas": 2031512
+        },
+        "intrinsicGas": 2052512,
+        "medianExecutionGasAfterIntrinsic": 9143731,
+        "enrollmentGas": 192709,
+        "deploymentGas": 1180895,
+        "controls": {
+          "replayRejected": true,
+          "staleProofRejected": true,
+          "wrongEnrollmentRejected": true,
+          "tamperedResponseRejected": null
+        }
+      }
+    },
+    {
+      "name": "spot-eta-8 exactly three transactions",
+      "pass": true,
+      "detail": [
+        11215082,
+        11196243,
+        11193881
+      ]
+    },
+    {
+      "name": "spot-eta-8 mandatory controls",
+      "pass": true,
+      "detail": {
+        "replayRejected": true,
+        "staleProofRejected": true,
+        "wrongEnrollmentRejected": true,
+        "tamperedResponseRejected": null
+      }
+    },
+    {
+      "name": "spot-eta-8 tamper scope",
+      "pass": true,
+      "detail": {
+        "replayRejected": true,
+        "staleProofRejected": true,
+        "wrongEnrollmentRejected": true,
+        "tamperedResponseRejected": null
+      }
+    },
+    {
+      "name": "full-check identity",
+      "pass": true,
+      "detail": {
+        "label": "full-check",
+        "eta": null,
+        "samples": 128,
+        "repetitions": 3,
+        "gasUsed": [
+          22114933,
+          22097401,
+          22097617
+        ],
+        "medianGasUsed": 22097617,
+        "calldata": {
+          "bytes": 127844,
+          "zeroBytes": 1141,
+          "nonzeroBytes": 126703,
+          "gas": 2031812
+        },
+        "intrinsicGas": 2052812,
+        "medianExecutionGasAfterIntrinsic": 20044805,
+        "enrollmentGas": 192709,
+        "deploymentGas": 1180895,
+        "controls": {
+          "replayRejected": true,
+          "staleProofRejected": true,
+          "wrongEnrollmentRejected": true,
+          "tamperedResponseRejected": true
+        }
+      }
+    },
+    {
+      "name": "full-check exactly three transactions",
+      "pass": true,
+      "detail": [
+        22114933,
+        22097401,
+        22097617
+      ]
+    },
+    {
+      "name": "full-check mandatory controls",
+      "pass": true,
+      "detail": {
+        "replayRejected": true,
+        "staleProofRejected": true,
+        "wrongEnrollmentRejected": true,
+        "tamperedResponseRejected": true
+      }
+    },
+    {
+      "name": "full-check tamper scope",
+      "pass": true,
+      "detail": {
+        "replayRejected": true,
+        "staleProofRejected": true,
+        "wrongEnrollmentRejected": true,
+        "tamperedResponseRejected": true
+      }
+    }
+  ],
+  "artifacts": [
+    {
+      "name": "setup-summary.json",
+      "sha256": "f4e537f27edfcc3d71ebf303f35583e6973f448c01eec3b49a437b8c87b57a15"
+    },
+    {
+      "name": "setup-artifacts.sha256",
+      "sha256": "4c75e58ac45d140d1bf421e924b8a7f44b3c3ea253b07c7c066318b55105d4a3"
+    },
+    {
+      "name": "hom-complete.json",
+      "sha256": "f4e9a6f0b96fdb7719b2afc9f041f0361019fdac30e37b636de8b9a889e0b71a"
+    }
+  ]
+}

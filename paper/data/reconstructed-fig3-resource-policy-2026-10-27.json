@@ -1,0 +1,35 @@
+{
+  "experiment_label": "reconstructed reproduction; not original Fig. 3 data",
+  "host_physical_memory_bytes": 17179869184,
+  "decisions": [
+    {
+      "target": "BioZero fixed",
+      "scope": "full: compile, witness, clean setup, 3 proofs, verifier export, Solidity compile, local-chain gas",
+      "status": "completed"
+    },
+    {
+      "target": "Vanilla N=2",
+      "scope": "full: repaired-copy compile, witness, clean setup, 3 proofs, verifier export, Solidity compile, local-chain gas",
+      "status": "completed"
+    },
+    {
+      "target": "Vanilla N=4",
+      "scope": "full: repaired-copy compile, witness, clean setup, 3 proofs, verifier export, Solidity compile, local-chain gas",
+      "status": "completed"
+    },
+    {
+      "target": "Vanilla N=8",
+      "scope": "compile only",
+      "status": "completed",
+      "reason_full_not_run": "The measured compiled program is 633427451 bytes. The earlier protocol audit found N=2 setup already produced a 172794672-byte proving key, and full N=8 setup/proving was judged unsafe on this 16 GiB host."
+    },
+    {
+      "target": "Vanilla N=16,32,64,128",
+      "scope": "not run",
+      "status": "resource-limited",
+      "reason": "The required prior audit recorded isolated N=16 compilation failing with WASM RuntimeError: unreachable at a 12 GiB JS heap; larger circuits scale further. They were not retried to avoid OOM and state pollution. No values were extrapolated."
+    }
+  ]
+}
+
+

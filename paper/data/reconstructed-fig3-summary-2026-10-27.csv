@@ -1,0 +1,10 @@
+target,dimension,status,compile_ms,constraints,program_bytes,witness_ms,setup_ms,proving_runs,proving_mean_ms,proving_sample_sd_ms,proof_compact_json_bytes,proofs_all_accepted,negative_control_rejected,verifier_source_bytes,deployment_gas,verifier_gas_mean,verifier_gas_sample_sd,calldata_bytes,creation_bytecode_bytes,runtime_bytecode_bytes,chain_valid_static_true,chain_invalid_static_false,onchain_runtime_matches_compiled
+BioZero fixed,,complete,962.290458,109900,39126170,361.815333,16291.881125,3,5317.935805333334,566.5881363734263,1041,true,true,10654,1286481,286848,0,452,5737,5709,true,true,true
+Vanilla shadow-fixed,2,complete,4615.279208,439240,158174266,1422.4280420000005,87008.507459,3,27218.94018066666,2190.2051255345114,1248,true,true,11246,1364013,312956,0,548,6096,6068,true,true,true
+Vanilla shadow-fixed,4,complete,11264.477916,877629,316592126,3414.987665999999,118460.33425000001,3,31043.59747233333,139.000602775442,1524,true,true,12040,1467681,347784,0,676,6575,6547,true,true,true
+Vanilla shadow-fixed,8,compile-only,28113.271583,1754406,633427451,,,0,,,,,,,,,,,,,,,
+Vanilla shadow-fixed,16,not-run,,,,,,,,,,,,,,,,,,,,,
+Vanilla shadow-fixed,32,not-run,,,,,,,,,,,,,,,,,,,,,
+Vanilla shadow-fixed,64,not-run,,,,,,,,,,,,,,,,,,,,,
+Vanilla shadow-fixed,128,not-run,,,,,,,,,,,,,,,,,,,,,
+

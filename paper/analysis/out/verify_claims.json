@@ -1,0 +1,111 @@
+{
+ "C1": {
+  "trials": 1000,
+  "N": 128,
+  "shared_mask_all_differences_recovered": 1.0,
+  "shared_mask_candidate_offsets_median": 14,
+  "shared_mask_true_offset_in_candidates": 1.0,
+  "independent_masks_fraction_of_differences_recovered_mean": 0.0078125
+ },
+ "C2": {
+  "p": 67108859,
+  "p_bits": 26,
+  "p_is_prime": true,
+  "p_minus_1_factorization": {
+   "2": 1,
+   "479": 1,
+   "70051": 1
+  },
+  "g": 56544564,
+  "h_mod_p": 36357999,
+  "order_of_g": 33554429,
+  "order_g_is_prime": false,
+  "bsgs_table_size": 5793,
+  "log_g_h_found": true,
+  "equivocation_opening_verified": true
+ },
+ "C3": {
+  "toy_group": [
+   2039,
+   1019
+  ],
+  "single_coordinate_shift_verified": true,
+  "shift": -10
+ },
+ "FEI": {
+  "fei-mobilefacenet128-shared512.json": {
+   "model": "Qualcomm AI Hub MobileFaceNet-128D v0.65.0 (foamliu weights)",
+   "float_validation_threshold": 1.1467778852401422,
+   "validation_eligible_pairs": 5857,
+   "test_eligible_pairs": 5935,
+   "settings": [
+    "float",
+    "4-bit",
+    "6-bit",
+    "8-bit",
+    "12-bit"
+   ],
+   "counts_and_metrics_recomputed": true
+  },
+  "fei-inceptionresnetv1-vggface2-512.json": {
+   "model": "facenet-pytorch InceptionResnetV1 pretrained=vggface2 (512D)",
+   "float_validation_threshold": 0.9340241551399231,
+   "validation_eligible_pairs": 5857,
+   "test_eligible_pairs": 5921,
+   "settings": [
+    "float",
+    "4-bit",
+    "6-bit",
+    "7-bit",
+    "9-bit"
+   ],
+   "counts_and_metrics_recomputed": true
+  }
+ },
+ "LFW": {
+  "lfw-mobilefacenet128-harmonized.json": {
+   "model": "Qualcomm AI Hub MobileFaceNet-128D v0.65.0 (foamliu weights)",
+   "source_result_sha256": "2b44226846939f24c90eff50ae9bb781d761238d3f24e6d18e39811304546a24",
+   "verification_sha256": "0ae94b8628a379eb552bfa1110735c65424be97660d4a1413d9bb08312ebca05",
+   "float_validation_threshold": 1.1185798048973083,
+   "image_coverage": {
+    "attempted": 13233,
+    "successful": 13185,
+    "rate": 0.996372704602131
+   },
+   "validation_eligible_pairs": 5980,
+   "test_eligible_pairs": 5949,
+   "settings": [
+    "float",
+    "4-bit",
+    "6-bit",
+    "8-bit",
+    "12-bit"
+   ],
+   "bootstrap_replicates": 2000,
+   "counts_metrics_deltas_and_ci_recomputed": true
+  },
+  "lfw-inceptionresnetv1-vggface2-harmonized.json": {
+   "model": "facenet-pytorch InceptionResnetV1 pretrained=vggface2 (512D)",
+   "source_result_sha256": "0129e9d1cf1e12a54d8708a1cb7b710465196210a891852cce5117117eef4eae",
+   "verification_sha256": "74a9c0d0b093451a24e8a9becdee72788a93e20361443473327cb7e6a986ecb0",
+   "float_validation_threshold": 1.070311963558197,
+   "image_coverage": {
+    "attempted": 13233,
+    "successful": 13233,
+    "rate": 1
+   },
+   "validation_eligible_pairs": 6000,
+   "test_eligible_pairs": 6000,
+   "settings": [
+    "float",
+    "4-bit",
+    "6-bit",
+    "7-bit",
+    "9-bit"
+   ],
+   "bootstrap_replicates": 2000,
+   "counts_metrics_deltas_and_ci_recomputed": true
+  }
+ }
+}

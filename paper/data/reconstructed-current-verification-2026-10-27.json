@@ -1,0 +1,89 @@
+{
+  "overall": "PASS",
+  "checks": [
+    {
+      "name": "fresh setup labelled reconstructed",
+      "pass": true,
+      "detail": "Fresh local single-party benchmark setup; never use these keys in production."
+    },
+    {
+      "name": "three matching verifiers exported",
+      "pass": true,
+      "detail": [
+        "contracts/generated/Groth16VerifierThreshold.sol",
+        "contracts/generated/Groth16Verifier128.sol",
+        "contracts/generated/Groth16Verifier512.sol"
+      ]
+    },
+    {
+      "name": "Full/Spot cases complete",
+      "pass": true,
+      "detail": "five cases, three transactions each"
+    },
+    {
+      "name": "Full/Spot mandatory controls pass",
+      "pass": true,
+      "detail": "sampled tamper remains untested/null by original harness"
+    },
+    {
+      "name": "CircuitCheck cases complete",
+      "pass": true,
+      "detail": "N=128/512, three transactions each"
+    },
+    {
+      "name": "CircuitCheck controls pass",
+      "pass": true,
+      "detail": "replay and wrong-nonce proofs rejected"
+    },
+    {
+      "name": "packed five-run protocol",
+      "pass": true,
+      "detail": "five cold child processes per N"
+    },
+    {
+      "name": "packed proof verifications pass",
+      "pass": true,
+      "detail": "ten verification operations returned true"
+    },
+    {
+      "name": "reconstructed unpacked witnesses pass",
+      "pass": true,
+      "detail": "only uniquely inferable unpacked wrappers reconstructed"
+    },
+    {
+      "name": "distance-only circuits not guessed",
+      "pass": true,
+      "detail": [
+        "distance_only_128.circom: design choices are not uniquely determined by the delivered source",
+        "distance_only_512.circom: design choices are not uniquely determined by the delivered source"
+      ]
+    }
+  ],
+  "artifactHashes": [
+    {
+      "path": "contracts/generated/Groth16VerifierThreshold.sol",
+      "sha256": "ab6469a1a91382f5c8ff6c66b724c2585eb0052d2d89b7357ec2710bf7873a31"
+    },
+    {
+      "path": "contracts/generated/Groth16Verifier128.sol",
+      "sha256": "3acd46a903546c27d12c615a4f0a9241fade531281bd899aa6917875f781ac50"
+    },
+    {
+      "path": "contracts/generated/Groth16Verifier512.sol",
+      "sha256": "20860b754522eecd5bf383de4c52cfa233be7e91d515322f5b148cdcc3b84a7e"
+    },
+    {
+      "path": "build/hom-complete-gas/ts_final.zkey",
+      "sha256": "cb68283c105fe38c4c15dcb582fe36976e9a4a08e2f1f25d162e7ffd8ea1b3b6"
+    },
+    {
+      "path": "build/proving/auth_distance_128/auth_distance_128_benchmark_final.zkey",
+      "sha256": "41159f984cf4a9f4a4740d832e046fda2dbca3cfb8f650600e82e2ab22c19bf8"
+    },
+    {
+      "path": "build/proving/auth_distance_512/auth_distance_512_benchmark_final.zkey",
+      "sha256": "80b7f96aa27b4cdbf67a8d90530503f458733113d21a41444cce3dc5496dfd52"
+    }
+  ]
+}
+

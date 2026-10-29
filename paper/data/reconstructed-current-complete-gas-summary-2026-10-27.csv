@@ -1,0 +1,9 @@
+strategy,dimension,samples,repetitions,median_gas,calldata_bytes,enrollment_gas,deployment_gas,mandatory_controls_passed,tampered_response_control
+spot-eta-1,128,7,3,4124394,127844,192709,1180895,true,not-run
+spot-eta-2,128,14,3,5111692,127844,192709,1180895,true,not-run
+spot-eta-4,128,28,3,7107360,127844,192709,1180895,true,not-run
+spot-eta-8,128,56,3,11196527,127844,192709,1180895,true,not-run
+full-check,128,128,3,22097617,127844,192709,1180895,true,true
+circuit-check,128,,3,255023,356,45391,399147,true,not-applicable
+circuit-check,512,,3,255011,356,45391,399147,true,not-applicable
+

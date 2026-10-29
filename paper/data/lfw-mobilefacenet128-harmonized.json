@@ -1,0 +1,472 @@
+{
+  "schema_version": "biozero-lfw-harmonized-aggregate-v1",
+  "source_result_sha256": "2b44226846939f24c90eff50ae9bb781d761238d3f24e6d18e39811304546a24",
+  "verification_sha256": "0ae94b8628a379eb552bfa1110735c65424be97660d4a1413d9bb08312ebca05",
+  "verification": {
+    "status": "PASS",
+    "all_metric_and_paired_delta_ci95_recomputed": true
+  },
+  "qualification": "Harmonized identity-disjoint LFW evaluation; not official LFW 10-fold and not historical-number reproduction.",
+  "dataset": {
+    "archive_sha256": "b47c8422c8cded889dc5a13418c4bc2abbda121092b3533a83306f90d900100a",
+    "image_manifest_sha256": "05ce4d46b8abe25b3000abc2aaf70255b034df49999cda2d6f9d768147aa9e6e",
+    "name": "LFW Funneled",
+    "source_url": "https://ndownloader.figshare.com/files/5976015",
+    "acquisition_condition": "unconstrained"
+  },
+  "model": {
+    "display_name": "MobileFaceNet (128)",
+    "source_name": "Qualcomm AI Hub MobileFaceNet-128D v0.65.0 (foamliu weights)",
+    "model_key": "qualcomm_mobilefacenet_128d_v0.65.0",
+    "embedding_dimension": 128,
+    "preprocessing": "buffalo_l det_10g CPU det_size=640 det_thresh=0.5; deterministic significant face; five-landmark norm_crop(112); RGB NCHW float32 [0,1]; graph-internal normalization+flip TTA",
+    "coverage": {
+      "attempted": 13233,
+      "successful": 13185,
+      "rate": 0.996372704602131
+    },
+    "weights": [
+      {
+        "sha256": "3ac0b9597efd5dc49c5397e5c21269f98cceb42e7193fcc1afbb0fa992c88e4e",
+        "bytes": 387359
+      },
+      {
+        "sha256": "5164ee5cdd52328da0b1959913e23fd1866b1696b690fc4ad0bbc5cd32ae319c",
+        "bytes": 3947008
+      },
+      {
+        "sha256": "5838f7fe053675b1c7a08b633df49e7af5495cee0493c7dcf6697200b85b5b91",
+        "bytes": 16923827
+      }
+    ]
+  },
+  "split": {
+    "identity_counts": {
+      "all": 5749,
+      "test": 4600,
+      "validation": 1149
+    },
+    "identity_intersection_count": 0,
+    "identity_split_sha256": "b11b53178b1b906d4ff909c3657369489cdfd9c9d6fd8fb5b676f2374aa25ca8",
+    "pair_sampling": {
+      "test": {
+        "endpoint_degree": {
+          "max": 17,
+          "mean": 2.159827213822894,
+          "median": 1.0,
+          "min": 1
+        },
+        "genuine_candidate_count": 211432,
+        "identity_count": 4600,
+        "image_count": 10485,
+        "impostor_candidate_count": 54750938,
+        "multi_image_identity_count": 1345,
+        "multi_image_identity_overweight_note": "An identity with n images contributes C(n,2) genuine candidates; singleton identities contribute zero genuine candidates but remain eligible for impostor sampling.",
+        "sampled_genuine_identity_count": 182,
+        "sampled_identity_count": 2486,
+        "sampling_estimand": "global-uniform unordered image-pair; image-pair weighted, not identity-balanced",
+        "singleton_identity_count": 3255,
+        "unique_endpoint_image_count": 5556
+      },
+      "validation": {
+        "endpoint_degree": {
+          "max": 27,
+          "mean": 4.667444574095683,
+          "median": 3.0,
+          "min": 1
+        },
+        "genuine_candidate_count": 30825,
+        "identity_count": 1149,
+        "image_count": 2748,
+        "impostor_candidate_count": 3743553,
+        "multi_image_identity_count": 335,
+        "multi_image_identity_overweight_note": "An identity with n images contributes C(n,2) genuine candidates; singleton identities contribute zero genuine candidates but remain eligible for impostor sampling.",
+        "sampled_genuine_identity_count": 112,
+        "sampled_identity_count": 1065,
+        "sampling_estimand": "global-uniform unordered image-pair; image-pair weighted, not identity-balanced",
+        "singleton_identity_count": 814,
+        "unique_endpoint_image_count": 2571
+      }
+    },
+    "policy": "SHA256 domain order; floor(0.2*N) validation, remainder test; all identities retained"
+  },
+  "pair_protocol": {
+    "no_replacement_after_failure": true,
+    "predetection_fixed": true,
+    "same_eligible_pairs_all_settings": true,
+    "test_availability": {
+      "available": 5949,
+      "available_genuine": 2975,
+      "available_impostor": 2974,
+      "ordered_eligible_pair_ids_sha256": "3ed297016b0ddae9b94d30bf849604bfd1cd9608f098b4c792a37fbfbaa9a465",
+      "rate": 0.9915,
+      "requested": 6000,
+      "requested_genuine": 3000,
+      "requested_impostor": 3000
+    },
+    "test_manifest_sha256": "0fd863e32ae59f19baa8b3bd00092f7a0887f38f6fa05700d2843540278bcef2",
+    "validation_availability": {
+      "available": 5980,
+      "available_genuine": 2996,
+      "available_impostor": 2984,
+      "ordered_eligible_pair_ids_sha256": "3087241fca9eb51beccfa97e0c592974dd47d80c4e82c8f817d88af854235680",
+      "rate": 0.9966666666666667,
+      "requested": 6000,
+      "requested_genuine": 3000,
+      "requested_impostor": 3000
+    },
+    "validation_manifest_sha256": "acaaf51de15e80b7c427ca98a407bdc8006669b1401702f453c53859fef457da"
+  },
+  "threshold": {
+    "comparison": "distance < threshold",
+    "float_threshold": 1.1185798048973083,
+    "policy": "float validation maximum balanced accuracy; frozen unchanged for every bit width",
+    "test_used_for_selection": false,
+    "tie_break": "smallest threshold",
+    "validation_balanced_accuracy": 0.9903204272363151
+  },
+  "quantizer": {
+    "formula": "L2-normalize; clip[-1,1]; round((x+1)*(p-1)/2); clip[0,p-1]",
+    "primes": {
+      "12-bit": 4093,
+      "4-bit": 13,
+      "6-bit": 61,
+      "8-bit": 251
+    },
+    "rounding": "NumPy ties-to-even",
+    "source_sha256": "bdb12892ee3160c5502de937ae8bfc94a13074fee19aea6d19824e39bd730c3b"
+  },
+  "bootstrap": {
+    "identity_count": 2472,
+    "method": "identity-cluster multinomial resampling over identities observed in eligible test pairs",
+    "paired_delta": "setting minus float within each accepted replicate",
+    "replicates_accepted": 2000,
+    "replicates_discarded_single_class": 0,
+    "replicates_requested": 2000,
+    "seed": 20261027,
+    "weights": {
+      "genuine": "m_i",
+      "impostor": "m_i*m_j"
+    }
+  },
+  "settings": [
+    {
+      "ci95_identity_cluster": {
+        "accuracy": {
+          "high": 0.994100317880722,
+          "low": 0.9822800953535998
+        },
+        "auc": {
+          "high": 0.9884181606302633,
+          "low": 0.9759200348884209
+        },
+        "far": {
+          "high": 0.0,
+          "low": 0.0
+        },
+        "frr": {
+          "high": 0.05233898494527508,
+          "low": 0.01935830275146883
+        },
+        "recall": {
+          "high": 0.9806416972485311,
+          "low": 0.947661015054725
+        }
+      },
+      "counts": {
+        "fn": 79,
+        "fp": 0,
+        "tn": 2974,
+        "tp": 2896
+      },
+      "delta_vs_float": null,
+      "delta_vs_float_ci95_identity_cluster": null,
+      "metrics": {
+        "accuracy": 0.9867204572197008,
+        "auc": 0.9849489977564664,
+        "far": 0.0,
+        "frr": 0.026554621848739496,
+        "recall": 0.9734453781512605
+      },
+      "prime": null,
+      "setting": "float",
+      "threshold_normalized_distance": 1.1185798048973083
+    },
+    {
+      "ci95_identity_cluster": {
+        "accuracy": {
+          "high": 0.9319932332650577,
+          "low": 0.7719414520345683
+        },
+        "auc": {
+          "high": 0.989810518042888,
+          "low": 0.9745108359543744
+        },
+        "far": {
+          "high": 0.0,
+          "low": 0.0
+        },
+        "frr": {
+          "high": 0.4415843038302277,
+          "low": 0.247377326323952
+        },
+        "recall": {
+          "high": 0.752622673676048,
+          "low": 0.5584156961697723
+        }
+      },
+      "counts": {
+        "fn": 968,
+        "fp": 0,
+        "tn": 2974,
+        "tp": 2007
+      },
+      "delta_vs_float": {
+        "accuracy": -0.149436880147924,
+        "auc": 0.0012297615751075686,
+        "far": 0.0,
+        "frr": 0.2988235294117647,
+        "recall": -0.2988235294117647
+      },
+      "delta_vs_float_ci95_identity_cluster": {
+        "accuracy": {
+          "high": -0.06054167620563665,
+          "low": -0.21405895213967394
+        },
+        "auc": {
+          "high": 0.002236300207125482,
+          "low": -0.0029983930805883435
+        },
+        "far": {
+          "high": 0.0,
+          "low": 0.0
+        },
+        "frr": {
+          "high": 0.3980635060732148,
+          "low": 0.20393869517722837
+        },
+        "recall": {
+          "high": -0.20393869517722849,
+          "low": -0.39806350607321483
+        }
+      },
+      "metrics": {
+        "accuracy": 0.8372835770717768,
+        "auc": 0.986178759331574,
+        "far": 0.0,
+        "frr": 0.3253781512605042,
+        "recall": 0.6746218487394958
+      },
+      "prime": 13,
+      "setting": "4-bit",
+      "threshold_normalized_distance": 1.1185798048973083
+    },
+    {
+      "ci95_identity_cluster": {
+        "accuracy": {
+          "high": 0.9934806768589263,
+          "low": 0.9816824748594618
+        },
+        "auc": {
+          "high": 0.9886056468402469,
+          "low": 0.9763728994406622
+        },
+        "far": {
+          "high": 0.0,
+          "low": 0.0
+        },
+        "frr": {
+          "high": 0.05676376852499932,
+          "low": 0.020088261901907222
+        },
+        "recall": {
+          "high": 0.9799117380980927,
+          "low": 0.9432362314750007
+        }
+      },
+      "counts": {
+        "fn": 82,
+        "fp": 0,
+        "tn": 2974,
+        "tp": 2893
+      },
+      "delta_vs_float": {
+        "accuracy": -0.0005042864346949116,
+        "auc": 0.00010132634089277115,
+        "far": 0.0,
+        "frr": 0.001008403361344539,
+        "recall": -0.0010084033613445564
+      },
+      "delta_vs_float_ci95_identity_cluster": {
+        "accuracy": {
+          "high": 0.0,
+          "low": -0.0012008335153993548
+        },
+        "auc": {
+          "high": 0.0008876928637419451,
+          "low": -0.00013168075370642294
+        },
+        "far": {
+          "high": 0.0,
+          "low": 0.0
+        },
+        "frr": {
+          "high": 0.005489638732830779,
+          "low": 0.0
+        },
+        "recall": {
+          "high": 0.0,
+          "low": -0.005489638732830865
+        }
+      },
+      "metrics": {
+        "accuracy": 0.9862161707850059,
+        "auc": 0.9850503240973592,
+        "far": 0.0,
+        "frr": 0.027563025210084035,
+        "recall": 0.972436974789916
+      },
+      "prime": 61,
+      "setting": "6-bit",
+      "threshold_normalized_distance": 1.1185798048973083
+    },
+    {
+      "ci95_identity_cluster": {
+        "accuracy": {
+          "high": 0.994100317880722,
+          "low": 0.9822800953535998
+        },
+        "auc": {
+          "high": 0.9884599070206316,
+          "low": 0.9757877331000552
+        },
+        "far": {
+          "high": 0.0,
+          "low": 0.0
+        },
+        "frr": {
+          "high": 0.05233898494527508,
+          "low": 0.01935830275146883
+        },
+        "recall": {
+          "high": 0.9806416972485311,
+          "low": 0.947661015054725
+        }
+      },
+      "counts": {
+        "fn": 79,
+        "fp": 0,
+        "tn": 2974,
+        "tp": 2896
+      },
+      "delta_vs_float": {
+        "accuracy": 0.0,
+        "auc": -0.000014354094024948694,
+        "far": 0.0,
+        "frr": 0.0,
+        "recall": 0.0
+      },
+      "delta_vs_float_ci95_identity_cluster": {
+        "accuracy": {
+          "high": 0.0,
+          "low": 0.0
+        },
+        "auc": {
+          "high": 0.00006966756875188826,
+          "low": -0.00017994887424790107
+        },
+        "far": {
+          "high": 0.0,
+          "low": 0.0
+        },
+        "frr": {
+          "high": 0.0,
+          "low": 0.0
+        },
+        "recall": {
+          "high": 0.0,
+          "low": 0.0
+        }
+      },
+      "metrics": {
+        "accuracy": 0.9867204572197008,
+        "auc": 0.9849346436624414,
+        "far": 0.0,
+        "frr": 0.026554621848739496,
+        "recall": 0.9734453781512605
+      },
+      "prime": 251,
+      "setting": "8-bit",
+      "threshold_normalized_distance": 1.1185798048973083
+    },
+    {
+      "ci95_identity_cluster": {
+        "accuracy": {
+          "high": 0.994100317880722,
+          "low": 0.9822800953535998
+        },
+        "auc": {
+          "high": 0.9884127395340891,
+          "low": 0.9759095342006132
+        },
+        "far": {
+          "high": 0.0,
+          "low": 0.0
+        },
+        "frr": {
+          "high": 0.05233898494527508,
+          "low": 0.01935830275146883
+        },
+        "recall": {
+          "high": 0.9806416972485311,
+          "low": 0.947661015054725
+        }
+      },
+      "counts": {
+        "fn": 79,
+        "fp": 0,
+        "tn": 2974,
+        "tp": 2896
+      },
+      "delta_vs_float": {
+        "accuracy": 0.0,
+        "auc": -0.0000021474628856266165,
+        "far": 0.0,
+        "frr": 0.0,
+        "recall": 0.0
+      },
+      "delta_vs_float_ci95_identity_cluster": {
+        "accuracy": {
+          "high": 0.0,
+          "low": 0.0
+        },
+        "auc": {
+          "high": 0.000010661549237239699,
+          "low": -0.000021299511892025615
+        },
+        "far": {
+          "high": 0.0,
+          "low": 0.0
+        },
+        "frr": {
+          "high": 0.0,
+          "low": 0.0
+        },
+        "recall": {
+          "high": 0.0,
+          "low": 0.0
+        }
+      },
+      "metrics": {
+        "accuracy": 0.9867204572197008,
+        "auc": 0.9849468502935808,
+        "far": 0.0,
+        "frr": 0.026554621848739496,
+        "recall": 0.9734453781512605
+      },
+      "prime": 4093,
+      "setting": "12-bit",
+      "threshold_normalized_distance": 1.1185798048973083
+    }
+  ]
+}

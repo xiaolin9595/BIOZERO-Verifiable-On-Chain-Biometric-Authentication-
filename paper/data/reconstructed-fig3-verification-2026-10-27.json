@@ -1,0 +1,179 @@
+{
+  "schema_version": 1,
+  "overall": "PASS",
+  "passed": 34,
+  "failed": 0,
+  "checks": [
+    {
+      "name": "biozero-fixed: run complete",
+      "passed": true,
+      "detail": "complete"
+    },
+    {
+      "name": "biozero-fixed: all JS verifications accepted",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "biozero-fixed: JS negative control rejected",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "biozero-fixed: exported verifier hash",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "biozero-fixed: exported proof hash",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "biozero-fixed: chain valid static call",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "biozero-fixed: chain invalid static call",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "biozero-fixed: chain runtime bytecode match",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "biozero-fixed: three successful valid receipts",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "vanilla-2: run complete",
+      "passed": true,
+      "detail": "complete"
+    },
+    {
+      "name": "vanilla-2: all JS verifications accepted",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "vanilla-2: JS negative control rejected",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "vanilla-2: exported verifier hash",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "vanilla-2: exported proof hash",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "vanilla-2: chain valid static call",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "vanilla-2: chain invalid static call",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "vanilla-2: chain runtime bytecode match",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "vanilla-2: three successful valid receipts",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "vanilla-4: run complete",
+      "passed": true,
+      "detail": "complete"
+    },
+    {
+      "name": "vanilla-4: all JS verifications accepted",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "vanilla-4: JS negative control rejected",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "vanilla-4: exported verifier hash",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "vanilla-4: exported proof hash",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "vanilla-4: chain valid static call",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "vanilla-4: chain invalid static call",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "vanilla-4: chain runtime bytecode match",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "vanilla-4: three successful valid receipts",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "vanilla-2: original source preserved",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "vanilla-2: fixed source hash",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "vanilla-4: original source preserved",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "vanilla-4: fixed source hash",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "vanilla-8: original source preserved",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "vanilla-8: fixed source hash",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "vanilla-8: compile-only complete",
+      "passed": true,
+      "detail": null
+    }
+  ]
+}
+

@@ -1,0 +1,11 @@
+node_modules/
+._*
+.DS_Store
+build/
+contracts/generated/*.sol
+inputs/generated/*.json
+logs/
+results/*.json
+results/*.csv
+results/proving/
+results/verifier-gas/

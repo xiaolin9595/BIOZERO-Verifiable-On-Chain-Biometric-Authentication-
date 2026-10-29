@@ -1,0 +1,8 @@
+strategy,dimension,current_median_gas,recorded_median_gas,absolute_delta,percent_delta
+spot-eta-1,128,4124394,4124634,-240,-0.006
+spot-eta-2,128,5111692,5111147,545,0.011
+spot-eta-4,128,7107360,7106181,1179,0.017
+spot-eta-8,128,11196527,11202131,-5604,-0.05
+full-check,128,22097617,22097629,-12,0
+circuit-check,128,255023,254999,24,0.009
+circuit-check,512,255011,255011,0,0

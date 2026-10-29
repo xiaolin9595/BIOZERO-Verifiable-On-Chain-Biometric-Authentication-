@@ -1,0 +1,326 @@
+{
+  "schema_version": 1,
+  "interpretation": "Fresh exact-split results are primary; the recovered complete 206160G campaign is retained as a separate comparison.",
+  "comparison": [
+    {
+      "target": "biozero-fixed",
+      "dimension": null,
+      "constraints": {
+        "fresh": 109900,
+        "recovered": 109900,
+        "absolute_delta": 0,
+        "percent_delta": 0
+      },
+      "proof_mean_ms": {
+        "fresh": 2728.3268554000183,
+        "recovered": 2990.399602800049,
+        "absolute_delta": -262.0727474000305,
+        "percent_delta": -8.763803578446163
+      },
+      "proof_mean_bytes": {
+        "fresh": 1219,
+        "recovered": 1219,
+        "absolute_delta": 0,
+        "percent_delta": 0
+      },
+      "verifier_gas_mean": {
+        "fresh": 271200,
+        "recovered": 271188,
+        "absolute_delta": 12,
+        "percent_delta": 0.0044249745563963005
+      },
+      "deployment_gas": {
+        "fresh": 1025177,
+        "recovered": 1025177,
+        "absolute_delta": 0,
+        "percent_delta": 0
+      },
+      "verifier_bytecode_bytes": {
+        "fresh": 4523,
+        "recovered": 4523,
+        "absolute_delta": 0,
+        "percent_delta": 0
+      }
+    },
+    {
+      "target": "vanilla-2",
+      "dimension": 2,
+      "constraints": {
+        "fresh": 439240,
+        "recovered": 439240,
+        "absolute_delta": 0,
+        "percent_delta": 0
+      },
+      "proof_mean_ms": {
+        "fresh": 5701.145417600001,
+        "recovered": 11034.331371600001,
+        "absolute_delta": -5333.1859540000005,
+        "percent_delta": -48.33266080558787
+      },
+      "proof_mean_bytes": {
+        "fresh": 1441,
+        "recovered": 1441,
+        "absolute_delta": 0,
+        "percent_delta": 0
+      },
+      "verifier_gas_mean": {
+        "fresh": 295244,
+        "recovered": 295208,
+        "absolute_delta": 36,
+        "percent_delta": 0.01219479146906588
+      },
+      "deployment_gas": {
+        "fresh": 1102804,
+        "recovered": 1102804,
+        "absolute_delta": 0,
+        "percent_delta": 0
+      },
+      "verifier_bytecode_bytes": {
+        "fresh": 4882,
+        "recovered": 4882,
+        "absolute_delta": 0,
+        "percent_delta": 0
+      }
+    },
+    {
+      "target": "vanilla-4",
+      "dimension": 4,
+      "constraints": {
+        "fresh": 877629,
+        "recovered": 877629,
+        "absolute_delta": 0,
+        "percent_delta": 0
+      },
+      "proof_mean_ms": {
+        "fresh": 10305.621550000002,
+        "recovered": 12029.160413199997,
+        "absolute_delta": -1723.5388631999958,
+        "percent_delta": -14.328006311302484
+      },
+      "proof_mean_bytes": {
+        "fresh": 1737,
+        "recovered": 1737,
+        "absolute_delta": 0,
+        "percent_delta": 0
+      },
+      "verifier_gas_mean": {
+        "fresh": 327308,
+        "recovered": 327284,
+        "absolute_delta": 24,
+        "percent_delta": 0.007333080749440853
+      },
+      "deployment_gas": {
+        "fresh": 1205809,
+        "recovered": 1205809,
+        "absolute_delta": 0,
+        "percent_delta": 0
+      },
+      "verifier_bytecode_bytes": {
+        "fresh": 5358,
+        "recovered": 5358,
+        "absolute_delta": 0,
+        "percent_delta": 0
+      }
+    },
+    {
+      "target": "vanilla-8",
+      "dimension": 8,
+      "constraints": {
+        "fresh": 1754406,
+        "recovered": 1754406,
+        "absolute_delta": 0,
+        "percent_delta": 0
+      },
+      "proof_mean_ms": {
+        "fresh": 20292.494545400008,
+        "recovered": 20916.468874400005,
+        "absolute_delta": -623.9743289999969,
+        "percent_delta": -2.9831724118772693
+      },
+      "proof_mean_bytes": {
+        "fresh": 2329,
+        "recovered": 2329,
+        "absolute_delta": 0,
+        "percent_delta": 0
+      },
+      "verifier_gas_mean": {
+        "fresh": 391437,
+        "recovered": 391449,
+        "absolute_delta": -12,
+        "percent_delta": -0.003065533441137926
+      },
+      "deployment_gas": {
+        "fresh": 1410934,
+        "recovered": 1410934,
+        "absolute_delta": 0,
+        "percent_delta": 0
+      },
+      "verifier_bytecode_bytes": {
+        "fresh": 6307,
+        "recovered": 6307,
+        "absolute_delta": 0,
+        "percent_delta": 0
+      }
+    },
+    {
+      "target": "vanilla-16",
+      "dimension": 16,
+      "constraints": {
+        "fresh": 3507959,
+        "recovered": 3507959,
+        "absolute_delta": 0,
+        "percent_delta": 0
+      },
+      "proof_mean_ms": {
+        "fresh": 40740.079182400004,
+        "recovered": 41758.24377700002,
+        "absolute_delta": -1018.1645946000135,
+        "percent_delta": -2.438236148141861
+      },
+      "proof_mean_bytes": {
+        "fresh": 3513,
+        "recovered": 3513,
+        "absolute_delta": 0,
+        "percent_delta": 0
+      },
+      "verifier_gas_mean": {
+        "fresh": 520070,
+        "recovered": 520094,
+        "absolute_delta": -24,
+        "percent_delta": -0.004614550446650028
+      },
+      "deployment_gas": {
+        "fresh": 1823047,
+        "recovered": 1823047,
+        "absolute_delta": 0,
+        "percent_delta": 0
+      },
+      "verifier_bytecode_bytes": {
+        "fresh": 8213,
+        "recovered": 8213,
+        "absolute_delta": 0,
+        "percent_delta": 0
+      }
+    },
+    {
+      "target": "vanilla-32",
+      "dimension": 32,
+      "constraints": {
+        "fresh": 7015064,
+        "recovered": 7015064,
+        "absolute_delta": 0,
+        "percent_delta": 0
+      },
+      "proof_mean_ms": {
+        "fresh": 80398.30250459998,
+        "recovered": 82362.73722400004,
+        "absolute_delta": -1964.4347194000584,
+        "percent_delta": -2.385101303830433
+      },
+      "proof_mean_bytes": {
+        "fresh": 5881,
+        "recovered": 5881,
+        "absolute_delta": 0,
+        "percent_delta": 0
+      },
+      "verifier_gas_mean": {
+        "fresh": 778284,
+        "recovered": 778260,
+        "absolute_delta": 24,
+        "percent_delta": 0.0030838023282707583
+      },
+      "deployment_gas": {
+        "fresh": 2646433,
+        "recovered": 2646433,
+        "absolute_delta": 0,
+        "percent_delta": 0
+      },
+      "verifier_bytecode_bytes": {
+        "fresh": 12020,
+        "recovered": 12020,
+        "absolute_delta": 0,
+        "percent_delta": 0
+      }
+    },
+    {
+      "target": "vanilla-64",
+      "dimension": 64,
+      "constraints": {
+        "fresh": 14029273,
+        "recovered": 14029273,
+        "absolute_delta": 0,
+        "percent_delta": 0
+      },
+      "proof_mean_ms": {
+        "fresh": 351190.7863299999,
+        "recovered": 361794.01890880003,
+        "absolute_delta": -10603.232578800118,
+        "percent_delta": -2.9307373877490632
+      },
+      "proof_mean_bytes": {
+        "fresh": 10617,
+        "recovered": 10617,
+        "absolute_delta": 0,
+        "percent_delta": 0
+      },
+      "verifier_gas_mean": {
+        "fresh": 1298444,
+        "recovered": 1298564,
+        "absolute_delta": -120,
+        "percent_delta": -0.009240976956083797
+      },
+      "deployment_gas": {
+        "fresh": 4292976,
+        "recovered": 4292976,
+        "absolute_delta": 0,
+        "percent_delta": 0
+      },
+      "verifier_bytecode_bytes": {
+        "fresh": 19633,
+        "recovered": 19633,
+        "absolute_delta": 0,
+        "percent_delta": 0
+      }
+    },
+    {
+      "target": "vanilla-128",
+      "dimension": 128,
+      "constraints": {
+        "fresh": 28057690,
+        "recovered": 28057690,
+        "absolute_delta": 0,
+        "percent_delta": 0
+      },
+      "proof_mean_ms": {
+        "fresh": 699006.9867864,
+        "recovered": 727288.9492542001,
+        "absolute_delta": -28281.962467800127,
+        "percent_delta": -3.888683101372834
+      },
+      "proof_mean_bytes": {
+        "fresh": 20089,
+        "recovered": 20089,
+        "absolute_delta": 0,
+        "percent_delta": 0
+      },
+      "verifier_gas_mean": {
+        "fresh": 2354712,
+        "recovered": 2354616,
+        "absolute_delta": 96,
+        "percent_delta": 0.004077097921699334
+      },
+      "deployment_gas": {
+        "fresh": 7588215,
+        "recovered": 7588215,
+        "absolute_delta": 0,
+        "percent_delta": 0
+      },
+      "verifier_bytecode_bytes": {
+        "fresh": 34865,
+        "recovered": 34865,
+        "absolute_delta": 0,
+        "percent_delta": 0
+      }
+    }
+  ]
+}

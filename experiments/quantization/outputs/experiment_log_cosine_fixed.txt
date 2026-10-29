@@ -1,0 +1,308 @@
+/Users/lin/Library/Python/3.9/lib/python/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+  warnings.warn(
+======================================================================
+人脸识别性能评估：量化前后对比
+======================================================================
+实验时间: 2025-10-13 21:24:44
+
+距离度量: cosine
+身份数量限制: 200
+======================================================================
+
+设备: cpu
+
+[模型加载] FaceNet InceptionResnetV1...
+✓ 模型加载完成
+
+[特征提取] 从 data/lfw/lfw/lfw-deepfunneled 提取...
+  [1/200] AJ_Cook: 1 张图片
+  [2/200] AJ_Lamas: 1 张图片
+  [3/200] Aaron_Eckhart: 1 张图片
+  [4/200] Aaron_Guiel: 1 张图片
+  [5/200] Aaron_Patterson: 1 张图片
+  [6/200] Aaron_Peirsol: 4 张图片
+  [7/200] Aaron_Pena: 1 张图片
+  [8/200] Aaron_Sorkin: 2 张图片
+  [9/200] Aaron_Tippin: 1 张图片
+  [10/200] Abba_Eban: 1 张图片
+  [11/200] Abbas_Kiarostami: 1 张图片
+  [12/200] Abdel_Aziz_Al-Hakim: 1 张图片
+  [13/200] Abdel_Madi_Shabneh: 1 张图片
+  [14/200] Abdel_Nasser_Assidi: 2 张图片
+  [15/200] Abdoulaye_Wade: 4 张图片
+  [16/200] Abdul_Majeed_Shobokshi: 1 张图片
+  [17/200] Abdul_Rahman: 1 张图片
+  [18/200] Abdulaziz_Kamilov: 1 张图片
+  [19/200] Abdullah: 4 张图片
+  [20/200] Abdullah_Ahmad_Badawi: 1 张图片
+  [21/200] Abdullah_Gul: 19 张图片
+  [22/200] Abdullah_Nasseef: 1 张图片
+  [23/200] Abdullah_al-Attiyah: 3 张图片
+  [24/200] Abdullatif_Sener: 2 张图片
+  [25/200] Abel_Aguilar: 1 张图片
+  [26/200] Abel_Pacheco: 4 张图片
+  [27/200] Abid_Hamid_Mahmud_Al-Tikriti: 3 张图片
+  [28/200] Abner_Martinez: 1 张图片
+  [29/200] Abraham_Foxman: 1 张图片
+  [30/200] Aby_Har-Even: 1 张图片
+  [31/200] Adam_Ant: 1 张图片
+  [32/200] Adam_Freier: 1 张图片
+  [33/200] Adam_Herbert: 1 张图片
+  [34/200] Adam_Kennedy: 1 张图片
+  [35/200] Adam_Mair: 1 张图片
+  [36/200] Adam_Rich: 1 张图片
+  [37/200] Adam_Sandler: 4 张图片
+  [38/200] Adam_Scott: 2 张图片
+  [39/200] Adel_Al-Jubeir: 3 张图片
+  [40/200] Adelina_Avila: 1 张图片
+  [41/200] Adisai_Bodharamik: 1 张图片
+  [42/200] Adolfo_Aguilar_Zinser: 3 张图片
+  [43/200] Adolfo_Rodriguez_Saa: 2 张图片
+  [44/200] Adoor_Gopalakarishnan: 1 张图片
+  [45/200] Adrian_Annus: 1 张图片
+  [46/200] Adrian_Fernandez: 1 张图片
+  [47/200] Adrian_McPherson: 2 张图片
+  [48/200] Adrian_Murrell: 1 张图片
+  [49/200] Adrian_Nastase: 2 张图片
+  [50/200] Adriana_Lima: 1 张图片
+  [51/200] Adriana_Perez_Navarro: 1 张图片
+  [52/200] Adrianna_Zuzic: 1 张图片
+  [53/200] Adrien_Brody: 12 张图片
+  [54/200] Afton_Smith: 1 张图片
+  [55/200] Agbani_Darego: 1 张图片
+  [56/200] Agnelo_Queiroz: 1 张图片
+  [57/200] Agnes_Bruckner: 1 张图片
+  [58/200] Ahmad_Jbarah: 1 张图片
+  [59/200] Ahmad_Masood: 2 张图片
+  [60/200] Ahmed_Ahmed: 1 张图片
+  [61/200] Ahmed_Chalabi: 5 张图片
+  [62/200] Ahmed_Ghazi: 1 张图片
+  [63/200] Ahmed_Ibrahim_Bilal: 1 张图片
+  [64/200] Ahmed_Lopez: 1 张图片
+  [65/200] Ahmed_Qureia: 1 张图片
+  [66/200] Ahmet_Demir: 1 张图片
+  [67/200] Ahmet_Necdet_Sezer: 2 张图片
+  [68/200] Ai_Sugiyama: 5 张图片
+  [69/200] Aicha_El_Ouafi: 3 张图片
+  [70/200] Aidan_Quinn: 1 张图片
+  [71/200] Aileen_Riggin_Soule: 1 张图片
+  [72/200] Ain_Seppik: 1 张图片
+  [73/200] Ainsworth_Dyer: 1 张图片
+  [74/200] Aishwarya_Rai: 1 张图片
+  [75/200] Aitor_Gonzalez: 2 张图片
+  [76/200] Aiysha_Smith: 1 张图片
+  [77/200] Ajit_Agarkar: 1 张图片
+  [78/200] Akbar_Al_Baker: 1 张图片
+  [79/200] Akbar_Hashemi_Rafsanjani: 3 张图片
+  [80/200] Akhmed_Zakayev: 3 张图片
+  [81/200] Akiko_Morigami: 1 张图片
+  [82/200] Akmal_Taher: 1 张图片
+  [83/200] Al_Cardenas: 1 张图片
+  [84/200] Al_Davis: 2 张图片
+  [85/200] Al_Gore: 8 张图片
+  [86/200] Al_Leiter: 1 张图片
+  [87/200] Al_Pacino: 3 张图片
+  [88/200] Al_Sharpton: 7 张图片
+  [89/200] Alain_Cervantes: 1 张图片
+  [90/200] Alain_Ducasse: 1 张图片
+  [91/200] Alan_Ball: 2 张图片
+  [92/200] Alan_Dershowitz: 1 张图片
+  [93/200] Alan_Dreher: 1 张图片
+  [94/200] Alan_Greenspan: 5 张图片
+  [95/200] Alan_Greer: 1 张图片
+  [96/200] Alan_Jackson: 1 张图片
+  [97/200] Alan_Mulally: 2 张图片
+  [98/200] Alan_Stonecipher: 1 张图片
+  [99/200] Alan_Tang_Kwong-wing: 1 张图片
+  [100/200] Alan_Trammell: 1 张图片
+  [101/200] Alan_Zemaitis: 1 张图片
+  [102/200] Alanis_Morissette: 1 张图片
+  [103/200] Alanna_Ubach: 1 张图片
+  [104/200] Alastair_Campbell: 5 张图片
+  [105/200] Alastair_Johnston: 1 张图片
+  [106/200] Albaro_Recoba: 1 张图片
+  [107/200] Albert_Brooks: 1 张图片
+  [108/200] Albert_Costa: 6 张图片
+  [109/200] Albert_Montanes: 1 张图片
+  [110/200] Albert_Pujols: 1 张图片
+  [111/200] Alberta_Lee: 1 张图片
+  [112/200] Alberto_Acosta: 1 张图片
+  [113/200] Alberto_Fujimori: 2 张图片
+  [114/200] Alberto_Gonzales: 1 张图片
+  [115/200] Alberto_Ruiz_Gallardon: 2 张图片
+  [116/200] Alberto_Sordi: 1 张图片
+  [117/200] Albrecht_Mentz: 2 张图片
+  [118/200] Aldo_Paredes: 2 张图片
+  [119/200] Alec_Baldwin: 4 张图片
+  [120/200] Alecos_Markides: 1 张图片
+  [121/200] Alejandro_Atchugarry: 2 张图片
+  [122/200] Alejandro_Avila: 3 张图片
+  [123/200] Alejandro_Fernandez: 1 张图片
+  [124/200] Alejandro_Gonzalez_Inarritu: 1 张图片
+  [125/200] Alejandro_Lembo: 1 张图片
+  [126/200] Alejandro_Lerner: 1 张图片
+  [127/200] Alejandro_Lopez: 1 张图片
+  [128/200] Alejandro_Toledo: 39 张图片
+  [129/200] Alek_Wek: 1 张图片
+  [130/200] Aleksander_Kwasniewski: 4 张图片
+  [131/200] Aleksander_Voloshin: 1 张图片
+  [132/200] Alessandra_Cerna: 1 张图片
+  [133/200] Alessandro_Nesta: 1 张图片
+  [134/200] Alex_Barros: 2 张图片
+  [135/200] Alex_Cabrera: 1 张图片
+  [136/200] Alex_Cejka: 1 张图片
+  [137/200] Alex_Corretja: 1 张图片
+  [138/200] Alex_Ferguson: 1 张图片
+  [139/200] Alex_Gonzalez: 1 张图片
+  [140/200] Alex_Holmes: 1 张图片
+  [141/200] Alex_King: 1 张图片
+  [142/200] Alex_Penelas: 2 张图片
+  [143/200] Alex_Popov: 1 张图片
+  [144/200] Alex_Sink: 3 张图片
+  [145/200] Alex_Wallau: 1 张图片
+  [146/200] Alex_Zanardi: 1 张图片
+  [147/200] Alexa_Loren: 1 张图片
+  [148/200] Alexa_Vega: 1 张图片
+  [149/200] Alexander_Downer: 4 张图片
+  [150/200] Alexander_Losyukov: 4 张图片
+  [151/200] Alexander_Lukashenko: 1 张图片
+  [152/200] Alexander_Payne: 1 张图片
+  [153/200] Alexander_Rumyantsev: 2 张图片
+  [154/200] Alexandra_Jackson: 1 张图片
+  [155/200] Alexandra_Pelosi: 1 张图片
+  [156/200] Alexandra_Rozovskaya: 1 张图片
+  [157/200] Alexandra_Spann: 1 张图片
+  [158/200] Alexandra_Stevenson: 3 张图片
+  [159/200] Alexandra_Vodjanikova: 2 张图片
+  [160/200] Alexandre_Daigle: 1 张图片
+  [161/200] Alexandre_Despatie: 1 张图片
+  [162/200] Alexandre_Herchcovitch: 1 张图片
+  [163/200] Alexandre_Vinokourov: 1 张图片
+  [164/200] Alexis_Bledel: 1 张图片
+  [165/200] Alexis_Dennisoff: 1 张图片
+  [166/200] Alfonso_Cuaron: 1 张图片
+  [167/200] Alfonso_Portillo: 1 张图片
+  [168/200] Alfonso_Soriano: 1 张图片
+  [169/200] Alfred_Ford: 1 张图片
+  [170/200] Alfred_Sant: 1 张图片
+  [171/200] Alfredo_Moreno: 1 张图片
+  [172/200] Alfredo_Pena: 1 张图片
+  [173/200] Alfredo_di_Stefano: 1 张图片
+  [174/200] Ali_Abbas: 2 张图片
+  [175/200] Ali_Abdullah_Saleh: 1 张图片
+  [176/200] Ali_Adbul_Karim_Madani: 1 张图片
+  [177/200] Ali_Ahmeti: 1 张图片
+  [178/200] Ali_Bin_Hussein: 1 张图片
+  [179/200] Ali_Fallahian: 1 张图片
+  [180/200] Ali_Hammoud: 1 张图片
+  [181/200] Ali_Khamenei: 3 张图片
+  [182/200] Ali_Mohammed_Maher: 1 张图片
+  [183/200] Ali_Naimi: 8 张图片
+  [184/200] Alice_Fisher: 2 张图片
+  [185/200] Alicia_Hollowell: 1 张图片
+  [186/200] Alicia_Keys: 1 张图片
+  [187/200] Alicia_Molik: 1 张图片
+  [188/200] Alicia_Silverstone: 2 张图片
+  [189/200] Alicia_Witt: 1 张图片
+  [190/200] Alimzhan_Tokhtakhounov: 2 张图片
+  [191/200] Alina_Kabaeva: 1 张图片
+  [192/200] Aline_Chretien: 1 张图片
+  [193/200] Alisha_Richman: 1 张图片
+  [194/200] Alison_Krauss: 1 张图片
+  [195/200] Alison_Lohman: 2 张图片
+  [196/200] Alistair_MacDonald: 1 张图片
+  [197/200] Allan_Houston: 1 张图片
+  [198/200] Allan_Kemakeza: 1 张图片
+  [199/200] Allan_Wagner: 1 张图片
+  [200/200] Allen_Iverson: 2 张图片
+
+✓ 提取完成: 387 个样本, 200 个身份
+
+[对生成] 生成所有图像对...
+  总对数: 74691
+  正样本对 (同一人): 1228
+  负样本对 (不同人): 73463
+  正负比例: 1:59.82
+
+[基准评估] 浮点特征 (无量化) - 使用cosine距离
+======================================================================
+
+最优阈值: 0.431869
+F1-Score: 0.952862
+Precision: 0.986063
+Recall: 0.921824
+Accuracy: 0.998500
+EER: 5.1580%
+ROC-AUC: 0.983829
+
+======================================================================
+使用基准阈值 0.431869 评估量化器
+======================================================================
+[AsymmetricQuantizer] 初始化完成
+  质数 p = 67,108,859
+  浮点范围: [-1.0, 1.0]
+  整数范围: [0, 67,108,858]
+  缩放因子: 33554429.00
+
+======================================================================
+评估: AsymmetricQuantizer
+======================================================================
+缩放因子: 33,554,429.00
+距离度量: cosine
+[1] 量化特征向量...
+[2] 在整数域计算cosine距离...
+[3] 在整数域寻找最优阈值:
+    (余弦距离不能直接缩放阈值)
+    整数域最优阈值: 0.000839
+    参考浮点阈值: 0.431869
+[4] 使用整数阈值评估...
+  使用整数阈值的性能:
+    Precision: 0.986051
+    Recall:    0.921010
+    F1-Score:  0.952421
+    Accuracy:  0.998487
+
+[5] 已使用整数域最优阈值
+
+[6] 计算 EER (整数域)...
+  EER:             5.6780%
+  EER阈值:         0.001388
+[7] 计算 ROC-AUC (整数域)...
+  ROC-AUC: 0.984004
+
+======================================================================
+[主要性能指标] 使用整数域阈值:
+======================================================================
+  参考浮点阈值: 0.431869
+  整数阈值:      0.000839 (整数域优化)
+  Precision:     0.986051
+  Recall:        0.921010
+  F1-Score:      0.952421
+  Accuracy:      0.998487
+  TPR:           0.921010
+  FPR:           0.000218
+
+======================================================================
+对比总结
+======================================================================
+
+量化器                            F1         Precision  Recall     EER(%)     ROC-AUC   
+----------------------------------------------------------------------
+Baseline_Float32               0.952862   0.986063   0.921824   5.1580     0.983829  
+AsymmetricQuantizer            0.952421   0.986051   0.921010   5.6780     0.984004  
+
+[性能变化]
+
+AsymmetricQuantizer:
+  F1变化: -0.0463%
+  EER变化: +10.0811%
+  AUC变化: +0.0177%
+
+结果已保存到: biozero_quantization_experiment/outputs/results/recognition_performance_evaluation.json
+
+[可视化] 生成对比图表...
+  ✓ 保存到: biozero_quantization_experiment/outputs/results/recognition_performance_comparison.png
+
+======================================================================
+评估完成
+======================================================================

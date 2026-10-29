@@ -1,0 +1,29 @@
+\begin{tabular}{@{}llrrrrrrr@{}}
+\toprule
+\textcolor{blue}{Model} & \textcolor{blue}{Setting} & \textcolor{blue}{Pairs} & \textcolor{blue}{Acc.} & \textcolor{blue}{$\Delta$ Acc.} & \textcolor{blue}{Rec.} & \textcolor{blue}{FAR} & \textcolor{blue}{FRR} & \textcolor{blue}{AUC} \\
+\midrule
+\multicolumn{9}{l}{\textcolor{blue}{FEI Face Database --- controlled acquisition}} \\
+\textcolor{blue}{MobileFaceNet (128)} & \textcolor{blue}{float} & \textcolor{blue}{5{,}935} & \textcolor{blue}{97.88} & \textcolor{blue}{--} & \textcolor{blue}{97.24} & \textcolor{blue}{1.48} & \textcolor{blue}{2.76} & \textcolor{blue}{0.99654} \\
+\textcolor{blue}{MobileFaceNet (128)} & \textcolor{blue}{4-bit} & \textcolor{blue}{5{,}935} & \textcolor{blue}{90.51} & \textcolor{blue}{-7.36} & \textcolor{blue}{81.09} & \textcolor{blue}{0.07} & \textcolor{blue}{18.91} & \textcolor{blue}{0.99282} \\
+\textcolor{blue}{MobileFaceNet (128)} & \textcolor{blue}{6-bit} & \textcolor{blue}{5{,}935} & \textcolor{blue}{97.78} & \textcolor{blue}{-0.10} & \textcolor{blue}{96.97} & \textcolor{blue}{1.42} & \textcolor{blue}{3.03} & \textcolor{blue}{0.99641} \\
+\textcolor{blue}{MobileFaceNet (128)} & \textcolor{blue}{8-bit} & \textcolor{blue}{5{,}935} & \textcolor{blue}{97.96} & \textcolor{blue}{+0.08} & \textcolor{blue}{97.37} & \textcolor{blue}{1.45} & \textcolor{blue}{2.63} & \textcolor{blue}{0.99656} \\
+\textcolor{blue}{MobileFaceNet (128)} & \textcolor{blue}{12-bit} & \textcolor{blue}{5{,}935} & \textcolor{blue}{97.88} & \textcolor{blue}{+0.00} & \textcolor{blue}{97.27} & \textcolor{blue}{1.52} & \textcolor{blue}{2.73} & \textcolor{blue}{0.99654} \\
+\textcolor{blue}{InceptionResnetV1 (512)} & \textcolor{blue}{float} & \textcolor{blue}{5{,}921} & \textcolor{blue}{97.67} & \textcolor{blue}{--} & \textcolor{blue}{95.50} & \textcolor{blue}{0.17} & \textcolor{blue}{4.50} & \textcolor{blue}{0.98531} \\
+\textcolor{blue}{InceptionResnetV1 (512)} & \textcolor{blue}{4-bit} & \textcolor{blue}{5{,}921} & \textcolor{blue}{86.30} & \textcolor{blue}{-11.37} & \textcolor{blue}{72.65} & \textcolor{blue}{0.07} & \textcolor{blue}{27.35} & \textcolor{blue}{0.98007} \\
+\textcolor{blue}{InceptionResnetV1 (512)} & \textcolor{blue}{6-bit} & \textcolor{blue}{5{,}921} & \textcolor{blue}{97.21} & \textcolor{blue}{-0.46} & \textcolor{blue}{94.49} & \textcolor{blue}{0.07} & \textcolor{blue}{5.51} & \textcolor{blue}{0.98532} \\
+\textcolor{blue}{InceptionResnetV1 (512)} & \textcolor{blue}{7-bit} & \textcolor{blue}{5{,}921} & \textcolor{blue}{97.62} & \textcolor{blue}{-0.05} & \textcolor{blue}{95.33} & \textcolor{blue}{0.10} & \textcolor{blue}{4.67} & \textcolor{blue}{0.98530} \\
+\textcolor{blue}{InceptionResnetV1 (512)} & \textcolor{blue}{9-bit} & \textcolor{blue}{5{,}921} & \textcolor{blue}{97.69} & \textcolor{blue}{+0.02} & \textcolor{blue}{95.50} & \textcolor{blue}{0.13} & \textcolor{blue}{4.50} & \textcolor{blue}{0.98529} \\
+\midrule
+\multicolumn{9}{l}{\textcolor{blue}{LFW Funneled --- unconstrained acquisition}} \\
+\textcolor{blue}{MobileFaceNet (128)} & \textcolor{blue}{float} & \textcolor{blue}{5{,}949} & \textcolor{blue}{98.67} & \textcolor{blue}{--} & \textcolor{blue}{97.34} & \textcolor{blue}{0.00} & \textcolor{blue}{2.66} & \textcolor{blue}{0.98495} \\
+\textcolor{blue}{MobileFaceNet (128)} & \textcolor{blue}{4-bit} & \textcolor{blue}{5{,}949} & \textcolor{blue}{83.73} & \textcolor{blue}{-14.94} & \textcolor{blue}{67.46} & \textcolor{blue}{0.00} & \textcolor{blue}{32.54} & \textcolor{blue}{0.98618} \\
+\textcolor{blue}{MobileFaceNet (128)} & \textcolor{blue}{6-bit} & \textcolor{blue}{5{,}949} & \textcolor{blue}{98.62} & \textcolor{blue}{-0.05} & \textcolor{blue}{97.24} & \textcolor{blue}{0.00} & \textcolor{blue}{2.76} & \textcolor{blue}{0.98505} \\
+\textcolor{blue}{MobileFaceNet (128)} & \textcolor{blue}{8-bit} & \textcolor{blue}{5{,}949} & \textcolor{blue}{98.67} & \textcolor{blue}{+0.00} & \textcolor{blue}{97.34} & \textcolor{blue}{0.00} & \textcolor{blue}{2.66} & \textcolor{blue}{0.98493} \\
+\textcolor{blue}{MobileFaceNet (128)} & \textcolor{blue}{12-bit} & \textcolor{blue}{5{,}949} & \textcolor{blue}{98.67} & \textcolor{blue}{+0.00} & \textcolor{blue}{97.34} & \textcolor{blue}{0.00} & \textcolor{blue}{2.66} & \textcolor{blue}{0.98495} \\
+\textcolor{blue}{InceptionResnetV1 (512)} & \textcolor{blue}{float} & \textcolor{blue}{6{,}000} & \textcolor{blue}{96.72} & \textcolor{blue}{--} & \textcolor{blue}{94.40} & \textcolor{blue}{0.97} & \textcolor{blue}{5.60} & \textcolor{blue}{0.98050} \\
+\textcolor{blue}{InceptionResnetV1 (512)} & \textcolor{blue}{4-bit} & \textcolor{blue}{6{,}000} & \textcolor{blue}{92.72} & \textcolor{blue}{-4.00} & \textcolor{blue}{85.60} & \textcolor{blue}{0.17} & \textcolor{blue}{14.40} & \textcolor{blue}{0.97559} \\
+\textcolor{blue}{InceptionResnetV1 (512)} & \textcolor{blue}{6-bit} & \textcolor{blue}{6{,}000} & \textcolor{blue}{96.87} & \textcolor{blue}{+0.15} & \textcolor{blue}{94.30} & \textcolor{blue}{0.57} & \textcolor{blue}{5.70} & \textcolor{blue}{0.98017} \\
+\textcolor{blue}{InceptionResnetV1 (512)} & \textcolor{blue}{7-bit} & \textcolor{blue}{6{,}000} & \textcolor{blue}{96.75} & \textcolor{blue}{+0.03} & \textcolor{blue}{94.37} & \textcolor{blue}{0.87} & \textcolor{blue}{5.63} & \textcolor{blue}{0.98046} \\
+\textcolor{blue}{InceptionResnetV1 (512)} & \textcolor{blue}{9-bit} & \textcolor{blue}{6{,}000} & \textcolor{blue}{96.72} & \textcolor{blue}{+0.00} & \textcolor{blue}{94.40} & \textcolor{blue}{0.97} & \textcolor{blue}{5.60} & \textcolor{blue}{0.98046} \\
+\bottomrule
+\end{tabular}

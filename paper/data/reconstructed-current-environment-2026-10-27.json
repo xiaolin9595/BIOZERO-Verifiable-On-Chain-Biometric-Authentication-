@@ -1,0 +1,31 @@
+{
+  "generatedAt": "2026-10-27T14:03:00.546Z",
+  "cwd": "/Volumes/TSD302/biozero/reproduction-audit-2026-10-27/reconstructed/current",
+  "host": {
+    "hostname": "192.168.5.15",
+    "platform": "darwin",
+    "release": "24.3.0",
+    "arch": "arm64",
+    "cpu": "Apple M4",
+    "logicalProcessors": 10,
+    "totalMemoryGiB": 16
+  },
+  "toolchain": {
+    "node": "v22.19.0",
+    "npm": "10.9.3",
+    "circom": [
+      "circom2 npm package 0.2.23",
+      "circom compiler 2.2.3"
+    ],
+    "snarkjs": "0.7.6",
+    "solc": "0.8.36+commit.8a079791.Emscripten.clang",
+    "ganache": "7.9.2",
+    "ethers": "5.8.0"
+  },
+  "notes": [
+    "Node differs from the recorded Windows run (v22.19.0 here versus v24.19.0 recorded).",
+    "Ganache reports native uWS unavailable on darwin-arm64 and falls back to pure NodeJS; EVM gas is unaffected.",
+    "All zkeys are fresh local benchmark-only keys and must never be deployed."
+  ]
+}
+

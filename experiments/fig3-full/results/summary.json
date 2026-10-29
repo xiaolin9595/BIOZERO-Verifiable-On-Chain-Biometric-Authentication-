@@ -1,0 +1,727 @@
+{
+  "schema_version": 1,
+  "experiment_label": "fresh full Fig. 3 reconstruction; not original raw data",
+  "recovered_campaign_is_separate_evidence": true,
+  "environment": {
+    "schema_version": 1,
+    "captured_at": "2026-10-28T03:22:36.125Z",
+    "hostname": "enine",
+    "platform": "linux",
+    "release": "6.8.0-138-generic",
+    "architecture": "x64",
+    "cpu": {
+      "logical_count": 40,
+      "model": "Intel(R) Xeon(R) w7-3445",
+      "lscpu": "Architecture:                            x86_64\nCPU op-mode(s):                          32-bit, 64-bit\nAddress sizes:                           52 bits physical, 57 bits virtual\nByte Order:                              Little Endian\nCPU(s):                                  40\nOn-line CPU(s) list:                     0-39\nVendor ID:                               GenuineIntel\nModel name:                              Intel(R) Xeon(R) w7-3445\nCPU family:                              6\nModel:                                   143\nThread(s) per core:                      2\nCore(s) per socket:                      20\nSocket(s):                               1\nStepping:                                8\nCPU max MHz:                             4800.0000\nCPU min MHz:                             800.0000\nBogoMIPS:                                5184.00\nFlags:                                   fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc art arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc cpuid aperfmperf tsc_known_freq pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid dca sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch cpuid_fault epb cat_l3 cat_l2 cdp_l3 intel_ppin cdp_l2 ssbd mba ibrs ibpb stibp ibrs_enhanced tpr_shadow flexpriority ept vpid ept_ad fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid cqm rdt_a avx512f avx512dq rdseed adx smap avx512ifma clflushopt clwb intel_pt avx512cd sha_ni avx512bw avx512vl xsaveopt xsavec xgetbv1 xsaves cqm_llc cqm_occup_llc cqm_mbm_total cqm_mbm_local split_lock_detect user_shstk avx_vnni avx512_bf16 wbnoinvd dtherm ida arat pln pts hwp hwp_act_window hwp_epp hwp_pkg_req vnmi avx512vbmi umip pku ospke waitpkg avx512_vbmi2 gfni vaes vpclmulqdq avx512_vnni avx512_bitalg tme avx512_vpopcntdq la57 rdpid bus_lock_detect cldemote movdiri movdir64b enqcmd fsrm md_clear serialize tsxldtrk pconfig arch_lbr ibt amx_bf16 avx512_fp16 amx_tile amx_int8 flush_l1d arch_capabilities ibpb_exit_to_user\nVirtualization:                          VT-x\nL1d cache:                               960 KiB (20 instances)\nL1i cache:                               640 KiB (20 instances)\nL2 cache:                                40 MiB (20 instances)\nL3 cache:                                52.5 MiB (1 instance)\nNUMA node(s):                            1\nNUMA node0 CPU(s):                       0-39\nVulnerability Gather data sampling:      Not affected\nVulnerability Indirect target selection: Not affected\nVulnerability Itlb multihit:             Not affected\nVulnerability L1tf:                      Not affected\nVulnerability Mds:                       Not affected\nVulnerability Meltdown:                  Not affected\nVulnerability Mmio stale data:           Not affected\nVulnerability Reg file data sampling:    Not affected\nVulnerability Retbleed:                  Not affected\nVulnerability Spec rstack overflow:      Not affected\nVulnerability Spec store bypass:         Mitigation; Speculative Store Bypass disabled via prctl\nVulnerability Spectre v1:                Mitigation; usercopy/swapgs barriers and __user pointer sanitization\nVulnerability Spectre v2:                Mitigation; Enhanced / Automatic IBRS; IBPB conditional; PBRSB-eIBRS SW sequence; BHI BHI_DIS_S\nVulnerability Srbds:                     Not affected\nVulnerability Tsa:                       Not affected\nVulnerability Tsx async abort:           Not affected\nVulnerability Vmscape:                   Mitigation; IBPB before exit to userspace"
+    },
+    "memory": {
+      "physical_bytes": 269892624384,
+      "free_bytes_at_capture": 216156364800,
+      "proc_meminfo": "MemTotal:       263567016 kB\nMemFree:        80634596 kB\nMemAvailable:   211090200 kB\nBuffers:         9837504 kB\nCached:         107233884 kB\nSwapCached:       484536 kB\nActive:         48017028 kB\nInactive:       105236416 kB\nActive(anon):   21809804 kB\nInactive(anon): 21142840 kB\nActive(file):   26207224 kB\nInactive(file): 84093576 kB\nUnevictable:       18620 kB\nMlocked:            9604 kB\nSwapTotal:      15999996 kB\nSwapFree:          76596 kB\nZswap:                 0 kB\nZswapped:              0 kB\nDirty:              2068 kB\nWriteback:             0 kB\nAnonPages:      35787864 kB\nMapped:          2596704 kB\nShmem:           6846004 kB\nKReclaimable:   22454080 kB\nSlab:           24839772 kB\nSReclaimable:   22454080 kB\nSUnreclaim:      2385692 kB\nKernelStack:      178208 kB\nPageTables:       531816 kB\nSecPageTables:         0 kB\nNFS_Unstable:          0 kB\nBounce:                0 kB\nWritebackTmp:          0 kB\nCommitLimit:    147783504 kB\nCommitted_AS:   116329104 kB\nVmallocTotal:   13743895347199 kB\nVmallocUsed:      291784 kB\nVmallocChunk:          0 kB\nPercpu:           194080 kB\nHardwareCorrupted:     0 kB\nAnonHugePages:     12288 kB\nShmemHugePages:        0 kB\nShmemPmdMapped:        0 kB\nFileHugePages:         0 kB\nFilePmdMapped:         0 kB\nUnaccepted:            0 kB\nHugePages_Total:       0\nHugePages_Free:        0\nHugePages_Rsvd:        0\nHugePages_Surp:        0\nHugepagesize:       2048 kB\nHugetlb:               0 kB\nDirectMap4k:    13531572 kB\nDirectMap2M:    186396672 kB\nDirectMap1G:    70254592 kB\n"
+    },
+    "software": {
+      "node": "v22.22.3",
+      "npm": "10.9.8",
+      "zokrates": {
+        "path": "/home/lzb/BioZero_remote/zokrates-0.8.8-linux/zokrates",
+        "version": "ZoKrates 0.8.8",
+        "bytes": 104481096,
+        "sha256": "b3de37f64f283079dc85dea8db6f5ffc0da1206f4d01e4eeb5ef39718e518d16"
+      },
+      "solc_js": "0.8.33",
+      "ganache": "7.9.2",
+      "ethers": "6.16.0"
+    },
+    "protocol": {
+      "vanilla_dimensions": [
+        2,
+        4,
+        8,
+        16,
+        32,
+        64,
+        128
+      ],
+      "low_dimensions_rayon_num_threads": null,
+      "high_dimensions_rayon_num_threads": 1,
+      "biozero_fixed_rayon_num_threads": 1,
+      "warmup_runs_per_target": 1,
+      "measured_runs_per_target": 5,
+      "setup_policy": "reuse circuit-specific out/proving.key/verification.key/verifier.sol; regenerate witness and proof in isolated mutable cache",
+      "solidity_optimizer": {
+        "enabled": true,
+        "runs": 200
+      },
+      "evm_version": "shanghai",
+      "chain_policy": "in-process Ganache with allowUnlimitedContractSize=true for N=128 reporting beyond EIP-170"
+    },
+    "storage": {
+      "home": "Filesystem      Size  Used Avail Use% Mounted on\n/dev/nvme0n1p5  1.9T  1.8T   23G  99% /home",
+      "var_tmp": "Filesystem      Size  Used Avail Use% Mounted on\n/dev/nvme0n1p4  1.9T  1.4T  428G  77% /"
+    }
+  },
+  "results": [
+    {
+      "target": "biozero-fixed",
+      "dimension": null,
+      "protocol_partition": "BioZero fixed after N=128; RAYON_NUM_THREADS=1",
+      "setup_policy": "reuse circuit-specific out/proving.key/verification.key/verifier.sol; regenerate witness and proof in isolated mutable cache",
+      "constraint_count": 109900,
+      "proof_time": {
+        "unit": "ms",
+        "warmup_runs": 1,
+        "measured_runs": [
+          2738.6546760005876,
+          2619.101272,
+          2739.764804000035,
+          2728.2354579996318,
+          2815.8780669998378
+        ],
+        "samples": 5,
+        "mean": 2728.3268554000183,
+        "sample_sd": 70.41473855253903,
+        "p50": 2738.6546760005876,
+        "p95": 2800.6554143998774
+      },
+      "native_verification_time": {
+        "unit": "ms",
+        "measured_runs": [
+          8.915309000760317,
+          13.741379000246525,
+          9.090234000235796,
+          11.021055999211967,
+          12.350548000074923
+        ],
+        "mean": 11.023705200105905
+      },
+      "proof_size": {
+        "unit": "bytes",
+        "measured_runs": [
+          1219,
+          1219,
+          1219,
+          1219,
+          1219
+        ],
+        "mean": 1219
+      },
+      "verifier_gas": {
+        "warmup_runs": 5,
+        "measured_runs": [
+          271200,
+          271200,
+          271200,
+          271200,
+          271200,
+          271200,
+          271200,
+          271200,
+          271200,
+          271200,
+          271200,
+          271200,
+          271200,
+          271200,
+          271200,
+          271200,
+          271200,
+          271200,
+          271200,
+          271200,
+          271200,
+          271200,
+          271200,
+          271200,
+          271200,
+          271200,
+          271200,
+          271200,
+          271200,
+          271200
+        ],
+        "samples": 30,
+        "mean": 271200,
+        "sample_sd": 0,
+        "estimate": 273803
+      },
+      "deployment_gas": 1025177,
+      "verifier_bytecode_bytes": 4523,
+      "verifier_creation_bytecode_bytes": 4523,
+      "verifier_runtime_bytecode_bytes": 4495,
+      "eip170_deployable": true,
+      "matching_and_controls": {
+        "native_valid_proof_accepted": true,
+        "native_invalid_public_input_rejected": true,
+        "verifier_reexport_byte_exact_match": true,
+        "chain_valid_static_true": true,
+        "chain_invalid_static_false": true,
+        "onchain_runtime_matches_compiler": true,
+        "standard_eip170_behavior": true
+      },
+      "hashes": {
+        "fixed_source_sha256": "d004879bba6aaa8c749cf5cff53028ad1c723547d7f110d88ac1761f6bf36774",
+        "proof_sha256": "90916195b0d4adb24211ed06de1fc2f58ed06a976e3934b171712527130b5ab6",
+        "verification_key_sha256": "93202ae199a78daf2e6a360b3363052022f84875fff0f50791eeb68a527a16b5",
+        "verifier_solidity_sha256": "56549dd99c1ad5a118bda4307bf7922c0b0f06042882c0bb592b8247b28726be"
+      }
+    },
+    {
+      "target": "vanilla-2",
+      "dimension": 2,
+      "protocol_partition": "N=2..32; RAYON_NUM_THREADS unset",
+      "setup_policy": "reuse circuit-specific out/proving.key/verification.key/verifier.sol; regenerate witness and proof in isolated mutable cache",
+      "constraint_count": 439240,
+      "proof_time": {
+        "unit": "ms",
+        "warmup_runs": 1,
+        "measured_runs": [
+          5531.543167,
+          5412.930910000001,
+          6079.275495999998,
+          5647.205499,
+          5834.772016000003
+        ],
+        "samples": 5,
+        "mean": 5701.145417600001,
+        "sample_sd": 262.4787918142218,
+        "p50": 5647.205499,
+        "p95": 6030.374799999999
+      },
+      "native_verification_time": {
+        "unit": "ms",
+        "measured_runs": [
+          14.465849999998682,
+          17.768998999999894,
+          12.901637000002665,
+          11.101047000000108,
+          14.142693999994663
+        ],
+        "mean": 14.076045399999202
+      },
+      "proof_size": {
+        "unit": "bytes",
+        "measured_runs": [
+          1441,
+          1441,
+          1441,
+          1441,
+          1441
+        ],
+        "mean": 1441
+      },
+      "verifier_gas": {
+        "warmup_runs": 1,
+        "measured_runs": [
+          295244,
+          295244,
+          295244,
+          295244,
+          295244
+        ],
+        "samples": 5,
+        "mean": 295244,
+        "sample_sd": 0,
+        "estimate": 297846
+      },
+      "deployment_gas": 1102804,
+      "verifier_bytecode_bytes": 4882,
+      "verifier_creation_bytecode_bytes": 4882,
+      "verifier_runtime_bytecode_bytes": 4854,
+      "eip170_deployable": true,
+      "matching_and_controls": {
+        "native_valid_proof_accepted": true,
+        "native_invalid_public_input_rejected": true,
+        "verifier_reexport_byte_exact_match": true,
+        "chain_valid_static_true": true,
+        "chain_invalid_static_false": true,
+        "onchain_runtime_matches_compiler": true,
+        "standard_eip170_behavior": true
+      },
+      "hashes": {
+        "fixed_source_sha256": "a89e76dd5595a49ee9deab78220a1ddb314321e6c6dc0b0551c294a7a6dfae40",
+        "proof_sha256": "862ac3967108faf4b16a947f91bc4b00c2eefc45320eacbe879564b138eab665",
+        "verification_key_sha256": "dc419f150189b793f7e665224e5cd27d33457496967864f8153a543ba265b22f",
+        "verifier_solidity_sha256": "4786fccd15f10b0b205e00a35a6887b5ec00bc54704dc417aa4116deff859cd4"
+      }
+    },
+    {
+      "target": "vanilla-4",
+      "dimension": 4,
+      "protocol_partition": "N=2..32; RAYON_NUM_THREADS unset",
+      "setup_policy": "reuse circuit-specific out/proving.key/verification.key/verifier.sol; regenerate witness and proof in isolated mutable cache",
+      "constraint_count": 877629,
+      "proof_time": {
+        "unit": "ms",
+        "warmup_runs": 1,
+        "measured_runs": [
+          10325.770542999999,
+          10727.240190999997,
+          10080.098265000008,
+          10161.717847000007,
+          10233.280904
+        ],
+        "samples": 5,
+        "mean": 10305.621550000002,
+        "sample_sd": 252.47299718761695,
+        "p50": 10233.280904,
+        "p95": 10646.946261399997
+      },
+      "native_verification_time": {
+        "unit": "ms",
+        "measured_runs": [
+          14.444650000004913,
+          14.186859000008553,
+          14.314629000000423,
+          15.37727700000687,
+          14.505843999999342
+        ],
+        "mean": 14.56585180000402
+      },
+      "proof_size": {
+        "unit": "bytes",
+        "measured_runs": [
+          1737,
+          1737,
+          1737,
+          1737,
+          1737
+        ],
+        "mean": 1737
+      },
+      "verifier_gas": {
+        "warmup_runs": 1,
+        "measured_runs": [
+          327308,
+          327308,
+          327308,
+          327308,
+          327308
+        ],
+        "samples": 5,
+        "mean": 327308,
+        "sample_sd": 0,
+        "estimate": 329910
+      },
+      "deployment_gas": 1205809,
+      "verifier_bytecode_bytes": 5358,
+      "verifier_creation_bytecode_bytes": 5358,
+      "verifier_runtime_bytecode_bytes": 5330,
+      "eip170_deployable": true,
+      "matching_and_controls": {
+        "native_valid_proof_accepted": true,
+        "native_invalid_public_input_rejected": true,
+        "verifier_reexport_byte_exact_match": true,
+        "chain_valid_static_true": true,
+        "chain_invalid_static_false": true,
+        "onchain_runtime_matches_compiler": true,
+        "standard_eip170_behavior": true
+      },
+      "hashes": {
+        "fixed_source_sha256": "f921cd22ee4c9b24741d9786586bfb8b0adab438d2e5ec81c55d21823ad79ca2",
+        "proof_sha256": "22cb02bd037d7831232c4bf7b0fafd109c89195636d4d55567e412a1184102ff",
+        "verification_key_sha256": "5c7603dc5cc02d86e534169483805012c9d541c49f2b1ae7ca723ac1baa68f48",
+        "verifier_solidity_sha256": "658d908b2b3f7fc18d5c371e3da11bff733dff676f4df93f6aa8c11c9d59c12c"
+      }
+    },
+    {
+      "target": "vanilla-8",
+      "dimension": 8,
+      "protocol_partition": "N=2..32; RAYON_NUM_THREADS unset",
+      "setup_policy": "reuse circuit-specific out/proving.key/verification.key/verifier.sol; regenerate witness and proof in isolated mutable cache",
+      "constraint_count": 1754406,
+      "proof_time": {
+        "unit": "ms",
+        "warmup_runs": 1,
+        "measured_runs": [
+          19996.260572,
+          20073.978251000022,
+          20940.00735500001,
+          20114.486684000003,
+          20337.73986500001
+        ],
+        "samples": 5,
+        "mean": 20292.494545400008,
+        "sample_sd": 383.5722598731088,
+        "p50": 20114.486684000003,
+        "p95": 20819.553857000006
+      },
+      "native_verification_time": {
+        "unit": "ms",
+        "measured_runs": [
+          14.57333899999503,
+          16.353868000005605,
+          13.28159699999378,
+          13.752481000003172,
+          9.85563999999431
+        ],
+        "mean": 13.56338499999838
+      },
+      "proof_size": {
+        "unit": "bytes",
+        "measured_runs": [
+          2329,
+          2329,
+          2329,
+          2329,
+          2329
+        ],
+        "mean": 2329
+      },
+      "verifier_gas": {
+        "warmup_runs": 1,
+        "measured_runs": [
+          391437,
+          391437,
+          391437,
+          391437,
+          391437
+        ],
+        "samples": 5,
+        "mean": 391437,
+        "sample_sd": 0,
+        "estimate": 394039
+      },
+      "deployment_gas": 1410934,
+      "verifier_bytecode_bytes": 6307,
+      "verifier_creation_bytecode_bytes": 6307,
+      "verifier_runtime_bytecode_bytes": 6279,
+      "eip170_deployable": true,
+      "matching_and_controls": {
+        "native_valid_proof_accepted": true,
+        "native_invalid_public_input_rejected": true,
+        "verifier_reexport_byte_exact_match": true,
+        "chain_valid_static_true": true,
+        "chain_invalid_static_false": true,
+        "onchain_runtime_matches_compiler": true,
+        "standard_eip170_behavior": true
+      },
+      "hashes": {
+        "fixed_source_sha256": "6f7367dd76df846da05a1bcd74dc61094412bce517e100188da2bd51ed1eaccd",
+        "proof_sha256": "ce2f2869984de4ffeadabc1becaec67566a3caab6808be1f1e262cb8a3151bd8",
+        "verification_key_sha256": "72181b32aeb3111612cfe1ee63dd51639843bc2c27a2b230cd6116214715dc3d",
+        "verifier_solidity_sha256": "ff13a573b7047b07a430ddfad88c187c92b02cbbe7e4b18a4f27fbd66d27b8e6"
+      }
+    },
+    {
+      "target": "vanilla-16",
+      "dimension": 16,
+      "protocol_partition": "N=2..32; RAYON_NUM_THREADS unset",
+      "setup_policy": "reuse circuit-specific out/proving.key/verification.key/verifier.sol; regenerate witness and proof in isolated mutable cache",
+      "constraint_count": 3507959,
+      "proof_time": {
+        "unit": "ms",
+        "warmup_runs": 1,
+        "measured_runs": [
+          40062.07447800005,
+          40031.05005199998,
+          41162.37488299998,
+          41567.02097900002,
+          40877.87552
+        ],
+        "samples": 5,
+        "mean": 40740.079182400004,
+        "sample_sd": 678.8900705028666,
+        "p50": 40877.87552,
+        "p95": 41486.091759800016
+      },
+      "native_verification_time": {
+        "unit": "ms",
+        "measured_runs": [
+          12.622973999998067,
+          14.88455099996645,
+          11.847214999957941,
+          15.23559599998407,
+          11.373940000019502
+        ],
+        "mean": 13.192855199985207
+      },
+      "proof_size": {
+        "unit": "bytes",
+        "measured_runs": [
+          3513,
+          3513,
+          3513,
+          3513,
+          3513
+        ],
+        "mean": 3513
+      },
+      "verifier_gas": {
+        "warmup_runs": 1,
+        "measured_runs": [
+          520070,
+          520070,
+          520070,
+          520070,
+          520070
+        ],
+        "samples": 5,
+        "mean": 520070,
+        "sample_sd": 0,
+        "estimate": 522670
+      },
+      "deployment_gas": 1823047,
+      "verifier_bytecode_bytes": 8213,
+      "verifier_creation_bytecode_bytes": 8213,
+      "verifier_runtime_bytecode_bytes": 8185,
+      "eip170_deployable": true,
+      "matching_and_controls": {
+        "native_valid_proof_accepted": true,
+        "native_invalid_public_input_rejected": true,
+        "verifier_reexport_byte_exact_match": true,
+        "chain_valid_static_true": true,
+        "chain_invalid_static_false": true,
+        "onchain_runtime_matches_compiler": true,
+        "standard_eip170_behavior": true
+      },
+      "hashes": {
+        "fixed_source_sha256": "dfbe5c722cfe008e28b01dcea00a8f4be869092df1de50819a34f3f3ad05e6ea",
+        "proof_sha256": "b815275a76d8169b2db4c91b512d2849f92f4a5a05e782667b32b4a749ffae27",
+        "verification_key_sha256": "cf803e9b1cc16728809e44b2b338ed83dc8162b146d309c8d73b87948ac5e027",
+        "verifier_solidity_sha256": "bc95faebbc2c6082063231f255b5955524bbf30e48c80b7c932894850475c63b"
+      }
+    },
+    {
+      "target": "vanilla-32",
+      "dimension": 32,
+      "protocol_partition": "N=2..32; RAYON_NUM_THREADS unset",
+      "setup_policy": "reuse circuit-specific out/proving.key/verification.key/verifier.sol; regenerate witness and proof in isolated mutable cache",
+      "constraint_count": 7015064,
+      "proof_time": {
+        "unit": "ms",
+        "warmup_runs": 1,
+        "measured_runs": [
+          79402.03529599996,
+          80482.58690999995,
+          81872.92898700002,
+          79601.29701600003,
+          80632.66431399994
+        ],
+        "samples": 5,
+        "mean": 80398.30250459998,
+        "sample_sd": 982.8935192944983,
+        "p50": 80482.58690999995,
+        "p95": 81624.87605240001
+      },
+      "native_verification_time": {
+        "unit": "ms",
+        "measured_runs": [
+          9.565974999917671,
+          14.137606999953277,
+          13.333600999903865,
+          10.909049000008963,
+          15.760716999997385
+        ],
+        "mean": 12.741389799956233
+      },
+      "proof_size": {
+        "unit": "bytes",
+        "measured_runs": [
+          5881,
+          5881,
+          5881,
+          5881,
+          5881
+        ],
+        "mean": 5881
+      },
+      "verifier_gas": {
+        "warmup_runs": 1,
+        "measured_runs": [
+          778284,
+          778284,
+          778284,
+          778284,
+          778284
+        ],
+        "samples": 5,
+        "mean": 778284,
+        "sample_sd": 0,
+        "estimate": 780882
+      },
+      "deployment_gas": 2646433,
+      "verifier_bytecode_bytes": 12020,
+      "verifier_creation_bytecode_bytes": 12020,
+      "verifier_runtime_bytecode_bytes": 11992,
+      "eip170_deployable": true,
+      "matching_and_controls": {
+        "native_valid_proof_accepted": true,
+        "native_invalid_public_input_rejected": true,
+        "verifier_reexport_byte_exact_match": true,
+        "chain_valid_static_true": true,
+        "chain_invalid_static_false": true,
+        "onchain_runtime_matches_compiler": true,
+        "standard_eip170_behavior": true
+      },
+      "hashes": {
+        "fixed_source_sha256": "6b69c3dbe2ffb6bb2884e28f8584f61a7c8a5fc82c7b6f6df39f07cd8107531b",
+        "proof_sha256": "8cf70b99303e735011997192d42344a2b73ca88eba4556c7f023ecbe99f49a57",
+        "verification_key_sha256": "47eff4292ec025554444ad97a5b277b808584fee5b54fc40df1474743873ca83",
+        "verifier_solidity_sha256": "b8c2cf7b7101ff7330d49646ee19cbe3f439b7801f889e011973f1e1d4711533"
+      }
+    },
+    {
+      "target": "vanilla-64",
+      "dimension": 64,
+      "protocol_partition": "N=64,128; RAYON_NUM_THREADS=1",
+      "setup_policy": "reuse circuit-specific out/proving.key/verification.key/verifier.sol; regenerate witness and proof in isolated mutable cache",
+      "constraint_count": 14029273,
+      "proof_time": {
+        "unit": "ms",
+        "warmup_runs": 1,
+        "measured_runs": [
+          359124.510078,
+          361480.39845099987,
+          354945.49004399986,
+          344293.1931459999,
+          336110.339931
+        ],
+        "samples": 5,
+        "mean": 351190.7863299999,
+        "sample_sd": 10699.468975318438,
+        "p50": 354945.49004399986,
+        "p95": 361009.2207763999
+      },
+      "native_verification_time": {
+        "unit": "ms",
+        "measured_runs": [
+          18.874233999988064,
+          13.157386999810115,
+          16.904753000009805,
+          11.724214000161737,
+          15.886098999995738
+        ],
+        "mean": 15.309337399993092
+      },
+      "proof_size": {
+        "unit": "bytes",
+        "measured_runs": [
+          10617,
+          10617,
+          10617,
+          10617,
+          10617
+        ],
+        "mean": 10617
+      },
+      "verifier_gas": {
+        "warmup_runs": 1,
+        "measured_runs": [
+          1298444,
+          1298444,
+          1298444,
+          1298444,
+          1298444
+        ],
+        "samples": 5,
+        "mean": 1298444,
+        "sample_sd": 0,
+        "estimate": 1301038
+      },
+      "deployment_gas": 4292976,
+      "verifier_bytecode_bytes": 19633,
+      "verifier_creation_bytecode_bytes": 19633,
+      "verifier_runtime_bytecode_bytes": 19605,
+      "eip170_deployable": true,
+      "matching_and_controls": {
+        "native_valid_proof_accepted": true,
+        "native_invalid_public_input_rejected": true,
+        "verifier_reexport_byte_exact_match": true,
+        "chain_valid_static_true": true,
+        "chain_invalid_static_false": true,
+        "onchain_runtime_matches_compiler": true,
+        "standard_eip170_behavior": true
+      },
+      "hashes": {
+        "fixed_source_sha256": "934dda1ef0ac506f6ac20db54fdd37d55d095f310e6f6179e880327872ed7536",
+        "proof_sha256": "a98eee76aaa79509920c8bc03f4d22ee2eb1cf0748176e314fa47a3afdd2dc84",
+        "verification_key_sha256": "dbbc3b7f1c5d972eee308ef4c6ae385f28d6579839cd835f926dfa1fc28ef39f",
+        "verifier_solidity_sha256": "57e8249e63e668b3f63334c6f0d3b75a954e5d63b3b6b66c7463b8a77b70de8b"
+      }
+    },
+    {
+      "target": "vanilla-128",
+      "dimension": 128,
+      "protocol_partition": "N=64,128; RAYON_NUM_THREADS=1",
+      "setup_policy": "reuse circuit-specific out/proving.key/verification.key/verifier.sol; regenerate witness and proof in isolated mutable cache",
+      "constraint_count": 28057690,
+      "proof_time": {
+        "unit": "ms",
+        "warmup_runs": 1,
+        "measured_runs": [
+          710274.167721,
+          706192.3336010003,
+          676956.6497159991,
+          696459.0884960005,
+          705152.6943979999
+        ],
+        "samples": 5,
+        "mean": 699006.9867864,
+        "sample_sd": 13314.066318398865,
+        "p50": 705152.6943979999,
+        "p95": 709457.800897
+      },
+      "native_verification_time": {
+        "unit": "ms",
+        "measured_runs": [
+          13.994996999856085,
+          23.16160700004548,
+          18.122062999755144,
+          18.919049000367522,
+          17.431374999694526
+        ],
+        "mean": 18.32581819994375
+      },
+      "proof_size": {
+        "unit": "bytes",
+        "measured_runs": [
+          20089,
+          20089,
+          20089,
+          20089,
+          20089
+        ],
+        "mean": 20089
+      },
+      "verifier_gas": {
+        "warmup_runs": 1,
+        "measured_runs": [
+          2354712,
+          2354712,
+          2354712,
+          2354712,
+          2354712
+        ],
+        "samples": 5,
+        "mean": 2354712,
+        "sample_sd": 0,
+        "estimate": 2357297
+      },
+      "deployment_gas": 7588215,
+      "verifier_bytecode_bytes": 34865,
+      "verifier_creation_bytecode_bytes": 34865,
+      "verifier_runtime_bytecode_bytes": 34837,
+      "eip170_deployable": false,
+      "matching_and_controls": {
+        "native_valid_proof_accepted": true,
+        "native_invalid_public_input_rejected": true,
+        "verifier_reexport_byte_exact_match": true,
+        "chain_valid_static_true": true,
+        "chain_invalid_static_false": true,
+        "onchain_runtime_matches_compiler": true,
+        "standard_eip170_behavior": true
+      },
+      "hashes": {
+        "fixed_source_sha256": "9285ecf220df798de246a08bf4b00e4f5063c7e869d227f1f538cfff1d87dc0a",
+        "proof_sha256": "528f57376b9862a58a2363b0946b1e60c2c7344b9da048c8080bc0fc90e8ef42",
+        "verification_key_sha256": "e55b6eac2d38f34617c0d041801eaf5c1aa8e08ea55c3aefd1b10ef88cc9ca3a",
+        "verifier_solidity_sha256": "4a2d20a1473f1fdc22565f7157d1af6111ed8086d288d40e5e967908debecc9f"
+      }
+    }
+  ],
+  "verification": {
+    "overall": "PASS",
+    "passed": 43,
+    "failed": 0
+  }
+}

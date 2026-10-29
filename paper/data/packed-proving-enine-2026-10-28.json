@@ -1,0 +1,203 @@
+{
+  "generatedAt": "2026-10-28T16:01:44.888Z",
+  "status": "reconstructed fresh run; not the historical Windows measurement",
+  "warning": "Fresh local single-party benchmark setup; never use these keys in production.",
+  "rssSemantics": "Cold child process process.resourceUsage().maxRSS, Node reports KiB, converted to MiB.",
+  "host": {
+    "hostname": "enine",
+    "platform": "linux",
+    "release": "6.8.0-138-generic",
+    "arch": "x64",
+    "cpu": "Intel(R) Xeon(R) w7-3445",
+    "logicalProcessors": 40,
+    "totalMemoryGiB": 251.36,
+    "freeMemoryAtRecordGiB": 193.7,
+    "node": "v22.22.3",
+    "snarkjs": "0.7.6",
+    "circom": "2.2.3 (circom2 npm 0.2.23)"
+  },
+  "results": [
+    {
+      "circuit": "auth_distance_128",
+      "dimension": 128,
+      "constraints": 7660,
+      "publicInputs": 5,
+      "repetitions": 5,
+      "witness": {
+        "elapsedMs": [
+          60.25,
+          57.75,
+          75.89,
+          73.24,
+          64.05
+        ],
+        "medianElapsedMs": 64.05,
+        "processMaxRssMiB": [
+          80.43,
+          77.83,
+          77.02,
+          77.67,
+          76.54
+        ],
+        "medianProcessMaxRssMiB": 77.67,
+        "baselineRssMiB": [
+          70,
+          66.36,
+          65.81,
+          66.79,
+          65.46
+        ]
+      },
+      "proof": {
+        "elapsedMs": [
+          659.49,
+          623.9,
+          631.87,
+          622.02,
+          642.57
+        ],
+        "medianElapsedMs": 631.87,
+        "processMaxRssMiB": [
+          825.57,
+          822.2,
+          816.56,
+          822.23,
+          823.78
+        ],
+        "medianProcessMaxRssMiB": 822.23,
+        "baselineRssMiB": [
+          67.65,
+          65.74,
+          66.1,
+          69.07,
+          68.13
+        ],
+        "canonicalUncompressedBytes": 256
+      },
+      "verification": {
+        "elapsedMs": [
+          296.89,
+          316.9,
+          317.04,
+          323.33,
+          300.9
+        ],
+        "medianElapsedMs": 316.9,
+        "processMaxRssMiB": [
+          497.08,
+          497.29,
+          493.39,
+          499.54,
+          498.95
+        ],
+        "medianProcessMaxRssMiB": 497.29,
+        "baselineRssMiB": [
+          69.06,
+          70.16,
+          64.25,
+          69.26,
+          69.04
+        ]
+      },
+      "artifacts": {
+        "sourceSha256": "70b9be47643013fc2dede30846edf00aba3f77ef85b1e6d7dccefd1436cfb801",
+        "r1csSha256": "02ec476683bc75358db02aa216c8a02b5da4545049f8cf1a9d130fa1eada7dea",
+        "wasmSha256": "1773ca549a1d64ed2ae86c57dc8a5b261f06b2e8503332b2a891049ec65dced1",
+        "zkeySha256": "bd32c5100520400c999a7efd188269605b21816360935437556c58139dff017b",
+        "provingKeyBytes": 5255365,
+        "verificationKeyJsonBytes": 3657
+      }
+    },
+    {
+      "circuit": "auth_distance_512",
+      "dimension": 512,
+      "constraints": 27118,
+      "publicInputs": 5,
+      "repetitions": 5,
+      "witness": {
+        "elapsedMs": [
+          90.08,
+          117.75,
+          101.9,
+          104.69,
+          89.12
+        ],
+        "medianElapsedMs": 101.9,
+        "processMaxRssMiB": [
+          86.21,
+          83.53,
+          83.19,
+          83.45,
+          83.53
+        ],
+        "medianProcessMaxRssMiB": 83.53,
+        "baselineRssMiB": [
+          68.75,
+          67.11,
+          68.13,
+          69.23,
+          67.49
+        ]
+      },
+      "proof": {
+        "elapsedMs": [
+          1019.86,
+          1058.63,
+          1088.48,
+          1031.6,
+          989.69
+        ],
+        "medianElapsedMs": 1031.6,
+        "processMaxRssMiB": [
+          1537.89,
+          1547.71,
+          1541.15,
+          1541.2,
+          1549
+        ],
+        "medianProcessMaxRssMiB": 1541.2,
+        "baselineRssMiB": [
+          66.38,
+          65.25,
+          65.2,
+          70,
+          65.58
+        ],
+        "canonicalUncompressedBytes": 256
+      },
+      "verification": {
+        "elapsedMs": [
+          312.83,
+          314.58,
+          300.85,
+          339.21,
+          325.64
+        ],
+        "medianElapsedMs": 314.58,
+        "processMaxRssMiB": [
+          496.52,
+          494.1,
+          501.2,
+          495.96,
+          498.73
+        ],
+        "medianProcessMaxRssMiB": 496.52,
+        "baselineRssMiB": [
+          67.25,
+          64.93,
+          68.75,
+          66.34,
+          66.18
+        ]
+      },
+      "artifacts": {
+        "sourceSha256": "eba0c05ee6192ebaf9a50b973a6ba6b861521e89dcfe63a379381fc155ee1cd5",
+        "r1csSha256": "c214cefdd0bbbdbd9f18f5f8d98db9812741b245e050eec187525cd48abf4bb3",
+        "wasmSha256": "13e46ed92aeae02db925163780c2836db55ca7544eba809e057f456617b2b918",
+        "zkeySha256": "2b5647e10c4c3af090f7a4a8e22101c7c73d51e8dfba5f625223ce57a6c64364",
+        "provingKeyBytes": 17302637,
+        "verificationKeyJsonBytes": 3654
+      }
+    }
+  ]
+}

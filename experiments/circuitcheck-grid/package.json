@@ -1,0 +1,31 @@
+{
+  "name": "biozero-circuitcheck-grid",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Isolated, auditable CircuitCheck N={2,4,8,16,32,64,128} benchmark driver",
+  "scripts": {
+    "inputs": "node scripts/generate-inputs.mjs",
+    "setup": "node scripts/setup.mjs --fresh",
+    "benchmark:proofs": "node scripts/benchmark-proofs.mjs",
+    "benchmark:gas": "node scripts/benchmark-verifier-gas.mjs",
+    "verify": "node scripts/verify-results.mjs",
+    "manifest": "node scripts/write-manifest.mjs",
+    "experiment": "node scripts/run-grid.mjs",
+    "smoke": "node scripts/generate-inputs.mjs --dimensions=2 && node scripts/setup.mjs --compile-only --dimensions=2"
+  },
+  "dependencies": {
+    "circomlib": "2.0.5",
+    "circomlibjs": "0.1.7",
+    "snarkjs": "0.7.6"
+  },
+  "devDependencies": {
+    "circom2": "0.2.23",
+    "ethers": "6.16.0",
+    "ganache": "7.9.2",
+    "solc": "0.8.33"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

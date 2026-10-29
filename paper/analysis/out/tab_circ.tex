@@ -1,0 +1,17 @@
+\begin{tabular}{lrr}
+\toprule
+ & $N{=}128$ & $N{=}512$ \\
+\midrule
+Constraints (packed) & \textcolor{blue}{7{,}660} & \textcolor{blue}{27{,}118} \\
+Authentication, tx gas & \textcolor{blue}{255{,}011} & \textcolor{blue}{255{,}011} \\
+\quad Groth16 verifier alone & \textcolor{blue}{241{,}694} & \textcolor{blue}{241{,}694} \\
+Enrollment, tx gas & \textcolor{blue}{45{,}391} & \textcolor{blue}{45{,}391} \\
+Calldata (B) & \textcolor{blue}{356} & \textcolor{blue}{356} \\
+Witness, median (ms) & \textcolor{blue}{64.05} & \textcolor{blue}{101.90} \\
+Prove, median (ms) & \textcolor{blue}{631.87} & \textcolor{blue}{1031.60} \\
+Verify, median (ms) & \textcolor{blue}{316.90} & \textcolor{blue}{314.58} \\
+Prove max-RSS, median (MiB) & \textcolor{blue}{822.23} & \textcolor{blue}{1541.20} \\
+Constraints (reconstructed unpacked) & \textcolor{blue}{38{,}464} & \textcolor{blue}{151{,}360} \\
+Packed constraint reduction & \textcolor{blue}{80.1\%} & \textcolor{blue}{82.1\%} \\
+\bottomrule
+\end{tabular}

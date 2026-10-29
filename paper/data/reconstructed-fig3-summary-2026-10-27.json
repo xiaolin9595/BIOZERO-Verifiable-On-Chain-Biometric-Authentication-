@@ -1,0 +1,127 @@
+{
+  "schema_version": 1,
+  "experiment_label": "reconstructed reproduction; not original Fig. 3 data",
+  "unit_definitions": {
+    "time": "milliseconds",
+    "size": "bytes",
+    "gas": "gas units"
+  },
+  "rows": [
+    {
+      "target": "BioZero fixed",
+      "dimension": null,
+      "status": "complete",
+      "compile_ms": 962.290458,
+      "constraints": 109900,
+      "program_bytes": 39126170,
+      "witness_ms": 361.815333,
+      "setup_ms": 16291.881125,
+      "proving_runs": 3,
+      "proving_mean_ms": 5317.935805333334,
+      "proving_sample_sd_ms": 566.5881363734263,
+      "proof_compact_json_bytes": 1041,
+      "proofs_all_accepted": true,
+      "negative_control_rejected": true,
+      "verifier_source_bytes": 10654,
+      "deployment_gas": 1286481,
+      "verifier_gas_mean": 286848,
+      "verifier_gas_sample_sd": 0,
+      "calldata_bytes": 452,
+      "creation_bytecode_bytes": 5737,
+      "runtime_bytecode_bytes": 5709,
+      "chain_valid_static_true": true,
+      "chain_invalid_static_false": true,
+      "onchain_runtime_matches_compiled": true
+    },
+    {
+      "target": "Vanilla shadow-fixed",
+      "dimension": 2,
+      "status": "complete",
+      "compile_ms": 4615.279208,
+      "constraints": 439240,
+      "program_bytes": 158174266,
+      "witness_ms": 1422.4280420000005,
+      "setup_ms": 87008.507459,
+      "proving_runs": 3,
+      "proving_mean_ms": 27218.94018066666,
+      "proving_sample_sd_ms": 2190.2051255345114,
+      "proof_compact_json_bytes": 1248,
+      "proofs_all_accepted": true,
+      "negative_control_rejected": true,
+      "verifier_source_bytes": 11246,
+      "deployment_gas": 1364013,
+      "verifier_gas_mean": 312956,
+      "verifier_gas_sample_sd": 0,
+      "calldata_bytes": 548,
+      "creation_bytecode_bytes": 6096,
+      "runtime_bytecode_bytes": 6068,
+      "chain_valid_static_true": true,
+      "chain_invalid_static_false": true,
+      "onchain_runtime_matches_compiled": true
+    },
+    {
+      "target": "Vanilla shadow-fixed",
+      "dimension": 4,
+      "status": "complete",
+      "compile_ms": 11264.477916,
+      "constraints": 877629,
+      "program_bytes": 316592126,
+      "witness_ms": 3414.987665999999,
+      "setup_ms": 118460.33425000001,
+      "proving_runs": 3,
+      "proving_mean_ms": 31043.59747233333,
+      "proving_sample_sd_ms": 139.000602775442,
+      "proof_compact_json_bytes": 1524,
+      "proofs_all_accepted": true,
+      "negative_control_rejected": true,
+      "verifier_source_bytes": 12040,
+      "deployment_gas": 1467681,
+      "verifier_gas_mean": 347784,
+      "verifier_gas_sample_sd": 0,
+      "calldata_bytes": 676,
+      "creation_bytecode_bytes": 6575,
+      "runtime_bytecode_bytes": 6547,
+      "chain_valid_static_true": true,
+      "chain_invalid_static_false": true,
+      "onchain_runtime_matches_compiled": true
+    },
+    {
+      "target": "Vanilla shadow-fixed",
+      "dimension": 8,
+      "status": "compile-only",
+      "compile_ms": 28113.271583,
+      "constraints": 1754406,
+      "program_bytes": 633427451,
+      "witness_ms": null,
+      "setup_ms": null,
+      "proving_runs": 0,
+      "proving_mean_ms": null,
+      "proving_sample_sd_ms": null,
+      "proof_compact_json_bytes": null,
+      "proofs_all_accepted": null,
+      "negative_control_rejected": null,
+      "verifier_source_bytes": null
+    },
+    {
+      "target": "Vanilla shadow-fixed",
+      "dimension": 16,
+      "status": "not-run"
+    },
+    {
+      "target": "Vanilla shadow-fixed",
+      "dimension": 32,
+      "status": "not-run"
+    },
+    {
+      "target": "Vanilla shadow-fixed",
+      "dimension": 64,
+      "status": "not-run"
+    },
+    {
+      "target": "Vanilla shadow-fixed",
+      "dimension": 128,
+      "status": "not-run"
+    }
+  ]
+}
+

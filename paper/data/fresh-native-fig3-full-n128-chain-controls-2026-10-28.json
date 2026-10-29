@@ -1,0 +1,169 @@
+{
+  "schema_version": 1,
+  "experiment_label": "fresh Fig. 3 full-chain validation; recovered circuit semantics with documented shadow fix",
+  "target": "vanilla-128",
+  "dimension": 128,
+  "configuration": {
+    "solc_version": "0.8.33+commit.64118f21.Emscripten.clang",
+    "optimizer": {
+      "enabled": true,
+      "runs": 200
+    },
+    "evm_version": "shanghai",
+    "ganache_version": "7.9.2",
+    "ethers_version": "6.16.0",
+    "allow_unlimited_contract_size": true,
+    "warmup_transaction_repeats": 1,
+    "measured_transaction_repeats": 5
+  },
+  "artifacts": {
+    "verifier_path": "/home/lzb/BioZero_remote/cache-fig3-full-20261028/groth16_vanilla_128/verifier.sol",
+    "verifier_bytes": 61309,
+    "verifier_sha256": "4a2d20a1473f1fdc22565f7157d1af6111ed8086d288d40e5e967908debecc9f",
+    "proof_path": "/home/lzb/BioZero_remote/cache-fig3-full-20261028/groth16_vanilla_128/proof.json",
+    "proof_bytes": 20089,
+    "proof_sha256": "528f57376b9862a58a2363b0946b1e60c2c7344b9da048c8080bc0fc90e8ef42",
+    "verification_key_path": "/home/lzb/BioZero_remote/cache-fig3-full-20261028/groth16_vanilla_128/verification.key",
+    "verification_key_bytes": 44229,
+    "verification_key_sha256": "e55b6eac2d38f34617c0d041801eaf5c1aa8e08ea55c3aefd1b10ef88cc9ca3a"
+  },
+  "deployment": {
+    "transaction_hash": "0x5f1801d6f11dd996eab0b19728eec44cb613ec0c141144404518b909b7b70e2c",
+    "block_number": 1,
+    "block_hash": "0x4c0d441216d35c9d06f1191568e7fecbf9a7dde8bfe74617efb6f7165ab07c44",
+    "receipt_status": 1,
+    "gas_used": 7588215,
+    "cumulative_gas_used": 7588215,
+    "contract_address": "0xe78A0F7E598Cc8b0Bb87894B0F60dD2a88d6a8Ab",
+    "from": "0x90F8bf6A479f320ead074411a4B0e7944Ea8c9C1",
+    "to": null,
+    "creation_bytecode_bytes": 34865,
+    "compiled_runtime_bytecode_bytes": 34837,
+    "onchain_runtime_bytecode_bytes": 34837,
+    "onchain_runtime_matches_compiled": true
+  },
+  "valid_control": {
+    "static_return": true,
+    "estimated_gas": 2357297,
+    "warmup_transactions": [
+      {
+        "run": 0,
+        "transaction_hash": "0x4ee91068402641f43da169c8a615874027799b114018069dfc1a670ce61c719c",
+        "block_number": 2,
+        "block_hash": "0x21085034563d44fe8d6d36a167ede0cd7ac975de9ff63765b4a012e4a39a4f64",
+        "receipt_status": 1,
+        "gas_used": 2354712,
+        "cumulative_gas_used": 2354712,
+        "contract_address": null,
+        "from": "0x90F8bf6A479f320ead074411a4B0e7944Ea8c9C1",
+        "to": "0xe78A0F7E598Cc8b0Bb87894B0F60dD2a88d6a8Ab"
+      }
+    ],
+    "transactions": [
+      {
+        "run": 0,
+        "transaction_hash": "0xb8214a552122b4fbd6ffbc97c6462f67ca1fbad10c42aa8a56f3431c8ec1ec29",
+        "block_number": 3,
+        "block_hash": "0x3a7bb108e6cc3ad6513653aad8377a972f4240b39d6cbc33d16acc796544a815",
+        "receipt_status": 1,
+        "gas_used": 2354712,
+        "cumulative_gas_used": 2354712,
+        "contract_address": null,
+        "from": "0x90F8bf6A479f320ead074411a4B0e7944Ea8c9C1",
+        "to": "0xe78A0F7E598Cc8b0Bb87894B0F60dD2a88d6a8Ab"
+      },
+      {
+        "run": 1,
+        "transaction_hash": "0x92f59384d360f5ee9b5f3c1cce658cb3a7d58475677b38060a2e772ce19cffa2",
+        "block_number": 4,
+        "block_hash": "0x354f5c0df60ad158494aca49f3e51baa4980c777a7b8d727eefc019458cebded",
+        "receipt_status": 1,
+        "gas_used": 2354712,
+        "cumulative_gas_used": 2354712,
+        "contract_address": null,
+        "from": "0x90F8bf6A479f320ead074411a4B0e7944Ea8c9C1",
+        "to": "0xe78A0F7E598Cc8b0Bb87894B0F60dD2a88d6a8Ab"
+      },
+      {
+        "run": 2,
+        "transaction_hash": "0xc7f04a7cf5cd10af65f20821f9b8383bc31f275903857db6fffa8fe05af4a6b1",
+        "block_number": 5,
+        "block_hash": "0xf11e045c524cf58c6a728bd20a6cb5f9872e7222ccd7ffcff67935b948829188",
+        "receipt_status": 1,
+        "gas_used": 2354712,
+        "cumulative_gas_used": 2354712,
+        "contract_address": null,
+        "from": "0x90F8bf6A479f320ead074411a4B0e7944Ea8c9C1",
+        "to": "0xe78A0F7E598Cc8b0Bb87894B0F60dD2a88d6a8Ab"
+      },
+      {
+        "run": 3,
+        "transaction_hash": "0x818dc873b65e2541f67927ebf752698fc6815ee6efb97b215883e835f4c2312f",
+        "block_number": 6,
+        "block_hash": "0x38f9683c3c97701cad9b4e0d8a99c26167cc60b936e3749a7ca5003ff462c385",
+        "receipt_status": 1,
+        "gas_used": 2354712,
+        "cumulative_gas_used": 2354712,
+        "contract_address": null,
+        "from": "0x90F8bf6A479f320ead074411a4B0e7944Ea8c9C1",
+        "to": "0xe78A0F7E598Cc8b0Bb87894B0F60dD2a88d6a8Ab"
+      },
+      {
+        "run": 4,
+        "transaction_hash": "0x39bf1e782c59a91f4dd6597c45be57d8b019198222c270c80d807eec720bd982",
+        "block_number": 7,
+        "block_hash": "0x66cc44818a430af83f381d9120219cfe876df1e9e52a4e9625e44775cab8a532",
+        "receipt_status": 1,
+        "gas_used": 2354712,
+        "cumulative_gas_used": 2354712,
+        "contract_address": null,
+        "from": "0x90F8bf6A479f320ead074411a4B0e7944Ea8c9C1",
+        "to": "0xe78A0F7E598Cc8b0Bb87894B0F60dD2a88d6a8Ab"
+      }
+    ]
+  },
+  "invalid_public_input_control": {
+    "mutation": "public inputs[0] += 1; proof group elements unchanged",
+    "static_return": false,
+    "estimated_gas": 2357297,
+    "transaction_hash": "0x4866cd3d790912d8e80d3abf5e873b70dcf6f614590ef57f41e5b88c2352c64f",
+    "block_number": 8,
+    "block_hash": "0x3482d9b7464891298bd75c2b93db25a60de0c7a6ab4e94d25cd0ea81e0b1c81d",
+    "receipt_status": 1,
+    "gas_used": 2354716,
+    "cumulative_gas_used": 2354716,
+    "contract_address": null,
+    "from": "0x90F8bf6A479f320ead074411a4B0e7944Ea8c9C1",
+    "to": "0xe78A0F7E598Cc8b0Bb87894B0F60dD2a88d6a8Ab",
+    "interpretation": "ZoKrates verifier returns false rather than reverting, so a status-1 receipt is expected."
+  },
+  "standard_eip170_control": {
+    "attempted": true,
+    "deployment_failed_as_expected": true,
+    "classification_basis": "status=0 receipt under standard size limit with compiled runtime above EIP-170 limit",
+    "eip170_runtime_limit_bytes": 24576,
+    "compiled_runtime_bytecode_bytes": 34837,
+    "runtime_exceeds_limit": true,
+    "explicit_size_reason": false,
+    "error_receipt": {
+      "transaction_hash": "0xb66dd10fcd577264f6c0db73250288a1a9a8043860e12a309548ea06c82e9be3",
+      "block_number": 1,
+      "block_hash": "0xaaca4683838272ef5e9ea30bdbeab60b0893578b19bce5fe7277f3108a033127",
+      "receipt_status": 0,
+      "gas_used": 15000000,
+      "cumulative_gas_used": 15000000,
+      "contract_address": "0xe78A0F7E598Cc8b0Bb87894B0F60dD2a88d6a8Ab",
+      "from": "0x90F8bf6A479f320ead074411a4B0e7944Ea8c9C1",
+      "to": null
+    },
+    "error": "transaction execution reverted | transaction execution reverted (action=\"sendTransaction\", data=null, reason=null, invocation=null, revert=null, transaction={ \"data\": \"\", \"from\": \"0x90F8bf6A479f320ead074411a4B0e7944Ea8c9C1\", \"to\": null }, receipt={ \"_type\": \"TransactionReceipt\", \"blobGasPrice\": null, \"blobGasUsed\": null, \"blockHash\": \"0xaaca4683838272ef5e9ea30bdbeab60b0893578b19bce5fe7277f3108a033127\", \"blockNumber\": 1, \"contractAddress\": \"0xe78A0F7E598Cc8b0Bb87894B0F60dD2a88d6a8Ab\", \"cumulativeGasUsed\": \"15000000\", \"from\": \"0x90F8bf6A479f320ead074411a4B0e7944Ea8c9C1\", \"gasPrice\": \"1107421875\", \"gasUsed\": \"15000000\", \"hash\": \"0xb66dd10fcd577264f6c0db73250288a1a9a8043860e12a309548ea06c82e9be3\", \"index\": 0, \"logs\": [  ], \"logsBloom\": \"0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000\", \"root\": null, \"status\": 0, \"to\": null }, code=CALL_EXCEPTION, version=6.16.0)"
+  },
+  "acceptance": {
+    "valid_static_true": true,
+    "valid_receipts_successful": true,
+    "invalid_static_false": true,
+    "runtime_matches_compiler": true,
+    "standard_eip170_behavior": true
+  },
+  "overall": "PASS"
+}

@@ -1,0 +1,30 @@
+{
+  "generatedAt": "2026-10-28T16:08:07.730Z",
+  "cwd": "/var/tmp/biozero-remaining-m4-enine-20261028T155318Z/project-r3",
+  "host": {
+    "hostname": "enine",
+    "platform": "linux",
+    "release": "6.8.0-138-generic",
+    "arch": "x64",
+    "cpu": "Intel(R) Xeon(R) w7-3445",
+    "logicalProcessors": 40,
+    "totalMemoryGiB": 251.36
+  },
+  "toolchain": {
+    "node": "v22.22.3",
+    "npm": "10.9.8",
+    "circom": [
+      "circom2 npm package 0.2.23",
+      "circom compiler 2.2.3"
+    ],
+    "snarkjs": "0.7.6",
+    "solc": "0.8.36+commit.8a079791.Emscripten.clang",
+    "ganache": "7.9.2",
+    "ethers": "5.8.0"
+  },
+  "notes": [
+    "Node v22.22.3; the historical Windows run used v24.19.0.",
+    "Measurements were recorded on linux-x64; see the benchmark logs for runtime warnings.",
+    "All zkeys are fresh local benchmark-only keys and must never be deployed."
+  ]
+}

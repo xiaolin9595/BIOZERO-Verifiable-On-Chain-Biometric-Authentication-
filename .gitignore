@@ -1,0 +1,58 @@
+# OS/editor metadata
+.DS_Store
+._*
+Thumbs.db
+*.swp
+
+# Secrets and local configuration
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+
+# Node.js
+node_modules/
+npm-debug.log*
+
+# Generated zero-knowledge artifacts
+build/
+cache/
+*.ptau
+*.zkey
+*.r1cs
+*.wtns
+*.sym
+*_js/
+proof.json
+public.json
+verification_key.json
+
+# Models and biometric/raw datasets
+*.pth
+*.pt
+*.onnx
+*.h5
+*.npy
+*.npz
+datasets/
+data/raw/
+lfw/
+
+# Large/raw experiment outputs
+logs/
+tmp/
+results/raw/
+results/**/raw/
+results/packed-proving/
+
+# Raw remote process/environment snapshots (may expose command-line secrets)
+paper/data/hom-complete-enine-2026-10-28-environment.txt
+paper/data/spotcheck-n-sweep-enine-2026-10-28-environment.txt

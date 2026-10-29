@@ -1,0 +1,30 @@
+{
+  "generatedAt": "2026-10-28T14:49:32.255Z",
+  "mode": "full",
+  "artifacts": [
+    {
+      "name": "results/spotcheck-n-sweep.json",
+      "sha256": "514f56e39246e77acba21b5ee58b35d28af395a939d90a19de51272144d94a11"
+    },
+    {
+      "name": "results/spotcheck-n-sweep.csv",
+      "sha256": "0615c054730d2bbf0e57c5bcb6cd6d894b45e6d9c357f4170cc87965e8617b19"
+    },
+    {
+      "name": "results/verification.json",
+      "sha256": "b154ab5cd6db73ec733f04b8055ea23e82260c0f1ddfcf6275f059f2d736b796"
+    },
+    {
+      "name": "metadata/environment.txt",
+      "sha256": "8ef2578fbbfed8a599316b399f4f593ab8b2f43017b7dee40e454111259514c6"
+    },
+    {
+      "name": "metadata/provenance.txt",
+      "sha256": "6e85ee0820a5f6b239d876b63b201e3404c28f720df1ac3e5be43a4d0339d34e"
+    },
+    {
+      "name": "metadata/setup-artifacts.check.log",
+      "sha256": "63150e582e39410c44210ffd977aea4db031889421b77bebe227d772be005007"
+    }
+  ]
+}

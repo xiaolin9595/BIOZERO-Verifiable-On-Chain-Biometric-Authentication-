@@ -1,0 +1,129 @@
+{
+  "experiment": "Pedersen Quantization Comparison",
+  "timestamp": "2025-10-10T16:20:29.211974",
+  "num_samples": 5,
+  "num_identities": 5,
+  "distance_metric": "euclidean",
+  "pedersen_prime": 67108859,
+  "results": [
+    {
+      "quantizer_name": "AsymmetricQuantizer",
+      "strategy": "asymmetric",
+      "p": 67108859,
+      "num_samples": 5,
+      "distance_metrics": {
+        "mean_distance_deviation": 1.1444091796875e-07,
+        "max_distance_deviation": 2.384185791015625e-07,
+        "relative_deviation_percent": 9.251494847623278e-06
+      },
+      "quantization_metrics": {
+        "avg_euclidean_deviation": 9.256189628104039e-07,
+        "avg_snr_db": 72.90722765750746,
+        "quantized_range": [
+          28637790,
+          37940072
+        ]
+      }
+    },
+    {
+      "quantizer_name": "SymmetricQuantizer_26bit",
+      "strategy": "symmetric_with_offset",
+      "p": 67108859,
+      "num_samples": 5,
+      "distance_metrics": {
+        "mean_distance_deviation": 2.86102294921875e-08,
+        "max_distance_deviation": 1.1920928955078125e-07,
+        "relative_deviation_percent": 2.3128737119058195e-06
+      },
+      "quantization_metrics": {
+        "avg_euclidean_deviation": 4.730044977918624e-08,
+        "avg_snr_db": 72.90730014862095,
+        "quantized_range": [
+          1,
+          63484995
+        ]
+      },
+      "bits": 26,
+      "scale": 228997899.09789902,
+      "symmetric_range": [
+        -33554428,
+        29930566
+      ]
+    },
+    {
+      "quantizer_name": "SymmetricQuantizer_28bit",
+      "strategy": "symmetric_with_offset",
+      "p": 67108859,
+      "num_samples": 5,
+      "distance_metrics": {
+        "mean_distance_deviation": 2.86102294921875e-08,
+        "max_distance_deviation": 1.1920928955078125e-07,
+        "relative_deviation_percent": 2.3128737119058195e-06
+      },
+      "quantization_metrics": {
+        "avg_euclidean_deviation": 4.730044977918624e-08,
+        "avg_snr_db": 72.90730014862095,
+        "quantized_range": [
+          1,
+          63484995
+        ]
+      },
+      "bits": 28,
+      "scale": 228997899.09789902,
+      "symmetric_range": [
+        -33554428,
+        29930566
+      ]
+    },
+    {
+      "quantizer_name": "SymmetricQuantizer_30bit",
+      "strategy": "symmetric_with_offset",
+      "p": 67108859,
+      "num_samples": 5,
+      "distance_metrics": {
+        "mean_distance_deviation": 2.86102294921875e-08,
+        "max_distance_deviation": 1.1920928955078125e-07,
+        "relative_deviation_percent": 2.3128737119058195e-06
+      },
+      "quantization_metrics": {
+        "avg_euclidean_deviation": 4.730044977918624e-08,
+        "avg_snr_db": 72.90730014862095,
+        "quantized_range": [
+          1,
+          63484995
+        ]
+      },
+      "bits": 30,
+      "scale": 228997899.09789902,
+      "symmetric_range": [
+        -33554428,
+        29930566
+      ]
+    },
+    {
+      "quantizer_name": "SymmetricQuantizer_32bit",
+      "strategy": "symmetric_with_offset",
+      "p": 67108859,
+      "num_samples": 5,
+      "distance_metrics": {
+        "mean_distance_deviation": 2.86102294921875e-08,
+        "max_distance_deviation": 1.1920928955078125e-07,
+        "relative_deviation_percent": 2.3128737119058195e-06
+      },
+      "quantization_metrics": {
+        "avg_euclidean_deviation": 4.730044977918624e-08,
+        "avg_snr_db": 72.90730014862095,
+        "quantized_range": [
+          1,
+          63484995
+        ]
+      },
+      "bits": 32,
+      "scale": 228997899.09789902,
+      "symmetric_range": [
+        -33554428,
+        29930566
+      ]
+    }
+  ]
+}

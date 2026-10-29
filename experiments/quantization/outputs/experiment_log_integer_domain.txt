@@ -1,0 +1,228 @@
+/Users/lin/Library/Python/3.9/lib/python/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+  warnings.warn(
+======================================================================
+人脸识别性能评估：LFW 数据集采样
+======================================================================
+实验时间: 2025-10-12 22:06:41
+
+设备: cpu
+
+[采样] 从 LFW 数据集采样...
+  根目录: data/lfw/lfw/lfw-deepfunneled
+  最多采样: 100 个身份
+  每个身份至少: 3 张图片
+
+  找到 901 个身份有 ≥3 张图片
+  采样其中前 100 个
+
+  采样的身份 (前10个):
+     1. George_W_Bush                  530 张
+     2. Colin_Powell                   236 张
+     3. Tony_Blair                     144 张
+     4. Donald_Rumsfeld                121 张
+     5. Gerhard_Schroeder              109 张
+     6. Ariel_Sharon                   77 张
+     7. Hugo_Chavez                    71 张
+     8. Junichiro_Koizumi              60 张
+     9. Jean_Chretien                  55 张
+    10. John_Ashcroft                  53 张
+    ...
+[模型加载] FaceNet InceptionResnetV1...
+✓ 模型加载完成
+
+
+[特征提取] 从采样的身份中提取...
+  [1/100] George_W_Bush: 530 张图片
+  [2/100] Colin_Powell: 236 张图片
+  [3/100] Tony_Blair: 144 张图片
+  [4/100] Donald_Rumsfeld: 121 张图片
+  [5/100] Gerhard_Schroeder: 109 张图片
+  [6/100] Ariel_Sharon: 77 张图片
+  [7/100] Hugo_Chavez: 71 张图片
+  [8/100] Junichiro_Koizumi: 60 张图片
+  [9/100] Jean_Chretien: 55 张图片
+  [10/100] John_Ashcroft: 53 张图片
+  [11/100] Jacques_Chirac: 52 张图片
+  [12/100] Serena_Williams: 52 张图片
+  [13/100] Vladimir_Putin: 49 张图片
+  [14/100] Luiz_Inacio_Lula_da_Silva: 48 张图片
+  [15/100] Gloria_Macapagal_Arroyo: 44 张图片
+  [16/100] Arnold_Schwarzenegger: 42 张图片
+  [17/100] Jennifer_Capriati: 42 张图片
+  [18/100] Laura_Bush: 41 张图片
+  [19/100] Lleyton_Hewitt: 41 张图片
+  [20/100] Alejandro_Toledo: 39 张图片
+  [21/100] Hans_Blix: 39 张图片
+  [22/100] Nestor_Kirchner: 37 张图片
+  [23/100] Andre_Agassi: 36 张图片
+  [24/100] Alvaro_Uribe: 35 张图片
+  [25/100] Tom_Ridge: 33 张图片
+  [26/100] Silvio_Berlusconi: 33 张图片
+  [27/100] Megawati_Sukarnoputri: 33 张图片
+  [28/100] Roh_Moo-hyun: 32 张图片
+  [29/100] Kofi_Annan: 32 张图片
+  [30/100] Vicente_Fox: 32 张图片
+  [31/100] John_Negroponte: 31 张图片
+  [32/100] David_Beckham: 31 张图片
+  [33/100] Recep_Tayyip_Erdogan: 30 张图片
+  [34/100] Guillermo_Coria: 30 张图片
+  [35/100] Mahmoud_Abbas: 29 张图片
+  [36/100] Bill_Clinton: 29 张图片
+  [37/100] Jack_Straw: 28 张图片
+  [38/100] Juan_Carlos_Ferrero: 28 张图片
+  [39/100] Ricardo_Lagos: 27 张图片
+  [40/100] Rudolph_Giuliani: 26 张图片
+  [41/100] Gray_Davis: 26 张图片
+  [42/100] Tom_Daschle: 25 张图片
+  [43/100] Winona_Ryder: 24 张图片
+  [44/100] Jeremy_Greenstock: 24 张图片
+  [45/100] Atal_Bihari_Vajpayee: 24 张图片
+  [46/100] Jose_Maria_Aznar: 23 张图片
+  [47/100] Saddam_Hussein: 23 张图片
+  [48/100] Tiger_Woods: 23 张图片
+  [49/100] Hamid_Karzai: 22 张图片
+  [50/100] Pete_Sampras: 22 张图片
+  [51/100] Naomi_Watts: 22 张图片
+  [52/100] Lindsay_Davenport: 22 张图片
+  [53/100] George_Robertson: 22 张图片
+  [54/100] Jennifer_Aniston: 21 张图片
+  [55/100] Jennifer_Lopez: 21 张图片
+  [56/100] Amelie_Mauresmo: 21 张图片
+  [57/100] Carlos_Menem: 21 张图片
+  [58/100] Angelina_Jolie: 20 张图片
+  [59/100] Igor_Ivanov: 20 张图片
+  [60/100] Jiang_Zemin: 20 张图片
+  [61/100] Paul_Bremer: 20 张图片
+  [62/100] Michael_Bloomberg: 20 张图片
+  [63/100] Carlos_Moya: 19 张图片
+  [64/100] John_Howard: 19 张图片
+  [65/100] Nicole_Kidman: 19 张图片
+  [66/100] Julianne_Moore: 19 张图片
+  [67/100] Joschka_Fischer: 19 张图片
+  [68/100] Abdullah_Gul: 19 张图片
+  [69/100] Tim_Henman: 19 张图片
+  [70/100] Fidel_Castro: 18 张图片
+  [71/100] Richard_Myers: 18 张图片
+  [72/100] Michael_Schumacher: 18 张图片
+  [73/100] Lance_Armstrong: 18 张图片
+  [74/100] Pervez_Musharraf: 18 张图片
+  [75/100] Spencer_Abraham: 17 张图片
+  [76/100] Renee_Zellweger: 17 张图片
+  [77/100] Venus_Williams: 17 张图片
+  [78/100] Jean_Charest: 17 张图片
+  [79/100] John_Snow: 17 张图片
+  [80/100] John_Bolton: 17 张图片
+  [81/100] Bill_Gates: 17 张图片
+  [82/100] John_Kerry: 17 张图片
+  [83/100] Tommy_Franks: 16 张图片
+  [84/100] Halle_Berry: 16 张图片
+  [85/100] Trent_Lott: 16 张图片
+  [86/100] Andy_Roddick: 15 张图片
+  [87/100] Taha_Yassin_Ramadan: 15 张图片
+  [88/100] Mohammed_Al-Douri: 15 张图片
+  [89/100] Julie_Gerberding: 15 张图片
+  [90/100] Pierce_Brosnan: 15 张图片
+  [91/100] Hu_Jintao: 15 张图片
+  [92/100] Bill_Simon: 15 张图片
+  [93/100] Meryl_Streep: 15 张图片
+  [94/100] Norah_Jones: 15 张图片
+  [95/100] Nancy_Pelosi: 15 张图片
+  [96/100] Dominique_de_Villepin: 15 张图片
+  [97/100] Dick_Cheney: 14 张图片
+  [98/100] Eduardo_Duhalde: 14 张图片
+  [99/100] David_Nalbandian: 14 张图片
+  [100/100] Kim_Clijsters: 14 张图片
+
+✓ 提取完成: 3651 个样本, 100 个身份
+
+[对生成] 生成所有图像对...
+  总对数: 6663075
+  正样本对 (同一人): 231240
+  负样本对 (不同人): 6431835
+  正负比例: 1:27.81
+
+[基准评估] 浮点特征 (无量化)
+======================================================================
+
+最优阈值: 0.897515
+F1-Score: 0.949116
+Precision: 0.960766
+Recall: 0.937744
+Accuracy: 0.996510
+EER: 4.1628%
+ROC-AUC: 0.979539
+
+======================================================================
+使用基准浮点阈值 0.897515
+将在整数域转换并评估
+======================================================================
+[AsymmetricQuantizer] 初始化完成
+  质数 p = 67,108,859
+  浮点范围: [-1.0, 1.0]
+  整数范围: [0, 67,108,858]
+  缩放因子: 33554429.00
+
+======================================================================
+评估: AsymmetricQuantizer
+======================================================================
+缩放因子: 33,554,429.00
+[1] 量化特征向量...
+[2] 在整数域计算欧氏距离...
+[3] 转换阈值到整数域:
+    浮点阈值: 0.897515
+    整数阈值: 30,115,614.64
+[4] 使用整数阈值评估...
+  使用整数阈值的性能:
+    Precision: 0.960766
+    Recall:    0.937744
+    F1-Score:  0.949116
+    Accuracy:  0.996510
+
+[5] 计算整数域的最优阈值（仅用于分析）...
+  整数域最优阈值: 30,115,617.69
+  等价浮点阈值:   0.897515
+  最优F1:          0.949116
+
+[6] 计算 EER (整数域)...
+  EER:             4.1619%
+  EER整数阈值:     38,023,545.10
+  EER等价浮点阈值: 1.133190
+[7] 计算 ROC-AUC (整数域)...
+  ROC-AUC: 0.979539
+
+======================================================================
+[主要性能指标] 使用整数域阈值:
+======================================================================
+  浮点阈值:  0.897515
+  整数阈值:  30,115,614.64
+  Precision: 0.960766
+  Recall:    0.937744
+  F1-Score:  0.949116
+  Accuracy:  0.996510
+  TPR:       0.937744
+  FPR:       0.001377
+
+======================================================================
+对比总结
+======================================================================
+
+量化器                            F1         Precision  Recall     EER(%)     ROC-AUC   
+----------------------------------------------------------------------
+Baseline_Float32               0.949116   0.960766   0.937744   4.1628     0.979539  
+AsymmetricQuantizer            0.949116   0.960766   0.937744   4.1619     0.979539  
+
+[性能变化]
+
+AsymmetricQuantizer:
+  F1变化: +0.0000%
+  EER变化: -0.0222%
+  AUC变化: +0.0000%
+
+结果已保存到: biozero_quantization_experiment/outputs/results/lfw_recognition_performance_evaluation.json
+
+[可视化] 生成对比图表...
+  ✓ 保存到: biozero_quantization_experiment/outputs/results/recognition_performance_comparison.png
+
+======================================================================
+评估完成
+======================================================================

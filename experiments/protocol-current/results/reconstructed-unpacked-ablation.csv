@@ -1,0 +1,3 @@
+circuit,dimension,constraints,packed_constraints,packed_reduction_percent,witness_checked,provenance
+auth_distance_128_unpacked,128,38464,7660,80.1,true,reconstructed wrapper; not recovered original source
+auth_distance_512_unpacked,512,151360,27118,82.1,true,reconstructed wrapper; not recovered original source

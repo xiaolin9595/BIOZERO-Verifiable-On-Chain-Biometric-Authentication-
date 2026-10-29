@@ -1,0 +1,476 @@
+{
+  "schema_version": "biozero-lfw-harmonized-aggregate-v1",
+  "source_result_sha256": "0129e9d1cf1e12a54d8708a1cb7b710465196210a891852cce5117117eef4eae",
+  "verification_sha256": "74a9c0d0b093451a24e8a9becdee72788a93e20361443473327cb7e6a986ecb0",
+  "verification": {
+    "status": "PASS",
+    "all_metric_and_paired_delta_ci95_recomputed": true
+  },
+  "qualification": "Harmonized identity-disjoint LFW evaluation; not official LFW 10-fold and not historical-number reproduction.",
+  "dataset": {
+    "archive_sha256": "b47c8422c8cded889dc5a13418c4bc2abbda121092b3533a83306f90d900100a",
+    "image_manifest_sha256": "05ce4d46b8abe25b3000abc2aaf70255b034df49999cda2d6f9d768147aa9e6e",
+    "name": "LFW Funneled",
+    "source_url": "https://ndownloader.figshare.com/files/5976015",
+    "acquisition_condition": "unconstrained"
+  },
+  "model": {
+    "display_name": "InceptionResnetV1 (512)",
+    "source_name": "facenet-pytorch InceptionResnetV1 pretrained=vggface2 (512D)",
+    "model_key": "inception_vggface2_512d",
+    "embedding_dimension": 512,
+    "preprocessing": "MTCNN(image_size=160, margin=14, device='cpu'); PIL RGB; defaults; largest; post_process",
+    "coverage": {
+      "attempted": 13233,
+      "successful": 13233,
+      "rate": 1
+    },
+    "weights": [
+      {
+        "sha256": "281cebca8662831adb987a874bdcb36e73f5b1c6dc5ee5878f305e985625d99b",
+        "bytes": 111898327
+      },
+      {
+        "sha256": "a2a71925e0b9996a42f63e47efc1ca19043e69558b5c523b978d611dfae49c8f",
+        "bytes": 28570
+      },
+      {
+        "sha256": "bbb937de72efc9ef83b186c49f5f558467a1d7e3453a8ece0d71a886633f6a86",
+        "bytes": 403147
+      },
+      {
+        "sha256": "165bfbe42940416ccfb977545cf0e976d5bf321f67083ae2aaaa5c764280118d",
+        "bytes": 1559269
+      }
+    ]
+  },
+  "split": {
+    "identity_counts": {
+      "all": 5749,
+      "test": 4600,
+      "validation": 1149
+    },
+    "identity_intersection_count": 0,
+    "identity_split_sha256": "b11b53178b1b906d4ff909c3657369489cdfd9c9d6fd8fb5b676f2374aa25ca8",
+    "pair_sampling": {
+      "test": {
+        "endpoint_degree": {
+          "max": 17,
+          "mean": 2.159827213822894,
+          "median": 1.0,
+          "min": 1
+        },
+        "genuine_candidate_count": 211432,
+        "identity_count": 4600,
+        "image_count": 10485,
+        "impostor_candidate_count": 54750938,
+        "multi_image_identity_count": 1345,
+        "multi_image_identity_overweight_note": "An identity with n images contributes C(n,2) genuine candidates; singleton identities contribute zero genuine candidates but remain eligible for impostor sampling.",
+        "sampled_genuine_identity_count": 182,
+        "sampled_identity_count": 2486,
+        "sampling_estimand": "global-uniform unordered image-pair; image-pair weighted, not identity-balanced",
+        "singleton_identity_count": 3255,
+        "unique_endpoint_image_count": 5556
+      },
+      "validation": {
+        "endpoint_degree": {
+          "max": 27,
+          "mean": 4.667444574095683,
+          "median": 3.0,
+          "min": 1
+        },
+        "genuine_candidate_count": 30825,
+        "identity_count": 1149,
+        "image_count": 2748,
+        "impostor_candidate_count": 3743553,
+        "multi_image_identity_count": 335,
+        "multi_image_identity_overweight_note": "An identity with n images contributes C(n,2) genuine candidates; singleton identities contribute zero genuine candidates but remain eligible for impostor sampling.",
+        "sampled_genuine_identity_count": 112,
+        "sampled_identity_count": 1065,
+        "sampling_estimand": "global-uniform unordered image-pair; image-pair weighted, not identity-balanced",
+        "singleton_identity_count": 814,
+        "unique_endpoint_image_count": 2571
+      }
+    },
+    "policy": "SHA256 domain order; floor(0.2*N) validation, remainder test; all identities retained"
+  },
+  "pair_protocol": {
+    "no_replacement_after_failure": true,
+    "predetection_fixed": true,
+    "same_eligible_pairs_all_settings": true,
+    "test_availability": {
+      "available": 6000,
+      "available_genuine": 3000,
+      "available_impostor": 3000,
+      "ordered_eligible_pair_ids_sha256": "50d025627b238f3db3dcbd6cbb8ff100299937b17339517204b6883049c7efbe",
+      "rate": 1.0,
+      "requested": 6000,
+      "requested_genuine": 3000,
+      "requested_impostor": 3000
+    },
+    "test_manifest_sha256": "0fd863e32ae59f19baa8b3bd00092f7a0887f38f6fa05700d2843540278bcef2",
+    "validation_availability": {
+      "available": 6000,
+      "available_genuine": 3000,
+      "available_impostor": 3000,
+      "ordered_eligible_pair_ids_sha256": "8e05053ab7478bf0f5fa2c35e2a36564b1ab25f17dfb0409d04ceb123c430e34",
+      "rate": 1.0,
+      "requested": 6000,
+      "requested_genuine": 3000,
+      "requested_impostor": 3000
+    },
+    "validation_manifest_sha256": "acaaf51de15e80b7c427ca98a407bdc8006669b1401702f453c53859fef457da"
+  },
+  "threshold": {
+    "comparison": "distance < threshold",
+    "float_threshold": 1.070311963558197,
+    "policy": "float validation maximum balanced accuracy; frozen unchanged for every bit width",
+    "test_used_for_selection": false,
+    "tie_break": "smallest threshold",
+    "validation_balanced_accuracy": 0.9786666666666668
+  },
+  "quantizer": {
+    "formula": "L2-normalize; clip[-1,1]; round((x+1)*(p-1)/2); clip[0,p-1]",
+    "primes": {
+      "4-bit": 13,
+      "6-bit": 61,
+      "7-bit": 127,
+      "9-bit": 509
+    },
+    "rounding": "NumPy ties-to-even",
+    "source_sha256": "bdb12892ee3160c5502de937ae8bfc94a13074fee19aea6d19824e39bd730c3b"
+  },
+  "bootstrap": {
+    "identity_count": 2486,
+    "method": "identity-cluster multinomial resampling over identities observed in eligible test pairs",
+    "paired_delta": "setting minus float within each accepted replicate",
+    "replicates_accepted": 2000,
+    "replicates_discarded_single_class": 0,
+    "replicates_requested": 2000,
+    "seed": 20261027,
+    "weights": {
+      "genuine": "m_i",
+      "impostor": "m_i*m_j"
+    }
+  },
+  "settings": [
+    {
+      "ci95_identity_cluster": {
+        "accuracy": {
+          "high": 0.9858509167318109,
+          "low": 0.9563702609293635
+        },
+        "auc": {
+          "high": 0.9884943226006917,
+          "low": 0.9696235971299468
+        },
+        "far": {
+          "high": 0.016561247587394218,
+          "low": 0.004349853491707701
+        },
+        "frr": {
+          "high": 0.06911580549454778,
+          "low": 0.03574610651712323
+        },
+        "recall": {
+          "high": 0.9642538934828767,
+          "low": 0.9308841945054521
+        }
+      },
+      "counts": {
+        "fn": 168,
+        "fp": 29,
+        "tn": 2971,
+        "tp": 2832
+      },
+      "delta_vs_float": null,
+      "delta_vs_float_ci95_identity_cluster": null,
+      "metrics": {
+        "accuracy": 0.9671666666666666,
+        "auc": 0.9805003333333333,
+        "far": 0.009666666666666667,
+        "frr": 0.056,
+        "recall": 0.944
+      },
+      "prime": null,
+      "setting": "float",
+      "threshold_normalized_distance": 1.070311963558197
+    },
+    {
+      "ci95_identity_cluster": {
+        "accuracy": {
+          "high": 0.9652402326917552,
+          "low": 0.8998149510852275
+        },
+        "auc": {
+          "high": 0.9800665479651135,
+          "low": 0.9595194323400582
+        },
+        "far": {
+          "high": 0.0046909370665659325,
+          "low": 0.0
+        },
+        "frr": {
+          "high": 0.23746562851728895,
+          "low": 0.10301017064037116
+        },
+        "recall": {
+          "high": 0.8969898293596287,
+          "low": 0.762534371482711
+        }
+      },
+      "counts": {
+        "fn": 432,
+        "fp": 5,
+        "tn": 2995,
+        "tp": 2568
+      },
+      "delta_vs_float": {
+        "accuracy": -0.039999999999999925,
+        "auc": -0.004914111111111064,
+        "far": -0.008,
+        "frr": 0.088,
+        "recall": -0.08799999999999997
+      },
+      "delta_vs_float_ci95_identity_cluster": {
+        "accuracy": {
+          "high": -0.013821429826410837,
+          "low": -0.05749034732592443
+        },
+        "auc": {
+          "high": -0.0020813203187052738,
+          "low": -0.012316751519317737
+        },
+        "far": {
+          "high": -0.0023589969003239165,
+          "low": -0.015067159606604236
+        },
+        "frr": {
+          "high": 0.17730693704824696,
+          "low": 0.0576021487747342
+        },
+        "recall": {
+          "high": -0.057602148774734206,
+          "low": -0.1773069370482471
+        }
+      },
+      "metrics": {
+        "accuracy": 0.9271666666666667,
+        "auc": 0.9755862222222222,
+        "far": 0.0016666666666666668,
+        "frr": 0.144,
+        "recall": 0.856
+      },
+      "prime": 13,
+      "setting": "4-bit",
+      "threshold_normalized_distance": 1.070311963558197
+    },
+    {
+      "ci95_identity_cluster": {
+        "accuracy": {
+          "high": 0.9875647894755046,
+          "low": 0.9575210318630755
+        },
+        "auc": {
+          "high": 0.9881767300742197,
+          "low": 0.9698031986297021
+        },
+        "far": {
+          "high": 0.010926582521629855,
+          "low": 0.0017971072222370992
+        },
+        "frr": {
+          "high": 0.07312748262164838,
+          "low": 0.038026345840620736
+        },
+        "recall": {
+          "high": 0.9619736541593793,
+          "low": 0.9268725173783516
+        }
+      },
+      "counts": {
+        "fn": 171,
+        "fp": 17,
+        "tn": 2983,
+        "tp": 2829
+      },
+      "delta_vs_float": {
+        "accuracy": 0.0015000000000000568,
+        "auc": -0.0003255555555555789,
+        "far": -0.004,
+        "frr": 0.0010000000000000009,
+        "recall": -0.0010000000000000009
+      },
+      "delta_vs_float_ci95_identity_cluster": {
+        "accuracy": {
+          "high": 0.004556292524602851,
+          "low": -0.000250341562888437
+        },
+        "auc": {
+          "high": 0.0002820767481748946,
+          "low": -0.0006188706037624087
+        },
+        "far": {
+          "high": -0.0008835186602275261,
+          "low": -0.008371535991918623
+        },
+        "frr": {
+          "high": 0.005770180023228792,
+          "low": 0.0
+        },
+        "recall": {
+          "high": 0.0,
+          "low": -0.005770180023228782
+        }
+      },
+      "metrics": {
+        "accuracy": 0.9686666666666667,
+        "auc": 0.9801747777777777,
+        "far": 0.005666666666666667,
+        "frr": 0.057,
+        "recall": 0.943
+      },
+      "prime": 61,
+      "setting": "6-bit",
+      "threshold_normalized_distance": 1.070311963558197
+    },
+    {
+      "ci95_identity_cluster": {
+        "accuracy": {
+          "high": 0.9865943157159053,
+          "low": 0.9564779844631159
+        },
+        "auc": {
+          "high": 0.9885119561397316,
+          "low": 0.9695770528646966
+        },
+        "far": {
+          "high": 0.01507380552538188,
+          "low": 0.003591545477780675
+        },
+        "frr": {
+          "high": 0.07117150622863157,
+          "low": 0.0367240307790609
+        },
+        "recall": {
+          "high": 0.963275969220939,
+          "low": 0.9288284937713683
+        }
+      },
+      "counts": {
+        "fn": 169,
+        "fp": 26,
+        "tn": 2974,
+        "tp": 2831
+      },
+      "delta_vs_float": {
+        "accuracy": 0.00033333333333340764,
+        "auc": -0.000035499999999966114,
+        "far": -0.0010000000000000009,
+        "frr": 0.0003333333333333313,
+        "recall": -0.0003333333333332966
+      },
+      "delta_vs_float_ci95_identity_cluster": {
+        "accuracy": {
+          "high": 0.0021861858466713253,
+          "low": -0.0004787233919297334
+        },
+        "auc": {
+          "high": 0.00020760065514059098,
+          "low": -0.00012763230500940082
+        },
+        "far": {
+          "high": 0.0,
+          "low": -0.003782130882084838
+        },
+        "frr": {
+          "high": 0.003120986038179693,
+          "low": 0.0
+        },
+        "recall": {
+          "high": 0.0,
+          "low": -0.0031209860381796323
+        }
+      },
+      "metrics": {
+        "accuracy": 0.9675,
+        "auc": 0.9804648333333333,
+        "far": 0.008666666666666666,
+        "frr": 0.05633333333333333,
+        "recall": 0.9436666666666667
+      },
+      "prime": 127,
+      "setting": "7-bit",
+      "threshold_normalized_distance": 1.070311963558197
+    },
+    {
+      "ci95_identity_cluster": {
+        "accuracy": {
+          "high": 0.9858509167318109,
+          "low": 0.9563702609293635
+        },
+        "auc": {
+          "high": 0.9884676312651269,
+          "low": 0.9695098749732758
+        },
+        "far": {
+          "high": 0.016561247587394218,
+          "low": 0.004349853491707701
+        },
+        "frr": {
+          "high": 0.06911580549454778,
+          "low": 0.03574610651712323
+        },
+        "recall": {
+          "high": 0.9642538934828767,
+          "low": 0.9308841945054521
+        }
+      },
+      "counts": {
+        "fn": 168,
+        "fp": 29,
+        "tn": 2971,
+        "tp": 2832
+      },
+      "delta_vs_float": {
+        "accuracy": 0.0,
+        "auc": -0.000040555555555488176,
+        "far": 0.0,
+        "frr": 0.0,
+        "recall": 0.0
+      },
+      "delta_vs_float_ci95_identity_cluster": {
+        "accuracy": {
+          "high": 0.0,
+          "low": 0.0
+        },
+        "auc": {
+          "high": -0.000005986392020579382,
+          "low": -0.00013632777578690135
+        },
+        "far": {
+          "high": 0.0,
+          "low": 0.0
+        },
+        "frr": {
+          "high": 0.0,
+          "low": 0.0
+        },
+        "recall": {
+          "high": 0.0,
+          "low": 0.0
+        }
+      },
+      "metrics": {
+        "accuracy": 0.9671666666666666,
+        "auc": 0.9804597777777778,
+        "far": 0.009666666666666667,
+        "frr": 0.056,
+        "recall": 0.944
+      },
+      "prime": 509,
+      "setting": "9-bit",
+      "threshold_normalized_distance": 1.070311963558197
+    }
+  ]
+}

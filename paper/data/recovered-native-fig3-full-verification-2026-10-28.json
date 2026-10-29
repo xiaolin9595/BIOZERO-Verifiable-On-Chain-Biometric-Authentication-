@@ -1,0 +1,56 @@
+{
+  "checks": {
+    "all_gas_pass": true,
+    "data_artifact_csv_identical": true,
+    "data_artifact_json_identical": true,
+    "dimension_values": [
+      2,
+      4,
+      8,
+      16,
+      32,
+      64,
+      128
+    ],
+    "dimensions": 7,
+    "plot_logical_cells": 70,
+    "plot_points_by_panel": {
+      "a_verifier_gas": 14,
+      "b_deployment_gas": 14,
+      "c_proving_time": 14,
+      "d_proof_and_bytecode": 28
+    },
+    "raw_counts": {
+      "biozero_fixed_gas_transactions": 30,
+      "biozero_fixed_proving_samples": 5,
+      "vanilla_gas_transactions": 35,
+      "vanilla_proving_samples": 35,
+      "vanilla_raw_observations": 70
+    },
+    "unique_vanilla_tx_hashes": 35
+  },
+  "figure": {
+    "bytes": 50813,
+    "figure_spec_version": "recovered-native-fig3-full-v1",
+    "file": "fig3_full_recovered_native_2026-10-28.pdf",
+    "panels": [
+      "(a) verifier gas",
+      "(b) deployment gas",
+      "(c) proving time",
+      "(d) proof and verifier bytecode"
+    ],
+    "proving_error_bars": "sample standard deviation, n=5",
+    "raster_image_objects": 0,
+    "semantic_sha256": "e7237e7513f373c0f6e5a1b3f65b8ed09965e5e42c74c915f5a2b2fcf7a5e1be",
+    "sha256": "c69ab0c16569bcaafee5c5e0ad45ed9a681d96054ebee3e413e916d8a8c9dbfe",
+    "vector_pdf": true
+  },
+  "fresh_2026_10_28_measurements": false,
+  "input": {
+    "file": "recovered-native-fig3-full-2026-10-28.json",
+    "sha256": "6bf110a53bb4f90771f5b567fd9d5cda477573c0fe3fd4682ee4097ac7a75add"
+  },
+  "schema_version": 1,
+  "source": "recovered_native_campaign_2026-06-05",
+  "status": "PASS"
+}

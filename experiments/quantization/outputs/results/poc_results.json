@@ -1,0 +1,36 @@
+{
+  "experiment": "BioZero Quantization POC",
+  "timestamp": "2025-10-09T21:53:07.196077",
+  "num_samples": 5,
+  "num_identities": 5,
+  "distance_metric": "euclidean",
+  "results": [
+    {
+      "bits": 8,
+      "mean_distance_deviation": 0.00021477699279785157,
+      "max_distance_deviation": 0.0007110834121704102,
+      "relative_deviation_percent": 0.01736274295527699,
+      "avg_mse": 1.1192787354730172e-07,
+      "avg_euclidean_deviation": 0.007569397892802953,
+      "avg_snr_db": 42.415745393686926
+    },
+    {
+      "bits": 12,
+      "mean_distance_deviation": 2.2063255310058595e-05,
+      "max_distance_deviation": 6.663799285888672e-05,
+      "relative_deviation_percent": 0.0017836111108313715,
+      "avg_mse": 4.317648460983037e-10,
+      "avg_euclidean_deviation": 0.00047010313719511034,
+      "avg_snr_db": 65.65183082662031
+    },
+    {
+      "bits": 16,
+      "mean_distance_deviation": 7.772445678710937e-07,
+      "max_distance_deviation": 2.562999725341797e-06,
+      "relative_deviation_percent": 6.283306917344143e-05,
+      "avg_mse": 1.6642280652526264e-12,
+      "avg_euclidean_deviation": 2.918815007433295e-05,
+      "avg_snr_db": 72.83561904011943
+    }
+  ]
+}

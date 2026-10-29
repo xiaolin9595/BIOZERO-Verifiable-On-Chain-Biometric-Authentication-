@@ -1,0 +1,296 @@
+{
+  "schema_version": 1,
+  "overall": "PASS",
+  "passed": 43,
+  "failed": 0,
+  "checks": [
+    {
+      "name": "all eight Fig. 3 targets present",
+      "passed": true,
+      "detail": [
+        "biozero-fixed",
+        "vanilla-2",
+        "vanilla-4",
+        "vanilla-8",
+        "vanilla-16",
+        "vanilla-32",
+        "vanilla-64",
+        "vanilla-128"
+      ]
+    },
+    {
+      "name": "native validation overall PASS",
+      "passed": true,
+      "detail": "PASS"
+    },
+    {
+      "name": "chain validation overall PASS",
+      "passed": true,
+      "detail": "PASS"
+    },
+    {
+      "name": "biozero-fixed: constraint count recorded",
+      "passed": true,
+      "detail": 109900
+    },
+    {
+      "name": "biozero-fixed: five measured proofs",
+      "passed": true,
+      "detail": 5
+    },
+    {
+      "name": "biozero-fixed: old-protocol gas receipt count",
+      "passed": true,
+      "detail": 30
+    },
+    {
+      "name": "biozero-fixed: old-protocol gas warmup count",
+      "passed": true,
+      "detail": 5
+    },
+    {
+      "name": "biozero-fixed: all matching/control checks",
+      "passed": true,
+      "detail": {
+        "native_valid_proof_accepted": true,
+        "native_invalid_public_input_rejected": true,
+        "verifier_reexport_byte_exact_match": true,
+        "chain_valid_static_true": true,
+        "chain_invalid_static_false": true,
+        "onchain_runtime_matches_compiler": true,
+        "standard_eip170_behavior": true
+      }
+    },
+    {
+      "name": "vanilla-2: constraint count recorded",
+      "passed": true,
+      "detail": 439240
+    },
+    {
+      "name": "vanilla-2: five measured proofs",
+      "passed": true,
+      "detail": 5
+    },
+    {
+      "name": "vanilla-2: old-protocol gas receipt count",
+      "passed": true,
+      "detail": 5
+    },
+    {
+      "name": "vanilla-2: old-protocol gas warmup count",
+      "passed": true,
+      "detail": 1
+    },
+    {
+      "name": "vanilla-2: all matching/control checks",
+      "passed": true,
+      "detail": {
+        "native_valid_proof_accepted": true,
+        "native_invalid_public_input_rejected": true,
+        "verifier_reexport_byte_exact_match": true,
+        "chain_valid_static_true": true,
+        "chain_invalid_static_false": true,
+        "onchain_runtime_matches_compiler": true,
+        "standard_eip170_behavior": true
+      }
+    },
+    {
+      "name": "vanilla-4: constraint count recorded",
+      "passed": true,
+      "detail": 877629
+    },
+    {
+      "name": "vanilla-4: five measured proofs",
+      "passed": true,
+      "detail": 5
+    },
+    {
+      "name": "vanilla-4: old-protocol gas receipt count",
+      "passed": true,
+      "detail": 5
+    },
+    {
+      "name": "vanilla-4: old-protocol gas warmup count",
+      "passed": true,
+      "detail": 1
+    },
+    {
+      "name": "vanilla-4: all matching/control checks",
+      "passed": true,
+      "detail": {
+        "native_valid_proof_accepted": true,
+        "native_invalid_public_input_rejected": true,
+        "verifier_reexport_byte_exact_match": true,
+        "chain_valid_static_true": true,
+        "chain_invalid_static_false": true,
+        "onchain_runtime_matches_compiler": true,
+        "standard_eip170_behavior": true
+      }
+    },
+    {
+      "name": "vanilla-8: constraint count recorded",
+      "passed": true,
+      "detail": 1754406
+    },
+    {
+      "name": "vanilla-8: five measured proofs",
+      "passed": true,
+      "detail": 5
+    },
+    {
+      "name": "vanilla-8: old-protocol gas receipt count",
+      "passed": true,
+      "detail": 5
+    },
+    {
+      "name": "vanilla-8: old-protocol gas warmup count",
+      "passed": true,
+      "detail": 1
+    },
+    {
+      "name": "vanilla-8: all matching/control checks",
+      "passed": true,
+      "detail": {
+        "native_valid_proof_accepted": true,
+        "native_invalid_public_input_rejected": true,
+        "verifier_reexport_byte_exact_match": true,
+        "chain_valid_static_true": true,
+        "chain_invalid_static_false": true,
+        "onchain_runtime_matches_compiler": true,
+        "standard_eip170_behavior": true
+      }
+    },
+    {
+      "name": "vanilla-16: constraint count recorded",
+      "passed": true,
+      "detail": 3507959
+    },
+    {
+      "name": "vanilla-16: five measured proofs",
+      "passed": true,
+      "detail": 5
+    },
+    {
+      "name": "vanilla-16: old-protocol gas receipt count",
+      "passed": true,
+      "detail": 5
+    },
+    {
+      "name": "vanilla-16: old-protocol gas warmup count",
+      "passed": true,
+      "detail": 1
+    },
+    {
+      "name": "vanilla-16: all matching/control checks",
+      "passed": true,
+      "detail": {
+        "native_valid_proof_accepted": true,
+        "native_invalid_public_input_rejected": true,
+        "verifier_reexport_byte_exact_match": true,
+        "chain_valid_static_true": true,
+        "chain_invalid_static_false": true,
+        "onchain_runtime_matches_compiler": true,
+        "standard_eip170_behavior": true
+      }
+    },
+    {
+      "name": "vanilla-32: constraint count recorded",
+      "passed": true,
+      "detail": 7015064
+    },
+    {
+      "name": "vanilla-32: five measured proofs",
+      "passed": true,
+      "detail": 5
+    },
+    {
+      "name": "vanilla-32: old-protocol gas receipt count",
+      "passed": true,
+      "detail": 5
+    },
+    {
+      "name": "vanilla-32: old-protocol gas warmup count",
+      "passed": true,
+      "detail": 1
+    },
+    {
+      "name": "vanilla-32: all matching/control checks",
+      "passed": true,
+      "detail": {
+        "native_valid_proof_accepted": true,
+        "native_invalid_public_input_rejected": true,
+        "verifier_reexport_byte_exact_match": true,
+        "chain_valid_static_true": true,
+        "chain_invalid_static_false": true,
+        "onchain_runtime_matches_compiler": true,
+        "standard_eip170_behavior": true
+      }
+    },
+    {
+      "name": "vanilla-64: constraint count recorded",
+      "passed": true,
+      "detail": 14029273
+    },
+    {
+      "name": "vanilla-64: five measured proofs",
+      "passed": true,
+      "detail": 5
+    },
+    {
+      "name": "vanilla-64: old-protocol gas receipt count",
+      "passed": true,
+      "detail": 5
+    },
+    {
+      "name": "vanilla-64: old-protocol gas warmup count",
+      "passed": true,
+      "detail": 1
+    },
+    {
+      "name": "vanilla-64: all matching/control checks",
+      "passed": true,
+      "detail": {
+        "native_valid_proof_accepted": true,
+        "native_invalid_public_input_rejected": true,
+        "verifier_reexport_byte_exact_match": true,
+        "chain_valid_static_true": true,
+        "chain_invalid_static_false": true,
+        "onchain_runtime_matches_compiler": true,
+        "standard_eip170_behavior": true
+      }
+    },
+    {
+      "name": "vanilla-128: constraint count recorded",
+      "passed": true,
+      "detail": 28057690
+    },
+    {
+      "name": "vanilla-128: five measured proofs",
+      "passed": true,
+      "detail": 5
+    },
+    {
+      "name": "vanilla-128: old-protocol gas receipt count",
+      "passed": true,
+      "detail": 5
+    },
+    {
+      "name": "vanilla-128: old-protocol gas warmup count",
+      "passed": true,
+      "detail": 1
+    },
+    {
+      "name": "vanilla-128: all matching/control checks",
+      "passed": true,
+      "detail": {
+        "native_valid_proof_accepted": true,
+        "native_invalid_public_input_rejected": true,
+        "verifier_reexport_byte_exact_match": true,
+        "chain_valid_static_true": true,
+        "chain_invalid_static_false": true,
+        "onchain_runtime_matches_compiler": true,
+        "standard_eip170_behavior": true
+      }
+    }
+  ]
+}

@@ -1,0 +1,4 @@
+circuit,dimension,constraints,repetitions,witness_median_ms,prove_median_ms,verify_median_ms,prove_median_max_rss_mib
+auth_distance_128,128,7660,5,37.43,568.7,139.28,484.8
+auth_distance_512,512,27118,5,71.69,1003.23,155.41,698.22
+

@@ -1,0 +1,180 @@
+{
+  "checks": {
+    "all_native_and_chain_controls_pass": true,
+    "csv": {
+      "file": "fresh-native-fig3-full-2026-10-28.csv",
+      "rows": 8,
+      "sha256": "5b643b1f3b855e5e7e9d53edddc4a319fcf1f33c1e2fb4a295f5ec62d363fd95"
+    },
+    "dimensions": [
+      2,
+      4,
+      8,
+      16,
+      32,
+      64,
+      128
+    ],
+    "eip170": {
+      "limit_bytes": 24576,
+      "n128_runtime_bytes": 34837,
+      "standard_limit_deployment_failed": true,
+      "standard_limit_receipt_status": 0,
+      "unlimited_contract_size": true,
+      "unlimited_deployment_receipt_status": 1
+    },
+    "fresh_logical_cells": 70,
+    "fresh_series": 10,
+    "gas_transactions": {
+      "biozero_fixed": 30,
+      "vanilla_total": 35
+    },
+    "plot_points_by_panel": {
+      "a_verifier_gas": 14,
+      "b_deployment_gas": 14,
+      "c_proving_time": 14,
+      "d_proof_and_creation_bytecode": 28
+    },
+    "proving_samples": {
+      "biozero_fixed": 5,
+      "vanilla_total": 35
+    },
+    "recovered_series_plotted": 0,
+    "source_transform_manifest": {
+      "all_exact_diff_checks": "PASS",
+      "file": "fresh-native-fig3-full-2026-10-28-source-transform-manifest.tsv",
+      "rows": 7,
+      "sha256": "df2405c8d4076a404ee65d52f167b72547b0bb6c01d4046c6f66b8ac246a3729"
+    },
+    "source_verification": {
+      "failed": 0,
+      "overall": "PASS",
+      "passed": 43
+    }
+  },
+  "data_policy": {
+    "primary": "fresh 2026-10-28 measurements",
+    "recovered_comparison_plotted": false,
+    "setup": "reused compiled program, proving key, verification key, and matching verifier"
+  },
+  "figure": {
+    "bytes": 42203,
+    "figure_spec_version": "fresh-native-fig3-full-v4-original-vector-style",
+    "file": "fig3_full_fresh_2026-10-28.pdf",
+    "fresh_logical_cells": 70,
+    "fresh_series": 10,
+    "page_size_pt": [
+      350,
+      215
+    ],
+    "panels": [
+      "(a) verifier gas",
+      "(b) deployment gas",
+      "(c) proving time",
+      "(d) proof and verifier creation bytecode"
+    ],
+    "proving_error_bars": "not drawn, matching the retained original TeX figure style; sample SD remains in the data and prose",
+    "raster_image_objects": 0,
+    "renderer": "retained original TeX vector with data-path substitution",
+    "renderer_sources": {
+      "builder": {
+        "file": "build_fig3_from_original_vector.py",
+        "sha256": "eb29846a5cf551f603fa3e89cf0c747ed3794a4c4d812c0909e63fdf603ebdea"
+      },
+      "original_vector_template": {
+        "file": "isc_groth16_cost.pdf",
+        "sha256": "94c807836db3caa304df1eb9be3738853a5c536568530b0310281bcea3df4f43"
+      }
+    },
+    "semantic_sha256": "fa0d5eda364c59416800d41385cc5c16e12619164507ae9ac956a994cd6d11cf",
+    "series_data_classes": [
+      {
+        "data_class": "fresh 2026-10-28",
+        "panel": "a",
+        "series": "Vanilla verifier gas"
+      },
+      {
+        "data_class": "fresh 2026-10-28",
+        "panel": "a",
+        "series": "BioZero fixed verifier gas"
+      },
+      {
+        "data_class": "fresh 2026-10-28",
+        "panel": "b",
+        "series": "Vanilla deployment gas"
+      },
+      {
+        "data_class": "fresh 2026-10-28",
+        "panel": "b",
+        "series": "BioZero fixed deployment gas"
+      },
+      {
+        "data_class": "fresh 2026-10-28",
+        "panel": "c",
+        "series": "Vanilla proving time"
+      },
+      {
+        "data_class": "fresh 2026-10-28",
+        "panel": "c",
+        "series": "BioZero fixed proving time"
+      },
+      {
+        "data_class": "fresh 2026-10-28",
+        "panel": "d",
+        "series": "Vanilla proof size"
+      },
+      {
+        "data_class": "fresh 2026-10-28",
+        "panel": "d",
+        "series": "Vanilla creation bytecode"
+      },
+      {
+        "data_class": "fresh 2026-10-28",
+        "panel": "d",
+        "series": "BioZero fixed proof size"
+      },
+      {
+        "data_class": "fresh 2026-10-28",
+        "panel": "d",
+        "series": "BioZero fixed creation bytecode"
+      }
+    ],
+    "sha256": "cb7aac7d5e7b1c8af1ea75a6c81d313ee32c7d5403a3d43c906df3fecfe8eab6",
+    "style_equivalence": "all non-data vector operators, fonts, axes, legends, colors, line widths, dash arrays, markers, and panel geometry are inherited verbatim from the retained original TeX vector",
+    "vector_pdf": true
+  },
+  "inputs": {
+    "fresh_csv": {
+      "file": "fresh-native-fig3-full-2026-10-28.csv",
+      "rows": 8,
+      "sha256": "5b643b1f3b855e5e7e9d53edddc4a319fcf1f33c1e2fb4a295f5ec62d363fd95"
+    },
+    "fresh_summary": {
+      "file": "fresh-native-fig3-full-2026-10-28.json",
+      "plotted": true,
+      "sha256": "603366ed52eba7afa2c467b43fc69a6047ca7770ae1ba0a71d5a4eb183f6a996"
+    },
+    "fresh_vs_recovered": {
+      "file": "fresh-native-fig3-full-2026-10-28-comparison.json",
+      "plotted": false,
+      "sha256": "de54eb6da1d78846fc642e3d16b3b85ee3c2a0b129f662ba6c3f7d2db31d2f13"
+    },
+    "n128_chain_controls": {
+      "file": "fresh-native-fig3-full-n128-chain-controls-2026-10-28.json",
+      "plotted": false,
+      "sha256": "740a75672e20a10e40d49648ec5de7509e17da811a79aa1820fd07386fd681bc"
+    },
+    "source_transform_manifest": {
+      "file": "fresh-native-fig3-full-2026-10-28-source-transform-manifest.tsv",
+      "plotted": false,
+      "sha256": "df2405c8d4076a404ee65d52f167b72547b0bb6c01d4046c6f66b8ac246a3729"
+    },
+    "source_verification": {
+      "file": "fresh-native-fig3-full-2026-10-28-verification.json",
+      "plotted": false,
+      "sha256": "6e238e4436099d9d68540d5849294bfd1a6bdba2b5697066060c10a072427e60"
+    }
+  },
+  "schema_version": 1,
+  "status": "PASS"
+}

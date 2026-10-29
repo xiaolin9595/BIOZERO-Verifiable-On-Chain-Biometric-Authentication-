@@ -1,0 +1,46 @@
+{
+  "version": "0.1.0",
+  "name": "biozero-route-a-prototype",
+  "dependencies": {
+    "circom2": {
+      "version": "0.2.23",
+      "resolved": "https://registry.npmjs.org/circom2/-/circom2-0.2.23.tgz",
+      "overridden": false
+    },
+    "circomlib": {
+      "version": "2.0.5",
+      "resolved": "https://registry.npmjs.org/circomlib/-/circomlib-2.0.5.tgz",
+      "overridden": false
+    },
+    "circomlibjs": {
+      "version": "0.1.7",
+      "resolved": "https://registry.npmjs.org/circomlibjs/-/circomlibjs-0.1.7.tgz",
+      "overridden": false
+    },
+    "ethers": {
+      "version": "5.8.0",
+      "resolved": "https://registry.npmjs.org/ethers/-/ethers-5.8.0.tgz",
+      "overridden": false
+    },
+    "ffjavascript": {
+      "version": "0.2.63",
+      "resolved": "https://registry.npmjs.org/ffjavascript/-/ffjavascript-0.2.63.tgz",
+      "overridden": false
+    },
+    "ganache": {
+      "version": "7.9.2",
+      "resolved": "https://registry.npmjs.org/ganache/-/ganache-7.9.2.tgz",
+      "overridden": false
+    },
+    "snarkjs": {
+      "version": "0.7.6",
+      "resolved": "https://registry.npmjs.org/snarkjs/-/snarkjs-0.7.6.tgz",
+      "overridden": false
+    },
+    "solc": {
+      "version": "0.8.36",
+      "resolved": "https://registry.npmjs.org/solc/-/solc-0.8.36.tgz",
+      "overridden": false
+    }
+  }
+}

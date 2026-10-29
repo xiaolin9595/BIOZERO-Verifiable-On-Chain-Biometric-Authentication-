@@ -1,0 +1,45 @@
+{
+  "schema_version": 1,
+  "dataset": "FEI Face Database",
+  "source": {
+    "results_file": "/var/tmp/biozero-face-quant-20261027/native128/run/results-512split-root.json",
+    "results_sha256": "44ec44d5c68ea691bafb3dd9939215dcca47c6b4d56b050d9353b2f26f5720b2",
+    "embeddings_sha256": "255b0944627da0431644c76470bcacf20fae9a7f95ec8ff8427c81fecb6c76ed"
+  },
+  "model": {
+    "display_name": "MobileFaceNet (128)",
+    "source_name": "Qualcomm AI Hub MobileFaceNet-128D v0.65.0 (foamliu weights)",
+    "embedding_dimension": 128
+  },
+  "protocol": {
+    "identity_split": {"validation_identities": 40, "test_identities": 160, "sha256": "0ee30180179be78cba85f2a5a38835fd1de6c7306925cff1fcf39d6dc76b1271"},
+    "validation_pairs": {
+      "requested": 6000, "requested_genuine": 3000, "requested_impostor": 3000,
+      "eligible": 5857, "eligible_genuine": 2925, "eligible_impostor": 2932,
+      "manifest_sha256": "7fa08349c23a822d8d79c06c8e6fd8d46d6eae3136bb74e919cea7bdffbb0446",
+      "ordered_eligible_pair_ids_sha256": "303852675c797c7eed10a6b0ecdf7b2e9c60077671e8ac05e2b7a6aa3a0e4de8"
+    },
+    "test_pairs": {
+      "requested": 6000, "requested_genuine": 3000, "requested_impostor": 3000,
+      "eligible": 5935, "eligible_genuine": 2967, "eligible_impostor": 2968,
+      "manifest_sha256": "50690dd559119c51563f083f1b515ed20e26ca3c6ca03858f2fa8954f9899a23",
+      "ordered_eligible_pair_ids_sha256": "7b0465369aa011f3e2f3e7904ca08812631e6ac118b74ea388603534c288d8c4"
+    },
+    "threshold_policy": "float-validation balanced-accuracy threshold shared by all settings; strict distance < threshold",
+    "float_validation_threshold": 1.1467778852401422,
+    "normalization": "strict per-row L2 normalization before float distance or quantizer clip/map/round"
+  },
+  "quantizer": {
+    "name": "recovered AsymmetricQuantizer",
+    "formula": "L2-normalize; clip[-1,1]; round((x+1)*(p-1)/2); clip[0,p-1]",
+    "distance": "Euclidean; integer distance divided by (p-1)/2",
+    "primes": {"4-bit": 13, "6-bit": 61, "8-bit": 251, "12-bit": 4093}
+  },
+  "settings": [
+    {"setting": "float", "prime": null, "counts": {"tp": 2885, "tn": 2924, "fp": 44, "fn": 82}, "metrics": {"accuracy": 0.9787700084245998, "recall": 0.9723626558813616, "far": 0.014824797843665768, "frr": 0.027637344118638354, "auc": 0.9965391998415636}},
+    {"setting": "4-bit", "prime": 13, "counts": {"tp": 2406, "tn": 2966, "fp": 2, "fn": 561}, "metrics": {"accuracy": 0.9051390058972199, "recall": 0.8109201213346815, "far": 0.0006738544474393531, "frr": 0.1890798786653185, "auc": 0.9928230072577326}},
+    {"setting": "6-bit", "prime": 61, "counts": {"tp": 2877, "tn": 2926, "fp": 42, "fn": 90}, "metrics": {"accuracy": 0.9777590564448189, "recall": 0.9696663296258847, "far": 0.014150943396226415, "frr": 0.030333670374115267, "auc": 0.9964092324645675}},
+    {"setting": "8-bit", "prime": 251, "counts": {"tp": 2889, "tn": 2925, "fp": 43, "fn": 78}, "metrics": {"accuracy": 0.9796124684077506, "recall": 0.9737108190091001, "far": 0.014487870619946091, "frr": 0.0262891809908999, "auc": 0.9965559496782669}},
+    {"setting": "12-bit", "prime": 4093, "counts": {"tp": 2886, "tn": 2923, "fp": 45, "fn": 81}, "metrics": {"accuracy": 0.9787700084245998, "recall": 0.9726996966632963, "far": 0.015161725067385445, "frr": 0.027300303336703743, "auc": 0.9965414710058623}}
+  ]
+}

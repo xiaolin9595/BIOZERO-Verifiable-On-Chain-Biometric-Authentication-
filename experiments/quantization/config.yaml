@@ -1,0 +1,46 @@
+experiment:
+  name: "BioZero_Quantization_Experiment"
+  version: "1.0"
+  random_seed: 42
+
+data:
+  lfw_root: "data/lfw"
+  lfw_pairs: "data/lfw/pairs.txt"
+  output_dir: "outputs"
+  cache_features: true
+
+model:
+  name: "InceptionResnetV1"
+  pretrained: "vggface2"  # or "casia-webface"
+  device: "cpu"  # No CUDA available
+
+quantization:
+  methods: ["symmetric"]  # Start with symmetric only
+  bit_widths: [16, 12, 8]  # Test key bit widths first
+  normalizations: ["l2"]  # L2 normalization only for now
+
+  pedersen:
+    prime_bits: 256
+    generator_g: "auto"
+    generator_h: "auto"
+
+evaluation:
+  distance_metric: "euclidean"  # BioZero uses Euclidean distance
+  n_folds: 10
+  far_target: 0.001
+  num_pairs: 100  # Start with small subset for testing
+
+metrics:
+  - "accuracy"
+  - "tpr"
+  - "fpr"
+  - "far"
+  - "frr"
+  - "eer"
+  - "euclidean_distance_deviation"
+
+visualization:
+  dpi: 300
+  format: "pdf"
+  style: "seaborn-v0_8-paper"
+  font_size: 10

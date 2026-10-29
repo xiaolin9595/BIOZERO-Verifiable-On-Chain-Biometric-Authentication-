@@ -1,0 +1,28 @@
+{
+  "generatedAt": "2026-10-27T13:59:13.005Z",
+  "status": "reconstructed, not an authenticated recovery of the missing original wrappers",
+  "omitted": [
+    "distance_only_128.circom: design choices are not uniquely determined by the delivered source",
+    "distance_only_512.circom: design choices are not uniquely determined by the delivered source"
+  ],
+  "results": [
+    {
+      "circuit": "auth_distance_128_unpacked",
+      "dimension": 128,
+      "provenance": "reconstructed wrapper; not recovered original source",
+      "constraints": 38464,
+      "packedConstraints": 7660,
+      "packedReductionPercent": 80.1,
+      "witnessChecked": true
+    },
+    {
+      "circuit": "auth_distance_512_unpacked",
+      "dimension": 512,
+      "provenance": "reconstructed wrapper; not recovered original source",
+      "constraints": 151360,
+      "packedConstraints": 27118,
+      "packedReductionPercent": 82.1,
+      "witnessChecked": true
+    }
+  ]
+}

@@ -1,0 +1,99 @@
+{
+  "generatedAt": "2026-10-27T14:03:00.174Z",
+  "gas": [
+    {
+      "strategy": "spot-eta-1",
+      "dimension": 128,
+      "current": 4124394,
+      "recorded": 4124634,
+      "absoluteDelta": -240,
+      "percentDelta": -0.006
+    },
+    {
+      "strategy": "spot-eta-2",
+      "dimension": 128,
+      "current": 5111692,
+      "recorded": 5111147,
+      "absoluteDelta": 545,
+      "percentDelta": 0.011
+    },
+    {
+      "strategy": "spot-eta-4",
+      "dimension": 128,
+      "current": 7107360,
+      "recorded": 7106181,
+      "absoluteDelta": 1179,
+      "percentDelta": 0.017
+    },
+    {
+      "strategy": "spot-eta-8",
+      "dimension": 128,
+      "current": 11196527,
+      "recorded": 11202131,
+      "absoluteDelta": -5604,
+      "percentDelta": -0.05
+    },
+    {
+      "strategy": "full-check",
+      "dimension": 128,
+      "current": 22097617,
+      "recorded": 22097629,
+      "absoluteDelta": -12,
+      "percentDelta": 0
+    },
+    {
+      "strategy": "circuit-check",
+      "dimension": 128,
+      "current": 255023,
+      "recorded": 254999,
+      "absoluteDelta": 24,
+      "percentDelta": 0.009
+    },
+    {
+      "strategy": "circuit-check",
+      "dimension": 512,
+      "current": 255011,
+      "recorded": 255011,
+      "absoluteDelta": 0,
+      "percentDelta": 0
+    }
+  ],
+  "proving": [
+    {
+      "circuit": "auth_distance_128",
+      "dimension": 128,
+      "constraintsMatch": true,
+      "proveElapsedMs": {
+        "current": 568.7,
+        "recorded": 798.05,
+        "absoluteDelta": -229.35,
+        "percentDelta": -28.739
+      },
+      "proveMaxRssMiB": {
+        "current": 484.8,
+        "recorded": 580.77,
+        "absoluteDelta": -95.97,
+        "percentDelta": -16.525
+      },
+      "caveat": "Different OS/CPU/Node and reconstructed profiler semantics; comparison is descriptive, not a reproduction tolerance test."
+    },
+    {
+      "circuit": "auth_distance_512",
+      "dimension": 512,
+      "constraintsMatch": true,
+      "proveElapsedMs": {
+        "current": 1003.23,
+        "recorded": 1530.08,
+        "absoluteDelta": -526.85,
+        "percentDelta": -34.433
+      },
+      "proveMaxRssMiB": {
+        "current": 698.22,
+        "recorded": 1087.78,
+        "absoluteDelta": -389.56,
+        "percentDelta": -35.812
+      },
+      "caveat": "Different OS/CPU/Node and reconstructed profiler semantics; comparison is descriptive, not a reproduction tolerance test."
+    }
+  ]
+}
