@@ -1,0 +1,3083 @@
+{
+  "hostname": "enine",
+  "source_run": "circuitcheck-only-resume-20261028T125516Z",
+  "source_verification": {
+    "schemaVersion": 1,
+    "generatedAt": "2026-10-28T13:26:53.231Z",
+    "overall": "PASS",
+    "checkCount": 168,
+    "checks": [
+      {
+        "name": "input grid is complete",
+        "pass": true,
+        "detail": [
+          2,
+          4,
+          8,
+          16,
+          32,
+          64,
+          128
+        ]
+      },
+      {
+        "name": "setup grid is complete",
+        "pass": true,
+        "detail": [
+          2,
+          4,
+          8,
+          16,
+          32,
+          64,
+          128
+        ]
+      },
+      {
+        "name": "proving grid is complete",
+        "pass": true,
+        "detail": [
+          2,
+          4,
+          8,
+          16,
+          32,
+          64,
+          128
+        ]
+      },
+      {
+        "name": "gas grid is complete",
+        "pass": true,
+        "detail": [
+          2,
+          4,
+          8,
+          16,
+          32,
+          64,
+          128
+        ]
+      },
+      {
+        "name": "one setup artifact per dimension",
+        "pass": true,
+        "detail": 7
+      },
+      {
+        "name": "one proving row per dimension",
+        "pass": true,
+        "detail": 7
+      },
+      {
+        "name": "one gas row per dimension",
+        "pass": true,
+        "detail": 7
+      },
+      {
+        "name": "N=2 entry parameters",
+        "pass": true,
+        "detail": {
+          "dimension": 2,
+          "bits": 16,
+          "qSpan": 65535,
+          "packSize": 15,
+          "blocks": 1,
+          "paddedBlocks": 2,
+          "distanceBits": 48
+        }
+      },
+      {
+        "name": "N=2 setup artifact present",
+        "pass": true,
+        "detail": [
+          2,
+          4,
+          8,
+          16,
+          32,
+          64,
+          128
+        ]
+      },
+      {
+        "name": "N=2 zkey hash current",
+        "pass": true,
+        "detail": "e5ef3bd34736b65fc2418cfbba3c05361f23f8cc32cc9ba973041d425264c097"
+      },
+      {
+        "name": "N=2 verification key hash current",
+        "pass": true,
+        "detail": "3cb6dddf94a09e59ca8a40be8003a7cdb55d4ebe27e650313960a91be26842c7"
+      },
+      {
+        "name": "N=2 matching verifier hash current",
+        "pass": true,
+        "detail": "00c2c24c1da846b9e8968addc618ddc52e444e983b9407131a24c355ba0b780a"
+      },
+      {
+        "name": "N=2 proof protocol",
+        "pass": true,
+        "detail": {
+          "warmups": 1,
+          "repetitions": 10
+        }
+      },
+      {
+        "name": "N=2 five public inputs",
+        "pass": true,
+        "detail": 5
+      },
+      {
+        "name": "N=2 ten end-to-end proving samples",
+        "pass": true,
+        "detail": {
+          "samples": 10,
+          "definition": "single cold child from immediately before wtns.calculate through Groth16 proof and proof/public JSON writes",
+          "endToEndMs": {
+            "samples": 10,
+            "values": [
+              2365.66,
+              2295.05,
+              2311.45,
+              2360.55,
+              2406.33,
+              2351.1,
+              2458.28,
+              2339.5,
+              2384.29,
+              2399.05
+            ],
+            "mean": 2367.13,
+            "sampleStandardDeviation": 47.75,
+            "median": 2363.11
+          },
+          "witnessSegmentMs": {
+            "samples": 10,
+            "values": [
+              53.85,
+              62.15,
+              55.21,
+              54.27,
+              84.8,
+              54.48,
+              55.05,
+              54.42,
+              56.97,
+              58.43
+            ],
+            "mean": 58.96,
+            "sampleStandardDeviation": 9.43,
+            "median": 55.13
+          },
+          "proveAndWriteSegmentMs": {
+            "samples": 10,
+            "values": [
+              2311.18,
+              2230.76,
+              2254.12,
+              2305.67,
+              2319.25,
+              2296.02,
+              2402.6,
+              2284.45,
+              2326.71,
+              2338.54
+            ],
+            "mean": 2306.93,
+            "sampleStandardDeviation": 47.06,
+            "median": 2308.43
+          },
+          "nodeProcessMaxRssMiB": {
+            "samples": 10,
+            "values": [
+              591.22,
+              593.49,
+              596.96,
+              596.34,
+              596,
+              591.61,
+              590.52,
+              598.11,
+              596.48,
+              596.64
+            ],
+            "mean": 594.74,
+            "sampleStandardDeviation": 2.76,
+            "median": 596.17
+          },
+          "externalGnuTimeMaxRssMiB": {
+            "available": true,
+            "source": "GNU /usr/bin/time -v Maximum resident set size; never mixed with Node maxRSS",
+            "samples": 10,
+            "values": [
+              591.22,
+              593.8,
+              596.96,
+              596.34,
+              596.32,
+              591.93,
+              590.52,
+              598.11,
+              596.48,
+              596.95
+            ],
+            "mean": 594.86,
+            "sampleStandardDeviation": 2.75,
+            "median": 596.33
+          }
+        }
+      },
+      {
+        "name": "N=2 proving distributions complete",
+        "pass": true,
+        "detail": {
+          "samples": 10,
+          "values": [
+            2365.66,
+            2295.05,
+            2311.45,
+            2360.55,
+            2406.33,
+            2351.1,
+            2458.28,
+            2339.5,
+            2384.29,
+            2399.05
+          ],
+          "mean": 2367.13,
+          "sampleStandardDeviation": 47.75,
+          "median": 2363.11
+        }
+      },
+      {
+        "name": "N=2 GNU time RSS captured",
+        "pass": true,
+        "detail": {
+          "available": true,
+          "source": "GNU /usr/bin/time -v Maximum resident set size; never mixed with Node maxRSS",
+          "samples": 10,
+          "values": [
+            591.22,
+            593.8,
+            596.96,
+            596.34,
+            596.32,
+            591.93,
+            590.52,
+            598.11,
+            596.48,
+            596.95
+          ],
+          "mean": 594.86,
+          "sampleStandardDeviation": 2.75,
+          "median": 596.33
+        }
+      },
+      {
+        "name": "N=2 ten native proof verifications",
+        "pass": true,
+        "detail": {
+          "elapsedMs": {
+            "samples": 10,
+            "values": [
+              1598.27,
+              1641.93,
+              1607.09,
+              1638.91,
+              1623.38,
+              1635.6,
+              1673.38,
+              1600.85,
+              1648.75,
+              1659.59
+            ],
+            "mean": 1632.78,
+            "sampleStandardDeviation": 25.19,
+            "median": 1637.26
+          },
+          "allVerified": true
+        }
+      },
+      {
+        "name": "N=2 all native proof verifications pass",
+        "pass": true,
+        "detail": {
+          "elapsedMs": {
+            "samples": 10,
+            "values": [
+              1598.27,
+              1641.93,
+              1607.09,
+              1638.91,
+              1623.38,
+              1635.6,
+              1673.38,
+              1600.85,
+              1648.75,
+              1659.59
+            ],
+            "mean": 1632.78,
+            "sampleStandardDeviation": 25.19,
+            "median": 1637.26
+          },
+          "allVerified": true
+        }
+      },
+      {
+        "name": "N=2 proving zkey matches setup",
+        "pass": true,
+        "detail": "e5ef3bd34736b65fc2418cfbba3c05361f23f8cc32cc9ba973041d425264c097"
+      },
+      {
+        "name": "N=2 bare verifier gas complete",
+        "pass": true,
+        "detail": [
+          242282,
+          242282,
+          242246,
+          242258,
+          242270
+        ]
+      },
+      {
+        "name": "N=2 valid public inputs return true",
+        "pass": true,
+        "detail": true
+      },
+      {
+        "name": "N=2 invalid public input returns false",
+        "pass": true,
+        "detail": false
+      },
+      {
+        "name": "N=2 raw receipt protocol",
+        "pass": true,
+        "detail": {
+          "warmups": 1,
+          "measured": 5
+        }
+      },
+      {
+        "name": "N=2 gas uses independent proofs",
+        "pass": true,
+        "detail": [
+          {
+            "phase": "measured",
+            "run": 1,
+            "proof": "results/proving/raw/auth_distance_2-measured-01-proof.json",
+            "proofSha256": "642098e0c3e14981c220010fe481bd3bcadf306f7a847dcf43fb36e95410ddeb",
+            "publicSignals": "results/proving/raw/auth_distance_2-measured-01-public.json",
+            "publicSignalsSha256": "a5d06ea1f2a0dd4f169875471cd210084a111a9731ea69edfbf95b460971505b"
+          },
+          {
+            "phase": "measured",
+            "run": 2,
+            "proof": "results/proving/raw/auth_distance_2-measured-02-proof.json",
+            "proofSha256": "aa3a3740814e11788f09e9cf6e6abfec5c4ac76acb15bba527b9406efe9e42c9",
+            "publicSignals": "results/proving/raw/auth_distance_2-measured-02-public.json",
+            "publicSignalsSha256": "a5d06ea1f2a0dd4f169875471cd210084a111a9731ea69edfbf95b460971505b"
+          },
+          {
+            "phase": "measured",
+            "run": 3,
+            "proof": "results/proving/raw/auth_distance_2-measured-03-proof.json",
+            "proofSha256": "c8292bd8bf9974a3e3cb3194c721dcf3d4e98722222dc31d465c518ce410a8c6",
+            "publicSignals": "results/proving/raw/auth_distance_2-measured-03-public.json",
+            "publicSignalsSha256": "a5d06ea1f2a0dd4f169875471cd210084a111a9731ea69edfbf95b460971505b"
+          },
+          {
+            "phase": "measured",
+            "run": 4,
+            "proof": "results/proving/raw/auth_distance_2-measured-04-proof.json",
+            "proofSha256": "b63dd3598009b00966093b8f62d7cacba04bd8a8b139f98c5e6081720663fff6",
+            "publicSignals": "results/proving/raw/auth_distance_2-measured-04-public.json",
+            "publicSignalsSha256": "a5d06ea1f2a0dd4f169875471cd210084a111a9731ea69edfbf95b460971505b"
+          },
+          {
+            "phase": "measured",
+            "run": 5,
+            "proof": "results/proving/raw/auth_distance_2-measured-05-proof.json",
+            "proofSha256": "c373f8f5ac0df9444b6c598a0276c149a12097cd6324a80ff255338650e0b9e6",
+            "publicSignals": "results/proving/raw/auth_distance_2-measured-05-public.json",
+            "publicSignalsSha256": "a5d06ea1f2a0dd4f169875471cd210084a111a9731ea69edfbf95b460971505b"
+          }
+        ]
+      },
+      {
+        "name": "N=2 all gas proof calls static-true",
+        "pass": true,
+        "detail": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ]
+      },
+      {
+        "name": "N=2 receipts successful",
+        "pass": true,
+        "detail": {
+          "deploymentSuccessful": true,
+          "validStaticTrue": true,
+          "fiveMeasuredReceiptsSuccessful": true,
+          "invalidStaticFalse": true,
+          "invalidTransactionSuccessful": true,
+          "runtimeMatchesCompiler": true,
+          "eip170Compliant": true
+        }
+      },
+      {
+        "name": "N=2 runtime matches compiler",
+        "pass": true,
+        "detail": {
+          "creation": "0x6080604052348015600e575f5ffd5b506106bc8061001c5f395ff3fe608060405234801561000f575f5ffd5b5060043610610029575f3560e01c806334baeab91461002d575b5f5ffd5b61004061003b366004610624565b610054565b604051901515815260200160405180910390f35b5f6105ac565b7f30644e72e131a029b85045b68181585d2833e84879b9709143e1f593f00000018110610089575f5f5260205ff35b50565b5f60405183815284602082015285604082015260408160608360076107d05a03fa9150816100bc575f5f5260205ff35b825160408201526020830151606082015260408360808360066107d05a03fa915050806100eb575f5f5260205ff35b5050505050565b7f0dc999de42b4a1dc68f95be2715556485ea1dda25e3095f711c0382918f1434f85527f2c8473d63c545c73e0684feb5c0db30d4289f22e5013ae3ebd9167b20a0055ed60208601525f608086018661018e87357f169320086b264c180a1f82dfc75bbd8de47419cf8ed7f8d0e3e1853c858d9dbd7f17d6151f4ffdfddec0b5b9e3fcb78c2582123eca37240bebb606aa6f486132c38461008c565b6101de60208801357f01a6884dbe4d866fdf1379d971dfc8738e0a03eccb8554b400240b98ec40d9937f04539dcf716305171487981f0b7388807bc23b9f5fae34775f2b9441801032e08461008c565b61022e60408801357f2837e1993ee4bb5e85a45d604b13bc4669239640fac785b8e03ece924caac52e7f2c6de2869b91641b0492e8238136860cf8ab702847c38e6f4dd28f6ce270dc068461008c565b61027e60608801357f1245ecdf121efa6051d4b5adac08e12c8dec00810fa3e4eecce06a10414f57ac7f26c4a5584718c92237f2290637a93fc384d414ae9e0c34dae8335ec0a3878f4f8461008c565b6102ce60808801357f1d83fef9b80a2a2444ac278a954051278449626d9545543997bfb3353a0a450a7f230f1e54032a09c2d127c8b18c45987a06098435b5d925b1444fec6f8ee7c58a8461008c565b50823581527f30644e72e131a029b85045b68181585d97816a916871ca8d3c208c16d87cfd4760208401357f30644e72e131a029b85045b68181585d97816a916871ca8d3c208c16d87cfd4703066020820152833560408201526020840135606082015260408401356080820152606084013560a08201527f19abb60a829e03832713becf8583d4ddd5dbef24843e95a1100c202cb4357ff560c08201527f068d3a0f4372a0541ed28e24a01b298f6052e4c87716d3b22a96f35f6f31dd9b60e08201527f2bbfed1d9b8791c2f1332049e56301897c6341846b267b7c8f964c5bfb6d78906101008201527f26a4774af007d9cf06d63b621af6571e68952f3048f9fadecf18cc3211d85c5c6101208201527f12800c1409fb928c2562b758d05b3d1541685927cc73dbcf7a3cb7593590d1be6101408201527f0e9a62a77ad9caeac721572246a324ed0e7b72d1a3fb84ea0af169c09532fa426101608201525f87015161018082015260205f018701516101a08201527f198e9393920d483a7260bfb731fb5d25f1aa493335a9e71297e485b7aef312c26101c08201527f1800deef121f1e76426a00665e5c4479674322d4f75edadd46debd5cd992f6ed6101e08201527f090689d0585ff075ec9e99ad690c3395bc4b313370b38ef355acdadcd122975b6102008201527f12c85ea5db8c6deb4aab71808dcb408fe3d1e7690c43d37b4ce6cc0166fa7daa610220820152843561024082015260208501356102608201527f03a6ef4db3aa90dc4fc7da7a57644673c65166a8b169dbd2c06b1794dc6ea9b56102808201527f14ed63a7578bb214f6c86d07f864f74fcad5872ae7bf9c7bfb605a0143eacdd26102a08201527f2d87864fd688057381a419792eb134c4830905543e371a3f365f3de7690c41b46102c08201527f0bf9233b83f3cbbd2e3a791a0a2536d35b86e8756973e3b39bae39f98fb0faf76102e08201526020816103008360086107d05a03fa9051169695505050505050565b60405161038081016040526105c35f84013561005a565b6105d0602084013561005a565b6105dd604084013561005a565b6105ea606084013561005a565b6105f7608084013561005a565b610604818486888a6100f2565b9050805f5260205ff35b806040810183101561061e575f5ffd5b92915050565b5f5f5f5f6101a08587031215610638575f5ffd5b610642868661060e565b935060c0850186811115610654575f5ffd5b604086019350610664878261060e565b925050856101a086011115610677575f5ffd5b5091949093509091610100019056fea2646970667358221220de17d99674ae8dcba07cf5d55f9be03c5ae05685632c8a19e13f1018e05252d164736f6c63430008210033",
+          "creationBytes": 1752,
+          "creationSha256": "79fdc7ca2b2f8ea8ea0548759ce53fe9a259e050558992d7f58d6535c69f9c3f",
+          "compiledRuntime": "0x608060405234801561000f575f5ffd5b5060043610610029575f3560e01c806334baeab91461002d575b5f5ffd5b61004061003b366004610624565b610054565b604051901515815260200160405180910390f35b5f6105ac565b7f30644e72e131a029b85045b68181585d2833e84879b9709143e1f593f00000018110610089575f5f5260205ff35b50565b5f60405183815284602082015285604082015260408160608360076107d05a03fa9150816100bc575f5f5260205ff35b825160408201526020830151606082015260408360808360066107d05a03fa915050806100eb575f5f5260205ff35b5050505050565b7f0dc999de42b4a1dc68f95be2715556485ea1dda25e3095f711c0382918f1434f85527f2c8473d63c545c73e0684feb5c0db30d4289f22e5013ae3ebd9167b20a0055ed60208601525f608086018661018e87357f169320086b264c180a1f82dfc75bbd8de47419cf8ed7f8d0e3e1853c858d9dbd7f17d6151f4ffdfddec0b5b9e3fcb78c2582123eca37240bebb606aa6f486132c38461008c565b6101de60208801357f01a6884dbe4d866fdf1379d971dfc8738e0a03eccb8554b400240b98ec40d9937f04539dcf716305171487981f0b7388807bc23b9f5fae34775f2b9441801032e08461008c565b61022e60408801357f2837e1993ee4bb5e85a45d604b13bc4669239640fac785b8e03ece924caac52e7f2c6de2869b91641b0492e8238136860cf8ab702847c38e6f4dd28f6ce270dc068461008c565b61027e60608801357f1245ecdf121efa6051d4b5adac08e12c8dec00810fa3e4eecce06a10414f57ac7f26c4a5584718c92237f2290637a93fc384d414ae9e0c34dae8335ec0a3878f4f8461008c565b6102ce60808801357f1d83fef9b80a2a2444ac278a954051278449626d9545543997bfb3353a0a450a7f230f1e54032a09c2d127c8b18c45987a06098435b5d925b1444fec6f8ee7c58a8461008c565b50823581527f30644e72e131a029b85045b68181585d97816a916871ca8d3c208c16d87cfd4760208401357f30644e72e131a029b85045b68181585d97816a916871ca8d3c208c16d87cfd4703066020820152833560408201526020840135606082015260408401356080820152606084013560a08201527f19abb60a829e03832713becf8583d4ddd5dbef24843e95a1100c202cb4357ff560c08201527f068d3a0f4372a0541ed28e24a01b298f6052e4c87716d3b22a96f35f6f31dd9b60e08201527f2bbfed1d9b8791c2f1332049e56301897c6341846b267b7c8f964c5bfb6d78906101008201527f26a4774af007d9cf06d63b621af6571e68952f3048f9fadecf18cc3211d85c5c6101208201527f12800c1409fb928c2562b758d05b3d1541685927cc73dbcf7a3cb7593590d1be6101408201527f0e9a62a77ad9caeac721572246a324ed0e7b72d1a3fb84ea0af169c09532fa426101608201525f87015161018082015260205f018701516101a08201527f198e9393920d483a7260bfb731fb5d25f1aa493335a9e71297e485b7aef312c26101c08201527f1800deef121f1e76426a00665e5c4479674322d4f75edadd46debd5cd992f6ed6101e08201527f090689d0585ff075ec9e99ad690c3395bc4b313370b38ef355acdadcd122975b6102008201527f12c85ea5db8c6deb4aab71808dcb408fe3d1e7690c43d37b4ce6cc0166fa7daa610220820152843561024082015260208501356102608201527f03a6ef4db3aa90dc4fc7da7a57644673c65166a8b169dbd2c06b1794dc6ea9b56102808201527f14ed63a7578bb214f6c86d07f864f74fcad5872ae7bf9c7bfb605a0143eacdd26102a08201527f2d87864fd688057381a419792eb134c4830905543e371a3f365f3de7690c41b46102c08201527f0bf9233b83f3cbbd2e3a791a0a2536d35b86e8756973e3b39bae39f98fb0faf76102e08201526020816103008360086107d05a03fa9051169695505050505050565b60405161038081016040526105c35f84013561005a565b6105d0602084013561005a565b6105dd604084013561005a565b6105ea606084013561005a565b6105f7608084013561005a565b610604818486888a6100f2565b9050805f5260205ff35b806040810183101561061e575f5ffd5b92915050565b5f5f5f5f6101a08587031215610638575f5ffd5b610642868661060e565b935060c0850186811115610654575f5ffd5b604086019350610664878261060e565b925050856101a086011115610677575f5ffd5b5091949093509091610100019056fea2646970667358221220de17d99674ae8dcba07cf5d55f9be03c5ae05685632c8a19e13f1018e05252d164736f6c63430008210033",
+          "compiledRuntimeBytes": 1724,
+          "compiledRuntimeSha256": "af447dde107962e3eff6255f98f8cc6ef7f7e18a315886571570c4aa9188942c",
+          "onchainRuntime": "0x608060405234801561000f575f5ffd5b5060043610610029575f3560e01c806334baeab91461002d575b5f5ffd5b61004061003b366004610624565b610054565b604051901515815260200160405180910390f35b5f6105ac565b7f30644e72e131a029b85045b68181585d2833e84879b9709143e1f593f00000018110610089575f5f5260205ff35b50565b5f60405183815284602082015285604082015260408160608360076107d05a03fa9150816100bc575f5f5260205ff35b825160408201526020830151606082015260408360808360066107d05a03fa915050806100eb575f5f5260205ff35b5050505050565b7f0dc999de42b4a1dc68f95be2715556485ea1dda25e3095f711c0382918f1434f85527f2c8473d63c545c73e0684feb5c0db30d4289f22e5013ae3ebd9167b20a0055ed60208601525f608086018661018e87357f169320086b264c180a1f82dfc75bbd8de47419cf8ed7f8d0e3e1853c858d9dbd7f17d6151f4ffdfddec0b5b9e3fcb78c2582123eca37240bebb606aa6f486132c38461008c565b6101de60208801357f01a6884dbe4d866fdf1379d971dfc8738e0a03eccb8554b400240b98ec40d9937f04539dcf716305171487981f0b7388807bc23b9f5fae34775f2b9441801032e08461008c565b61022e60408801357f2837e1993ee4bb5e85a45d604b13bc4669239640fac785b8e03ece924caac52e7f2c6de2869b91641b0492e8238136860cf8ab702847c38e6f4dd28f6ce270dc068461008c565b61027e60608801357f1245ecdf121efa6051d4b5adac08e12c8dec00810fa3e4eecce06a10414f57ac7f26c4a5584718c92237f2290637a93fc384d414ae9e0c34dae8335ec0a3878f4f8461008c565b6102ce60808801357f1d83fef9b80a2a2444ac278a954051278449626d9545543997bfb3353a0a450a7f230f1e54032a09c2d127c8b18c45987a06098435b5d925b1444fec6f8ee7c58a8461008c565b50823581527f30644e72e131a029b85045b68181585d97816a916871ca8d3c208c16d87cfd4760208401357f30644e72e131a029b85045b68181585d97816a916871ca8d3c208c16d87cfd4703066020820152833560408201526020840135606082015260408401356080820152606084013560a08201527f19abb60a829e03832713becf8583d4ddd5dbef24843e95a1100c202cb4357ff560c08201527f068d3a0f4372a0541ed28e24a01b298f6052e4c87716d3b22a96f35f6f31dd9b60e08201527f2bbfed1d9b8791c2f1332049e56301897c6341846b267b7c8f964c5bfb6d78906101008201527f26a4774af007d9cf06d63b621af6571e68952f3048f9fadecf18cc3211d85c5c6101208201527f12800c1409fb928c2562b758d05b3d1541685927cc73dbcf7a3cb7593590d1be6101408201527f0e9a62a77ad9caeac721572246a324ed0e7b72d1a3fb84ea0af169c09532fa426101608201525f87015161018082015260205f018701516101a08201527f198e9393920d483a7260bfb731fb5d25f1aa493335a9e71297e485b7aef312c26101c08201527f1800deef121f1e76426a00665e5c4479674322d4f75edadd46debd5cd992f6ed6101e08201527f090689d0585ff075ec9e99ad690c3395bc4b313370b38ef355acdadcd122975b6102008201527f12c85ea5db8c6deb4aab71808dcb408fe3d1e7690c43d37b4ce6cc0166fa7daa610220820152843561024082015260208501356102608201527f03a6ef4db3aa90dc4fc7da7a57644673c65166a8b169dbd2c06b1794dc6ea9b56102808201527f14ed63a7578bb214f6c86d07f864f74fcad5872ae7bf9c7bfb605a0143eacdd26102a08201527f2d87864fd688057381a419792eb134c4830905543e371a3f365f3de7690c41b46102c08201527f0bf9233b83f3cbbd2e3a791a0a2536d35b86e8756973e3b39bae39f98fb0faf76102e08201526020816103008360086107d05a03fa9051169695505050505050565b60405161038081016040526105c35f84013561005a565b6105d0602084013561005a565b6105dd604084013561005a565b6105ea606084013561005a565b6105f7608084013561005a565b610604818486888a6100f2565b9050805f5260205ff35b806040810183101561061e575f5ffd5b92915050565b5f5f5f5f6101a08587031215610638575f5ffd5b610642868661060e565b935060c0850186811115610654575f5ffd5b604086019350610664878261060e565b925050856101a086011115610677575f5ffd5b5091949093509091610100019056fea2646970667358221220de17d99674ae8dcba07cf5d55f9be03c5ae05685632c8a19e13f1018e05252d164736f6c63430008210033",
+          "onchainRuntimeBytes": 1724,
+          "onchainRuntimeSha256": "af447dde107962e3eff6255f98f8cc6ef7f7e18a315886571570c4aa9188942c",
+          "onchainMatchesCompiled": true,
+          "eip170LimitBytes": 24576,
+          "eip170Compliant": true
+        }
+      },
+      {
+        "name": "N=2 EIP-170",
+        "pass": true,
+        "detail": {
+          "runtimeBytes": 1724,
+          "limit": 24576
+        }
+      },
+      {
+        "name": "N=2 raw evidence hash current",
+        "pass": true,
+        "detail": "41830bfa3dca03b1b1760fe1e3b8888799b31c7640e7694307545f4e708dc0a3"
+      },
+      {
+        "name": "N=4 entry parameters",
+        "pass": true,
+        "detail": {
+          "dimension": 4,
+          "bits": 16,
+          "qSpan": 65535,
+          "packSize": 15,
+          "blocks": 1,
+          "paddedBlocks": 2,
+          "distanceBits": 48
+        }
+      },
+      {
+        "name": "N=4 setup artifact present",
+        "pass": true,
+        "detail": [
+          2,
+          4,
+          8,
+          16,
+          32,
+          64,
+          128
+        ]
+      },
+      {
+        "name": "N=4 zkey hash current",
+        "pass": true,
+        "detail": "34f5fcb23a1137ce96ddec06b9b7ad4dfdaf5dff5d40c8c6cf2fe44328ebc008"
+      },
+      {
+        "name": "N=4 verification key hash current",
+        "pass": true,
+        "detail": "7c564cf8ebb4da5020c5ffc43b6c21f7b720609d5f59770d862a64c2ceaefb84"
+      },
+      {
+        "name": "N=4 matching verifier hash current",
+        "pass": true,
+        "detail": "889720c4c1d0613fa6fe60c525f8fb66c62b507025622885c6a3f7fdfd79348d"
+      },
+      {
+        "name": "N=4 proof protocol",
+        "pass": true,
+        "detail": {
+          "warmups": 1,
+          "repetitions": 10
+        }
+      },
+      {
+        "name": "N=4 five public inputs",
+        "pass": true,
+        "detail": 5
+      },
+      {
+        "name": "N=4 ten end-to-end proving samples",
+        "pass": true,
+        "detail": {
+          "samples": 10,
+          "definition": "single cold child from immediately before wtns.calculate through Groth16 proof and proof/public JSON writes",
+          "endToEndMs": {
+            "samples": 10,
+            "values": [
+              2356.26,
+              2380.89,
+              2468.24,
+              2405.24,
+              2405.03,
+              2356.64,
+              2424.65,
+              2346.2,
+              2338.1,
+              2351.08
+            ],
+            "mean": 2383.23,
+            "sampleStandardDeviation": 41.88,
+            "median": 2368.76
+          },
+          "witnessSegmentMs": {
+            "samples": 10,
+            "values": [
+              54.97,
+              56.69,
+              59,
+              59.42,
+              69.38,
+              56.69,
+              55.12,
+              53.77,
+              55.46,
+              55.22
+            ],
+            "mean": 57.57,
+            "sampleStandardDeviation": 4.52,
+            "median": 56.08
+          },
+          "proveAndWriteSegmentMs": {
+            "samples": 10,
+            "values": [
+              2300.67,
+              2322.07,
+              2407.06,
+              2343.55,
+              2333.43,
+              2297.74,
+              2368.92,
+              2290.38,
+              2282.02,
+              2295.23
+            ],
+            "mean": 2324.11,
+            "sampleStandardDeviation": 39.92,
+            "median": 2311.37
+          },
+          "nodeProcessMaxRssMiB": {
+            "samples": 10,
+            "values": [
+              593.32,
+              597.63,
+              595.13,
+              593.48,
+              595.47,
+              597.39,
+              594.85,
+              594.15,
+              596.63,
+              594.11
+            ],
+            "mean": 595.22,
+            "sampleStandardDeviation": 1.55,
+            "median": 594.99
+          },
+          "externalGnuTimeMaxRssMiB": {
+            "available": true,
+            "source": "GNU /usr/bin/time -v Maximum resident set size; never mixed with Node maxRSS",
+            "samples": 10,
+            "values": [
+              593.32,
+              597.63,
+              595.13,
+              593.48,
+              595.47,
+              597.39,
+              595.16,
+              594.15,
+              596.63,
+              594.11
+            ],
+            "mean": 595.25,
+            "sampleStandardDeviation": 1.55,
+            "median": 595.14
+          }
+        }
+      },
+      {
+        "name": "N=4 proving distributions complete",
+        "pass": true,
+        "detail": {
+          "samples": 10,
+          "values": [
+            2356.26,
+            2380.89,
+            2468.24,
+            2405.24,
+            2405.03,
+            2356.64,
+            2424.65,
+            2346.2,
+            2338.1,
+            2351.08
+          ],
+          "mean": 2383.23,
+          "sampleStandardDeviation": 41.88,
+          "median": 2368.76
+        }
+      },
+      {
+        "name": "N=4 GNU time RSS captured",
+        "pass": true,
+        "detail": {
+          "available": true,
+          "source": "GNU /usr/bin/time -v Maximum resident set size; never mixed with Node maxRSS",
+          "samples": 10,
+          "values": [
+            593.32,
+            597.63,
+            595.13,
+            593.48,
+            595.47,
+            597.39,
+            595.16,
+            594.15,
+            596.63,
+            594.11
+          ],
+          "mean": 595.25,
+          "sampleStandardDeviation": 1.55,
+          "median": 595.14
+        }
+      },
+      {
+        "name": "N=4 ten native proof verifications",
+        "pass": true,
+        "detail": {
+          "elapsedMs": {
+            "samples": 10,
+            "values": [
+              1627.82,
+              1667.79,
+              1649.13,
+              1672.39,
+              1638.04,
+              1840.73,
+              1612.62,
+              1643.63,
+              1630.69,
+              1612.27
+            ],
+            "mean": 1659.51,
+            "sampleStandardDeviation": 66.8,
+            "median": 1640.84
+          },
+          "allVerified": true
+        }
+      },
+      {
+        "name": "N=4 all native proof verifications pass",
+        "pass": true,
+        "detail": {
+          "elapsedMs": {
+            "samples": 10,
+            "values": [
+              1627.82,
+              1667.79,
+              1649.13,
+              1672.39,
+              1638.04,
+              1840.73,
+              1612.62,
+              1643.63,
+              1630.69,
+              1612.27
+            ],
+            "mean": 1659.51,
+            "sampleStandardDeviation": 66.8,
+            "median": 1640.84
+          },
+          "allVerified": true
+        }
+      },
+      {
+        "name": "N=4 proving zkey matches setup",
+        "pass": true,
+        "detail": "34f5fcb23a1137ce96ddec06b9b7ad4dfdaf5dff5d40c8c6cf2fe44328ebc008"
+      },
+      {
+        "name": "N=4 bare verifier gas complete",
+        "pass": true,
+        "detail": [
+          242282,
+          242282,
+          242270,
+          242270,
+          242258
+        ]
+      },
+      {
+        "name": "N=4 valid public inputs return true",
+        "pass": true,
+        "detail": true
+      },
+      {
+        "name": "N=4 invalid public input returns false",
+        "pass": true,
+        "detail": false
+      },
+      {
+        "name": "N=4 raw receipt protocol",
+        "pass": true,
+        "detail": {
+          "warmups": 1,
+          "measured": 5
+        }
+      },
+      {
+        "name": "N=4 gas uses independent proofs",
+        "pass": true,
+        "detail": [
+          {
+            "phase": "measured",
+            "run": 1,
+            "proof": "results/proving/raw/auth_distance_4-measured-01-proof.json",
+            "proofSha256": "bdda29f9b0f326128bd606edab4c23783b132fbd07b9abe0cbfd1b47314a3ef9",
+            "publicSignals": "results/proving/raw/auth_distance_4-measured-01-public.json",
+            "publicSignalsSha256": "50d448f5e699ca422c7da7b6ad29779d6ce7cf86571a3fcb7bd2b5a3f9e83833"
+          },
+          {
+            "phase": "measured",
+            "run": 2,
+            "proof": "results/proving/raw/auth_distance_4-measured-02-proof.json",
+            "proofSha256": "78c6526e4df4826bcdf9e723cb4ffd1c06a04067d6f3ea84f9281d36644ba441",
+            "publicSignals": "results/proving/raw/auth_distance_4-measured-02-public.json",
+            "publicSignalsSha256": "50d448f5e699ca422c7da7b6ad29779d6ce7cf86571a3fcb7bd2b5a3f9e83833"
+          },
+          {
+            "phase": "measured",
+            "run": 3,
+            "proof": "results/proving/raw/auth_distance_4-measured-03-proof.json",
+            "proofSha256": "8484606fcb24acc3c7c75f2292a68bc463aec5f9f743ec7567c8b874eb89d370",
+            "publicSignals": "results/proving/raw/auth_distance_4-measured-03-public.json",
+            "publicSignalsSha256": "50d448f5e699ca422c7da7b6ad29779d6ce7cf86571a3fcb7bd2b5a3f9e83833"
+          },
+          {
+            "phase": "measured",
+            "run": 4,
+            "proof": "results/proving/raw/auth_distance_4-measured-04-proof.json",
+            "proofSha256": "45af8c09b45bfadfdc758e9d3984836f9645ba02343a144b355e6615b52a9878",
+            "publicSignals": "results/proving/raw/auth_distance_4-measured-04-public.json",
+            "publicSignalsSha256": "50d448f5e699ca422c7da7b6ad29779d6ce7cf86571a3fcb7bd2b5a3f9e83833"
+          },
+          {
+            "phase": "measured",
+            "run": 5,
+            "proof": "results/proving/raw/auth_distance_4-measured-05-proof.json",
+            "proofSha256": "d591e92a77e684606ef7dbd8214baa0b1716cbf73cbfa1e4217b061849180c59",
+            "publicSignals": "results/proving/raw/auth_distance_4-measured-05-public.json",
+            "publicSignalsSha256": "50d448f5e699ca422c7da7b6ad29779d6ce7cf86571a3fcb7bd2b5a3f9e83833"
+          }
+        ]
+      },
+      {
+        "name": "N=4 all gas proof calls static-true",
+        "pass": true,
+        "detail": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ]
+      },
+      {
+        "name": "N=4 receipts successful",
+        "pass": true,
+        "detail": {
+          "deploymentSuccessful": true,
+          "validStaticTrue": true,
+          "fiveMeasuredReceiptsSuccessful": true,
+          "invalidStaticFalse": true,
+          "invalidTransactionSuccessful": true,
+          "runtimeMatchesCompiler": true,
+          "eip170Compliant": true
+        }
+      },
+      {
+        "name": "N=4 runtime matches compiler",
+        "pass": true,
+        "detail": {
+          "creation": "0x6080604052348015600e575f5ffd5b506106bb8061001c5f395ff3fe608060405234801561000f575f5ffd5b5060043610610029575f3560e01c806334baeab91461002d575b5f5ffd5b61004061003b366004610623565b610054565b604051901515815260200160405180910390f35b5f6105ab565b7f30644e72e131a029b85045b68181585d2833e84879b9709143e1f593f00000018110610089575f5f5260205ff35b50565b5f60405183815284602082015285604082015260408160608360076107d05a03fa9150816100bc575f5f5260205ff35b825160408201526020830151606082015260408360808360066107d05a03fa915050806100eb575f5f5260205ff35b5050505050565b7f083f662dfbef12277fabe7e578710e93d6cbbeca152e8ca1dcb88f0e4b6560f285527f29a79d7f4ddba117148bda786b45c5dc981bedbdad5dde9f70050af832c54e8d60208601525f608086018661018e87357f2b543adad468b3ba089378913c11443e8a0511f3cf5b308dbae928a19e1cbc117f2e8e8bfd8f78a847de615259806c862719b4e7c0db10b00622eb2577d0aa46508461008c565b6101de60208801357f16e97403eef6667fc60149a4e4dc3fc339c1a5d26a464e6c5a5c6fc705971af97f088a29a10656d0886eace029cd701f9cad2bbb3703de9b44ab136c221fc584298461008c565b61022d60408801357f184c1ff36f145a4407c2d6b05c881afa54465d5329b33c88012933531c577c6e7e0603280e596d59724b4107d79187af779bb4eec97adb93d087abee7c8dae818461008c565b61027d60608801357f274f217e969bbff1c26d0cf572ea57c38da2c194177817126643c24a054c456d7f21bbfeb800d5695e985f43ef03e03ef690ea2ff1586723973d93e47e54390f8d8461008c565b6102cd60808801357f0a8a80d9b0a2b528fb4c3aaf16fb56df793a268fc3b5a01c744502c6add656467f21ca2c8a46be72c7f36b17b6dc1f834db48c0e7a0b83365340f4c58fc818a6f38461008c565b50823581527f30644e72e131a029b85045b68181585d97816a916871ca8d3c208c16d87cfd4760208401357f30644e72e131a029b85045b68181585d97816a916871ca8d3c208c16d87cfd4703066020820152833560408201526020840135606082015260408401356080820152606084013560a08201527f19abb60a829e03832713becf8583d4ddd5dbef24843e95a1100c202cb4357ff560c08201527f068d3a0f4372a0541ed28e24a01b298f6052e4c87716d3b22a96f35f6f31dd9b60e08201527f2bbfed1d9b8791c2f1332049e56301897c6341846b267b7c8f964c5bfb6d78906101008201527f26a4774af007d9cf06d63b621af6571e68952f3048f9fadecf18cc3211d85c5c6101208201527f12800c1409fb928c2562b758d05b3d1541685927cc73dbcf7a3cb7593590d1be6101408201527f0e9a62a77ad9caeac721572246a324ed0e7b72d1a3fb84ea0af169c09532fa426101608201525f87015161018082015260205f018701516101a08201527f198e9393920d483a7260bfb731fb5d25f1aa493335a9e71297e485b7aef312c26101c08201527f1800deef121f1e76426a00665e5c4479674322d4f75edadd46debd5cd992f6ed6101e08201527f090689d0585ff075ec9e99ad690c3395bc4b313370b38ef355acdadcd122975b6102008201527f12c85ea5db8c6deb4aab71808dcb408fe3d1e7690c43d37b4ce6cc0166fa7daa610220820152843561024082015260208501356102608201527f2711f904756c0b02bb7371314545d90ea61b767ac7dba3e76397a17a375312306102808201527f1f5589de9da4035d847996776123b853fcff487e42a0b7de9c0e9209bc21465b6102a08201527f01dcf92fdcc5b1f622cf52c88f3e3347e6e6a224a7f1ddc6b87b88c0ee8cd53f6102c08201527f0a14835644d08fe68b1e5c8e6501092c5dfb10e06e0feef6282875c816ab34fb6102e08201526020816103008360086107d05a03fa9051169695505050505050565b60405161038081016040526105c25f84013561005a565b6105cf602084013561005a565b6105dc604084013561005a565b6105e9606084013561005a565b6105f6608084013561005a565b610603818486888a6100f2565b9050805f5260205ff35b806040810183101561061d575f5ffd5b92915050565b5f5f5f5f6101a08587031215610637575f5ffd5b610641868661060d565b935060c0850186811115610653575f5ffd5b604086019350610663878261060d565b925050856101a086011115610676575f5ffd5b5091949093509091610100019056fea2646970667358221220ac82a6558a717df46f5dbebd3646f1e19c124774dde86b7a53f68ef9287779bf64736f6c63430008210033",
+          "creationBytes": 1751,
+          "creationSha256": "104e2fe787fceda6497b79ecdc14d85abd088de45277a86f40dcb7d31495209a",
+          "compiledRuntime": "0x608060405234801561000f575f5ffd5b5060043610610029575f3560e01c806334baeab91461002d575b5f5ffd5b61004061003b366004610623565b610054565b604051901515815260200160405180910390f35b5f6105ab565b7f30644e72e131a029b85045b68181585d2833e84879b9709143e1f593f00000018110610089575f5f5260205ff35b50565b5f60405183815284602082015285604082015260408160608360076107d05a03fa9150816100bc575f5f5260205ff35b825160408201526020830151606082015260408360808360066107d05a03fa915050806100eb575f5f5260205ff35b5050505050565b7f083f662dfbef12277fabe7e578710e93d6cbbeca152e8ca1dcb88f0e4b6560f285527f29a79d7f4ddba117148bda786b45c5dc981bedbdad5dde9f70050af832c54e8d60208601525f608086018661018e87357f2b543adad468b3ba089378913c11443e8a0511f3cf5b308dbae928a19e1cbc117f2e8e8bfd8f78a847de615259806c862719b4e7c0db10b00622eb2577d0aa46508461008c565b6101de60208801357f16e97403eef6667fc60149a4e4dc3fc339c1a5d26a464e6c5a5c6fc705971af97f088a29a10656d0886eace029cd701f9cad2bbb3703de9b44ab136c221fc584298461008c565b61022d60408801357f184c1ff36f145a4407c2d6b05c881afa54465d5329b33c88012933531c577c6e7e0603280e596d59724b4107d79187af779bb4eec97adb93d087abee7c8dae818461008c565b61027d60608801357f274f217e969bbff1c26d0cf572ea57c38da2c194177817126643c24a054c456d7f21bbfeb800d5695e985f43ef03e03ef690ea2ff1586723973d93e47e54390f8d8461008c565b6102cd60808801357f0a8a80d9b0a2b528fb4c3aaf16fb56df793a268fc3b5a01c744502c6add656467f21ca2c8a46be72c7f36b17b6dc1f834db48c0e7a0b83365340f4c58fc818a6f38461008c565b50823581527f30644e72e131a029b85045b68181585d97816a916871ca8d3c208c16d87cfd4760208401357f30644e72e131a029b85045b68181585d97816a916871ca8d3c208c16d87cfd4703066020820152833560408201526020840135606082015260408401356080820152606084013560a08201527f19abb60a829e03832713becf8583d4ddd5dbef24843e95a1100c202cb4357ff560c08201527f068d3a0f4372a0541ed28e24a01b298f6052e4c87716d3b22a96f35f6f31dd9b60e08201527f2bbfed1d9b8791c2f1332049e56301897c6341846b267b7c8f964c5bfb6d78906101008201527f26a4774af007d9cf06d63b621af6571e68952f3048f9fadecf18cc3211d85c5c6101208201527f12800c1409fb928c2562b758d05b3d1541685927cc73dbcf7a3cb7593590d1be6101408201527f0e9a62a77ad9caeac721572246a324ed0e7b72d1a3fb84ea0af169c09532fa426101608201525f87015161018082015260205f018701516101a08201527f198e9393920d483a7260bfb731fb5d25f1aa493335a9e71297e485b7aef312c26101c08201527f1800deef121f1e76426a00665e5c4479674322d4f75edadd46debd5cd992f6ed6101e08201527f090689d0585ff075ec9e99ad690c3395bc4b313370b38ef355acdadcd122975b6102008201527f12c85ea5db8c6deb4aab71808dcb408fe3d1e7690c43d37b4ce6cc0166fa7daa610220820152843561024082015260208501356102608201527f2711f904756c0b02bb7371314545d90ea61b767ac7dba3e76397a17a375312306102808201527f1f5589de9da4035d847996776123b853fcff487e42a0b7de9c0e9209bc21465b6102a08201527f01dcf92fdcc5b1f622cf52c88f3e3347e6e6a224a7f1ddc6b87b88c0ee8cd53f6102c08201527f0a14835644d08fe68b1e5c8e6501092c5dfb10e06e0feef6282875c816ab34fb6102e08201526020816103008360086107d05a03fa9051169695505050505050565b60405161038081016040526105c25f84013561005a565b6105cf602084013561005a565b6105dc604084013561005a565b6105e9606084013561005a565b6105f6608084013561005a565b610603818486888a6100f2565b9050805f5260205ff35b806040810183101561061d575f5ffd5b92915050565b5f5f5f5f6101a08587031215610637575f5ffd5b610641868661060d565b935060c0850186811115610653575f5ffd5b604086019350610663878261060d565b925050856101a086011115610676575f5ffd5b5091949093509091610100019056fea2646970667358221220ac82a6558a717df46f5dbebd3646f1e19c124774dde86b7a53f68ef9287779bf64736f6c63430008210033",
+          "compiledRuntimeBytes": 1723,
+          "compiledRuntimeSha256": "81809d7a55fb7af3e823bc69a41d18adf48f52f11df844bce857d656250fabea",
+          "onchainRuntime": "0x608060405234801561000f575f5ffd5b5060043610610029575f3560e01c806334baeab91461002d575b5f5ffd5b61004061003b366004610623565b610054565b604051901515815260200160405180910390f35b5f6105ab565b7f30644e72e131a029b85045b68181585d2833e84879b9709143e1f593f00000018110610089575f5f5260205ff35b50565b5f60405183815284602082015285604082015260408160608360076107d05a03fa9150816100bc575f5f5260205ff35b825160408201526020830151606082015260408360808360066107d05a03fa915050806100eb575f5f5260205ff35b5050505050565b7f083f662dfbef12277fabe7e578710e93d6cbbeca152e8ca1dcb88f0e4b6560f285527f29a79d7f4ddba117148bda786b45c5dc981bedbdad5dde9f70050af832c54e8d60208601525f608086018661018e87357f2b543adad468b3ba089378913c11443e8a0511f3cf5b308dbae928a19e1cbc117f2e8e8bfd8f78a847de615259806c862719b4e7c0db10b00622eb2577d0aa46508461008c565b6101de60208801357f16e97403eef6667fc60149a4e4dc3fc339c1a5d26a464e6c5a5c6fc705971af97f088a29a10656d0886eace029cd701f9cad2bbb3703de9b44ab136c221fc584298461008c565b61022d60408801357f184c1ff36f145a4407c2d6b05c881afa54465d5329b33c88012933531c577c6e7e0603280e596d59724b4107d79187af779bb4eec97adb93d087abee7c8dae818461008c565b61027d60608801357f274f217e969bbff1c26d0cf572ea57c38da2c194177817126643c24a054c456d7f21bbfeb800d5695e985f43ef03e03ef690ea2ff1586723973d93e47e54390f8d8461008c565b6102cd60808801357f0a8a80d9b0a2b528fb4c3aaf16fb56df793a268fc3b5a01c744502c6add656467f21ca2c8a46be72c7f36b17b6dc1f834db48c0e7a0b83365340f4c58fc818a6f38461008c565b50823581527f30644e72e131a029b85045b68181585d97816a916871ca8d3c208c16d87cfd4760208401357f30644e72e131a029b85045b68181585d97816a916871ca8d3c208c16d87cfd4703066020820152833560408201526020840135606082015260408401356080820152606084013560a08201527f19abb60a829e03832713becf8583d4ddd5dbef24843e95a1100c202cb4357ff560c08201527f068d3a0f4372a0541ed28e24a01b298f6052e4c87716d3b22a96f35f6f31dd9b60e08201527f2bbfed1d9b8791c2f1332049e56301897c6341846b267b7c8f964c5bfb6d78906101008201527f26a4774af007d9cf06d63b621af6571e68952f3048f9fadecf18cc3211d85c5c6101208201527f12800c1409fb928c2562b758d05b3d1541685927cc73dbcf7a3cb7593590d1be6101408201527f0e9a62a77ad9caeac721572246a324ed0e7b72d1a3fb84ea0af169c09532fa426101608201525f87015161018082015260205f018701516101a08201527f198e9393920d483a7260bfb731fb5d25f1aa493335a9e71297e485b7aef312c26101c08201527f1800deef121f1e76426a00665e5c4479674322d4f75edadd46debd5cd992f6ed6101e08201527f090689d0585ff075ec9e99ad690c3395bc4b313370b38ef355acdadcd122975b6102008201527f12c85ea5db8c6deb4aab71808dcb408fe3d1e7690c43d37b4ce6cc0166fa7daa610220820152843561024082015260208501356102608201527f2711f904756c0b02bb7371314545d90ea61b767ac7dba3e76397a17a375312306102808201527f1f5589de9da4035d847996776123b853fcff487e42a0b7de9c0e9209bc21465b6102a08201527f01dcf92fdcc5b1f622cf52c88f3e3347e6e6a224a7f1ddc6b87b88c0ee8cd53f6102c08201527f0a14835644d08fe68b1e5c8e6501092c5dfb10e06e0feef6282875c816ab34fb6102e08201526020816103008360086107d05a03fa9051169695505050505050565b60405161038081016040526105c25f84013561005a565b6105cf602084013561005a565b6105dc604084013561005a565b6105e9606084013561005a565b6105f6608084013561005a565b610603818486888a6100f2565b9050805f5260205ff35b806040810183101561061d575f5ffd5b92915050565b5f5f5f5f6101a08587031215610637575f5ffd5b610641868661060d565b935060c0850186811115610653575f5ffd5b604086019350610663878261060d565b925050856101a086011115610676575f5ffd5b5091949093509091610100019056fea2646970667358221220ac82a6558a717df46f5dbebd3646f1e19c124774dde86b7a53f68ef9287779bf64736f6c63430008210033",
+          "onchainRuntimeBytes": 1723,
+          "onchainRuntimeSha256": "81809d7a55fb7af3e823bc69a41d18adf48f52f11df844bce857d656250fabea",
+          "onchainMatchesCompiled": true,
+          "eip170LimitBytes": 24576,
+          "eip170Compliant": true
+        }
+      },
+      {
+        "name": "N=4 EIP-170",
+        "pass": true,
+        "detail": {
+          "runtimeBytes": 1723,
+          "limit": 24576
+        }
+      },
+      {
+        "name": "N=4 raw evidence hash current",
+        "pass": true,
+        "detail": "36dcddd88c9706cafc77dcb6f07ebbd38d03a866f4e94bfcc9c325c207bcc797"
+      },
+      {
+        "name": "N=8 entry parameters",
+        "pass": true,
+        "detail": {
+          "dimension": 8,
+          "bits": 16,
+          "qSpan": 65535,
+          "packSize": 15,
+          "blocks": 1,
+          "paddedBlocks": 2,
+          "distanceBits": 48
+        }
+      },
+      {
+        "name": "N=8 setup artifact present",
+        "pass": true,
+        "detail": [
+          2,
+          4,
+          8,
+          16,
+          32,
+          64,
+          128
+        ]
+      },
+      {
+        "name": "N=8 zkey hash current",
+        "pass": true,
+        "detail": "4933459a05caa5583609f9f9de03ec7c24bd300b7464e0c1ca49c85201ba5091"
+      },
+      {
+        "name": "N=8 verification key hash current",
+        "pass": true,
+        "detail": "e4df65d651998bbfdee4d9113a74fc9b0688384f913d8e11df6b2018e277a46e"
+      },
+      {
+        "name": "N=8 matching verifier hash current",
+        "pass": true,
+        "detail": "7106abb90b9e630a36e8893123908f709e1b5f81b1d1f53cf060c2d28cb09247"
+      },
+      {
+        "name": "N=8 proof protocol",
+        "pass": true,
+        "detail": {
+          "warmups": 1,
+          "repetitions": 10
+        }
+      },
+      {
+        "name": "N=8 five public inputs",
+        "pass": true,
+        "detail": 5
+      },
+      {
+        "name": "N=8 ten end-to-end proving samples",
+        "pass": true,
+        "detail": {
+          "samples": 10,
+          "definition": "single cold child from immediately before wtns.calculate through Groth16 proof and proof/public JSON writes",
+          "endToEndMs": {
+            "samples": 10,
+            "values": [
+              2347.8,
+              2343.73,
+              2394.24,
+              2397.14,
+              2334.21,
+              2379.56,
+              2381.65,
+              2389.8,
+              2369.2,
+              2398.43
+            ],
+            "mean": 2373.58,
+            "sampleStandardDeviation": 23.78,
+            "median": 2380.61
+          },
+          "witnessSegmentMs": {
+            "samples": 10,
+            "values": [
+              56.05,
+              55.87,
+              54.61,
+              70.1,
+              55.21,
+              55.25,
+              56.62,
+              56.09,
+              55.99,
+              56.72
+            ],
+            "mean": 57.25,
+            "sampleStandardDeviation": 4.56,
+            "median": 56.02
+          },
+          "proveAndWriteSegmentMs": {
+            "samples": 10,
+            "values": [
+              2291.13,
+              2287.25,
+              2339.04,
+              2326.14,
+              2278.36,
+              2323.72,
+              2324.43,
+              2333.02,
+              2312.6,
+              2341.04
+            ],
+            "mean": 2315.67,
+            "sampleStandardDeviation": 22.49,
+            "median": 2324.07
+          },
+          "nodeProcessMaxRssMiB": {
+            "samples": 10,
+            "values": [
+              598.93,
+              599.59,
+              600.56,
+              601.07,
+              603.77,
+              603.67,
+              599.42,
+              600.64,
+              600.99,
+              599.96
+            ],
+            "mean": 600.86,
+            "sampleStandardDeviation": 1.66,
+            "median": 600.6
+          },
+          "externalGnuTimeMaxRssMiB": {
+            "available": true,
+            "source": "GNU /usr/bin/time -v Maximum resident set size; never mixed with Node maxRSS",
+            "samples": 10,
+            "values": [
+              598.93,
+              599.59,
+              600.56,
+              601.07,
+              603.77,
+              603.67,
+              599.42,
+              600.96,
+              600.99,
+              599.96
+            ],
+            "mean": 600.89,
+            "sampleStandardDeviation": 1.66,
+            "median": 600.76
+          }
+        }
+      },
+      {
+        "name": "N=8 proving distributions complete",
+        "pass": true,
+        "detail": {
+          "samples": 10,
+          "values": [
+            2347.8,
+            2343.73,
+            2394.24,
+            2397.14,
+            2334.21,
+            2379.56,
+            2381.65,
+            2389.8,
+            2369.2,
+            2398.43
+          ],
+          "mean": 2373.58,
+          "sampleStandardDeviation": 23.78,
+          "median": 2380.61
+        }
+      },
+      {
+        "name": "N=8 GNU time RSS captured",
+        "pass": true,
+        "detail": {
+          "available": true,
+          "source": "GNU /usr/bin/time -v Maximum resident set size; never mixed with Node maxRSS",
+          "samples": 10,
+          "values": [
+            598.93,
+            599.59,
+            600.56,
+            601.07,
+            603.77,
+            603.67,
+            599.42,
+            600.96,
+            600.99,
+            599.96
+          ],
+          "mean": 600.89,
+          "sampleStandardDeviation": 1.66,
+          "median": 600.76
+        }
+      },
+      {
+        "name": "N=8 ten native proof verifications",
+        "pass": true,
+        "detail": {
+          "elapsedMs": {
+            "samples": 10,
+            "values": [
+              1632.53,
+              1651.32,
+              1610.28,
+              1618.22,
+              1638.38,
+              1623.03,
+              1631.29,
+              1615.08,
+              1599.51,
+              1613.45
+            ],
+            "mean": 1623.31,
+            "sampleStandardDeviation": 15.23,
+            "median": 1620.63
+          },
+          "allVerified": true
+        }
+      },
+      {
+        "name": "N=8 all native proof verifications pass",
+        "pass": true,
+        "detail": {
+          "elapsedMs": {
+            "samples": 10,
+            "values": [
+              1632.53,
+              1651.32,
+              1610.28,
+              1618.22,
+              1638.38,
+              1623.03,
+              1631.29,
+              1615.08,
+              1599.51,
+              1613.45
+            ],
+            "mean": 1623.31,
+            "sampleStandardDeviation": 15.23,
+            "median": 1620.63
+          },
+          "allVerified": true
+        }
+      },
+      {
+        "name": "N=8 proving zkey matches setup",
+        "pass": true,
+        "detail": "4933459a05caa5583609f9f9de03ec7c24bd300b7464e0c1ca49c85201ba5091"
+      },
+      {
+        "name": "N=8 bare verifier gas complete",
+        "pass": true,
+        "detail": [
+          242258,
+          242270,
+          242282,
+          242258,
+          242270
+        ]
+      },
+      {
+        "name": "N=8 valid public inputs return true",
+        "pass": true,
+        "detail": true
+      },
+      {
+        "name": "N=8 invalid public input returns false",
+        "pass": true,
+        "detail": false
+      },
+      {
+        "name": "N=8 raw receipt protocol",
+        "pass": true,
+        "detail": {
+          "warmups": 1,
+          "measured": 5
+        }
+      },
+      {
+        "name": "N=8 gas uses independent proofs",
+        "pass": true,
+        "detail": [
+          {
+            "phase": "measured",
+            "run": 1,
+            "proof": "results/proving/raw/auth_distance_8-measured-01-proof.json",
+            "proofSha256": "d16a285ece361f3e132436f3c2873e217d95b2cbf4f92f3ca8f183b2c5f85a57",
+            "publicSignals": "results/proving/raw/auth_distance_8-measured-01-public.json",
+            "publicSignalsSha256": "ad3fb072ee200b9673c74b51a15b0d39ac366d5893094856a9b4931db40f2347"
+          },
+          {
+            "phase": "measured",
+            "run": 2,
+            "proof": "results/proving/raw/auth_distance_8-measured-02-proof.json",
+            "proofSha256": "9a091162a9a6026e021f09610f60422f8b2486db2aee4e0db9190cdc1f610ce2",
+            "publicSignals": "results/proving/raw/auth_distance_8-measured-02-public.json",
+            "publicSignalsSha256": "ad3fb072ee200b9673c74b51a15b0d39ac366d5893094856a9b4931db40f2347"
+          },
+          {
+            "phase": "measured",
+            "run": 3,
+            "proof": "results/proving/raw/auth_distance_8-measured-03-proof.json",
+            "proofSha256": "111bd617daf5920a151439994d95efb025d3f9c0c703ba2a9033b7cf2b82e2d2",
+            "publicSignals": "results/proving/raw/auth_distance_8-measured-03-public.json",
+            "publicSignalsSha256": "ad3fb072ee200b9673c74b51a15b0d39ac366d5893094856a9b4931db40f2347"
+          },
+          {
+            "phase": "measured",
+            "run": 4,
+            "proof": "results/proving/raw/auth_distance_8-measured-04-proof.json",
+            "proofSha256": "d3a93f769ce88416a7b01dfb000c6b96261c113528621aa6405cb9b82096f506",
+            "publicSignals": "results/proving/raw/auth_distance_8-measured-04-public.json",
+            "publicSignalsSha256": "ad3fb072ee200b9673c74b51a15b0d39ac366d5893094856a9b4931db40f2347"
+          },
+          {
+            "phase": "measured",
+            "run": 5,
+            "proof": "results/proving/raw/auth_distance_8-measured-05-proof.json",
+            "proofSha256": "98b8f136f10c8455c2543abf628158e17722007ab2e7f67e7c87223ad0258ef2",
+            "publicSignals": "results/proving/raw/auth_distance_8-measured-05-public.json",
+            "publicSignalsSha256": "ad3fb072ee200b9673c74b51a15b0d39ac366d5893094856a9b4931db40f2347"
+          }
+        ]
+      },
+      {
+        "name": "N=8 all gas proof calls static-true",
+        "pass": true,
+        "detail": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ]
+      },
+      {
+        "name": "N=8 receipts successful",
+        "pass": true,
+        "detail": {
+          "deploymentSuccessful": true,
+          "validStaticTrue": true,
+          "fiveMeasuredReceiptsSuccessful": true,
+          "invalidStaticFalse": true,
+          "invalidTransactionSuccessful": true,
+          "runtimeMatchesCompiler": true,
+          "eip170Compliant": true
+        }
+      },
+      {
+        "name": "N=8 runtime matches compiler",
+        "pass": true,
+        "detail": {
+          "creation": "0x6080604052348015600e575f5ffd5b506106bc8061001c5f395ff3fe608060405234801561000f575f5ffd5b5060043610610029575f3560e01c806334baeab91461002d575b5f5ffd5b61004061003b366004610624565b610054565b604051901515815260200160405180910390f35b5f6105ac565b7f30644e72e131a029b85045b68181585d2833e84879b9709143e1f593f00000018110610089575f5f5260205ff35b50565b5f60405183815284602082015285604082015260408160608360076107d05a03fa9150816100bc575f5f5260205ff35b825160408201526020830151606082015260408360808360066107d05a03fa915050806100eb575f5f5260205ff35b5050505050565b7f2f76720fa23df0451f41f9d9761b13855bd3bb110adc8839a5b3c932c449638c85527f158701d6e811c95e1237b92c5bd6a0f2f4a403c36d9a9c63ed30ff7db959e42660208601525f608086018661018e87357f0a2b7685a765a33c664c87dcfef8bedd04a288691470a9fda05cf28bd256283d7f293e15a666846acb035d625c3eccd0a6c336a41c39fefb3db77ccb432fd03b068461008c565b6101de60208801357f246773549e9f1a12a909e46e31107bef29e5befd06b55c679e3ac849af93068e7f0ea65e35c7a40bce9ccc81dc954406d76e3f75579e20ec76e2e9a001c2e41e318461008c565b61022e60408801357f0def613be3c694e2d1050e32dcd3b2b1a09f4ccf27edb1b06e3692c72b6451bb7f148de45be1d761287bee8162c09da952ed87cbc232ccab975b80d500fa57222a8461008c565b61027e60608801357f0c322ce5f40249b4ee9a51d9c29b1caff0509a7fb22618d315293992e26621897f07d67606b2d56352a27e34e28ce4480ba5b5a743ae82c18c2112939de28904c68461008c565b6102ce60808801357f2d4c5475c48b627f450a61d9519fd13f98c7e9a5f1f3ee82dea68a34abd5598e7f1c555e910a4d0071f3e79dfe3936cee7681cc09f923211e5cb55748206da0edf8461008c565b50823581527f30644e72e131a029b85045b68181585d97816a916871ca8d3c208c16d87cfd4760208401357f30644e72e131a029b85045b68181585d97816a916871ca8d3c208c16d87cfd4703066020820152833560408201526020840135606082015260408401356080820152606084013560a08201527f19abb60a829e03832713becf8583d4ddd5dbef24843e95a1100c202cb4357ff560c08201527f068d3a0f4372a0541ed28e24a01b298f6052e4c87716d3b22a96f35f6f31dd9b60e08201527f2bbfed1d9b8791c2f1332049e56301897c6341846b267b7c8f964c5bfb6d78906101008201527f26a4774af007d9cf06d63b621af6571e68952f3048f9fadecf18cc3211d85c5c6101208201527f12800c1409fb928c2562b758d05b3d1541685927cc73dbcf7a3cb7593590d1be6101408201527f0e9a62a77ad9caeac721572246a324ed0e7b72d1a3fb84ea0af169c09532fa426101608201525f87015161018082015260205f018701516101a08201527f198e9393920d483a7260bfb731fb5d25f1aa493335a9e71297e485b7aef312c26101c08201527f1800deef121f1e76426a00665e5c4479674322d4f75edadd46debd5cd992f6ed6101e08201527f090689d0585ff075ec9e99ad690c3395bc4b313370b38ef355acdadcd122975b6102008201527f12c85ea5db8c6deb4aab71808dcb408fe3d1e7690c43d37b4ce6cc0166fa7daa610220820152843561024082015260208501356102608201527f1d7f8fb29ed820fc92673edc6d4cf9b37752f70d109324e8f1b9db12b97d576f6102808201527f02097857f2454ba0b16453bb3a0e4f61048972ebaa9ec56a2a4b4afe6f887e396102a08201527f07aced65c29fc7538d9ff0b9df515be56feaf91a58f4d7d71dd4919f4a2a38bd6102c08201527f08f4e01ce48c32f3c4530963104b96d88869c8239e4311dd8fbcf370781fa38d6102e08201526020816103008360086107d05a03fa9051169695505050505050565b60405161038081016040526105c35f84013561005a565b6105d0602084013561005a565b6105dd604084013561005a565b6105ea606084013561005a565b6105f7608084013561005a565b610604818486888a6100f2565b9050805f5260205ff35b806040810183101561061e575f5ffd5b92915050565b5f5f5f5f6101a08587031215610638575f5ffd5b610642868661060e565b935060c0850186811115610654575f5ffd5b604086019350610664878261060e565b925050856101a086011115610677575f5ffd5b5091949093509091610100019056fea2646970667358221220872bbb72beaecc8edcbbf54a414cf5f1a0d294eb9850f0807179815491059e4964736f6c63430008210033",
+          "creationBytes": 1752,
+          "creationSha256": "988a923c1b7405262d5567f0970fd360bc86657dd51a4a109361611b5e81711e",
+          "compiledRuntime": "0x608060405234801561000f575f5ffd5b5060043610610029575f3560e01c806334baeab91461002d575b5f5ffd5b61004061003b366004610624565b610054565b604051901515815260200160405180910390f35b5f6105ac565b7f30644e72e131a029b85045b68181585d2833e84879b9709143e1f593f00000018110610089575f5f5260205ff35b50565b5f60405183815284602082015285604082015260408160608360076107d05a03fa9150816100bc575f5f5260205ff35b825160408201526020830151606082015260408360808360066107d05a03fa915050806100eb575f5f5260205ff35b5050505050565b7f2f76720fa23df0451f41f9d9761b13855bd3bb110adc8839a5b3c932c449638c85527f158701d6e811c95e1237b92c5bd6a0f2f4a403c36d9a9c63ed30ff7db959e42660208601525f608086018661018e87357f0a2b7685a765a33c664c87dcfef8bedd04a288691470a9fda05cf28bd256283d7f293e15a666846acb035d625c3eccd0a6c336a41c39fefb3db77ccb432fd03b068461008c565b6101de60208801357f246773549e9f1a12a909e46e31107bef29e5befd06b55c679e3ac849af93068e7f0ea65e35c7a40bce9ccc81dc954406d76e3f75579e20ec76e2e9a001c2e41e318461008c565b61022e60408801357f0def613be3c694e2d1050e32dcd3b2b1a09f4ccf27edb1b06e3692c72b6451bb7f148de45be1d761287bee8162c09da952ed87cbc232ccab975b80d500fa57222a8461008c565b61027e60608801357f0c322ce5f40249b4ee9a51d9c29b1caff0509a7fb22618d315293992e26621897f07d67606b2d56352a27e34e28ce4480ba5b5a743ae82c18c2112939de28904c68461008c565b6102ce60808801357f2d4c5475c48b627f450a61d9519fd13f98c7e9a5f1f3ee82dea68a34abd5598e7f1c555e910a4d0071f3e79dfe3936cee7681cc09f923211e5cb55748206da0edf8461008c565b50823581527f30644e72e131a029b85045b68181585d97816a916871ca8d3c208c16d87cfd4760208401357f30644e72e131a029b85045b68181585d97816a916871ca8d3c208c16d87cfd4703066020820152833560408201526020840135606082015260408401356080820152606084013560a08201527f19abb60a829e03832713becf8583d4ddd5dbef24843e95a1100c202cb4357ff560c08201527f068d3a0f4372a0541ed28e24a01b298f6052e4c87716d3b22a96f35f6f31dd9b60e08201527f2bbfed1d9b8791c2f1332049e56301897c6341846b267b7c8f964c5bfb6d78906101008201527f26a4774af007d9cf06d63b621af6571e68952f3048f9fadecf18cc3211d85c5c6101208201527f12800c1409fb928c2562b758d05b3d1541685927cc73dbcf7a3cb7593590d1be6101408201527f0e9a62a77ad9caeac721572246a324ed0e7b72d1a3fb84ea0af169c09532fa426101608201525f87015161018082015260205f018701516101a08201527f198e9393920d483a7260bfb731fb5d25f1aa493335a9e71297e485b7aef312c26101c08201527f1800deef121f1e76426a00665e5c4479674322d4f75edadd46debd5cd992f6ed6101e08201527f090689d0585ff075ec9e99ad690c3395bc4b313370b38ef355acdadcd122975b6102008201527f12c85ea5db8c6deb4aab71808dcb408fe3d1e7690c43d37b4ce6cc0166fa7daa610220820152843561024082015260208501356102608201527f1d7f8fb29ed820fc92673edc6d4cf9b37752f70d109324e8f1b9db12b97d576f6102808201527f02097857f2454ba0b16453bb3a0e4f61048972ebaa9ec56a2a4b4afe6f887e396102a08201527f07aced65c29fc7538d9ff0b9df515be56feaf91a58f4d7d71dd4919f4a2a38bd6102c08201527f08f4e01ce48c32f3c4530963104b96d88869c8239e4311dd8fbcf370781fa38d6102e08201526020816103008360086107d05a03fa9051169695505050505050565b60405161038081016040526105c35f84013561005a565b6105d0602084013561005a565b6105dd604084013561005a565b6105ea606084013561005a565b6105f7608084013561005a565b610604818486888a6100f2565b9050805f5260205ff35b806040810183101561061e575f5ffd5b92915050565b5f5f5f5f6101a08587031215610638575f5ffd5b610642868661060e565b935060c0850186811115610654575f5ffd5b604086019350610664878261060e565b925050856101a086011115610677575f5ffd5b5091949093509091610100019056fea2646970667358221220872bbb72beaecc8edcbbf54a414cf5f1a0d294eb9850f0807179815491059e4964736f6c63430008210033",
+          "compiledRuntimeBytes": 1724,
+          "compiledRuntimeSha256": "c573a4f9a5380fd6cea3e4406f8aa5e2dc6af5f7ed6a0db2333f5b6f4bb1b8bd",
+          "onchainRuntime": "0x608060405234801561000f575f5ffd5b5060043610610029575f3560e01c806334baeab91461002d575b5f5ffd5b61004061003b366004610624565b610054565b604051901515815260200160405180910390f35b5f6105ac565b7f30644e72e131a029b85045b68181585d2833e84879b9709143e1f593f00000018110610089575f5f5260205ff35b50565b5f60405183815284602082015285604082015260408160608360076107d05a03fa9150816100bc575f5f5260205ff35b825160408201526020830151606082015260408360808360066107d05a03fa915050806100eb575f5f5260205ff35b5050505050565b7f2f76720fa23df0451f41f9d9761b13855bd3bb110adc8839a5b3c932c449638c85527f158701d6e811c95e1237b92c5bd6a0f2f4a403c36d9a9c63ed30ff7db959e42660208601525f608086018661018e87357f0a2b7685a765a33c664c87dcfef8bedd04a288691470a9fda05cf28bd256283d7f293e15a666846acb035d625c3eccd0a6c336a41c39fefb3db77ccb432fd03b068461008c565b6101de60208801357f246773549e9f1a12a909e46e31107bef29e5befd06b55c679e3ac849af93068e7f0ea65e35c7a40bce9ccc81dc954406d76e3f75579e20ec76e2e9a001c2e41e318461008c565b61022e60408801357f0def613be3c694e2d1050e32dcd3b2b1a09f4ccf27edb1b06e3692c72b6451bb7f148de45be1d761287bee8162c09da952ed87cbc232ccab975b80d500fa57222a8461008c565b61027e60608801357f0c322ce5f40249b4ee9a51d9c29b1caff0509a7fb22618d315293992e26621897f07d67606b2d56352a27e34e28ce4480ba5b5a743ae82c18c2112939de28904c68461008c565b6102ce60808801357f2d4c5475c48b627f450a61d9519fd13f98c7e9a5f1f3ee82dea68a34abd5598e7f1c555e910a4d0071f3e79dfe3936cee7681cc09f923211e5cb55748206da0edf8461008c565b50823581527f30644e72e131a029b85045b68181585d97816a916871ca8d3c208c16d87cfd4760208401357f30644e72e131a029b85045b68181585d97816a916871ca8d3c208c16d87cfd4703066020820152833560408201526020840135606082015260408401356080820152606084013560a08201527f19abb60a829e03832713becf8583d4ddd5dbef24843e95a1100c202cb4357ff560c08201527f068d3a0f4372a0541ed28e24a01b298f6052e4c87716d3b22a96f35f6f31dd9b60e08201527f2bbfed1d9b8791c2f1332049e56301897c6341846b267b7c8f964c5bfb6d78906101008201527f26a4774af007d9cf06d63b621af6571e68952f3048f9fadecf18cc3211d85c5c6101208201527f12800c1409fb928c2562b758d05b3d1541685927cc73dbcf7a3cb7593590d1be6101408201527f0e9a62a77ad9caeac721572246a324ed0e7b72d1a3fb84ea0af169c09532fa426101608201525f87015161018082015260205f018701516101a08201527f198e9393920d483a7260bfb731fb5d25f1aa493335a9e71297e485b7aef312c26101c08201527f1800deef121f1e76426a00665e5c4479674322d4f75edadd46debd5cd992f6ed6101e08201527f090689d0585ff075ec9e99ad690c3395bc4b313370b38ef355acdadcd122975b6102008201527f12c85ea5db8c6deb4aab71808dcb408fe3d1e7690c43d37b4ce6cc0166fa7daa610220820152843561024082015260208501356102608201527f1d7f8fb29ed820fc92673edc6d4cf9b37752f70d109324e8f1b9db12b97d576f6102808201527f02097857f2454ba0b16453bb3a0e4f61048972ebaa9ec56a2a4b4afe6f887e396102a08201527f07aced65c29fc7538d9ff0b9df515be56feaf91a58f4d7d71dd4919f4a2a38bd6102c08201527f08f4e01ce48c32f3c4530963104b96d88869c8239e4311dd8fbcf370781fa38d6102e08201526020816103008360086107d05a03fa9051169695505050505050565b60405161038081016040526105c35f84013561005a565b6105d0602084013561005a565b6105dd604084013561005a565b6105ea606084013561005a565b6105f7608084013561005a565b610604818486888a6100f2565b9050805f5260205ff35b806040810183101561061e575f5ffd5b92915050565b5f5f5f5f6101a08587031215610638575f5ffd5b610642868661060e565b935060c0850186811115610654575f5ffd5b604086019350610664878261060e565b925050856101a086011115610677575f5ffd5b5091949093509091610100019056fea2646970667358221220872bbb72beaecc8edcbbf54a414cf5f1a0d294eb9850f0807179815491059e4964736f6c63430008210033",
+          "onchainRuntimeBytes": 1724,
+          "onchainRuntimeSha256": "c573a4f9a5380fd6cea3e4406f8aa5e2dc6af5f7ed6a0db2333f5b6f4bb1b8bd",
+          "onchainMatchesCompiled": true,
+          "eip170LimitBytes": 24576,
+          "eip170Compliant": true
+        }
+      },
+      {
+        "name": "N=8 EIP-170",
+        "pass": true,
+        "detail": {
+          "runtimeBytes": 1724,
+          "limit": 24576
+        }
+      },
+      {
+        "name": "N=8 raw evidence hash current",
+        "pass": true,
+        "detail": "84041279ff3acea11d1ce2bd934430fce8d74266deb6f8d60f6ef0ef4dcc8be4"
+      },
+      {
+        "name": "N=16 entry parameters",
+        "pass": true,
+        "detail": {
+          "dimension": 16,
+          "bits": 16,
+          "qSpan": 65535,
+          "packSize": 15,
+          "blocks": 2,
+          "paddedBlocks": 2,
+          "distanceBits": 48
+        }
+      },
+      {
+        "name": "N=16 setup artifact present",
+        "pass": true,
+        "detail": [
+          2,
+          4,
+          8,
+          16,
+          32,
+          64,
+          128
+        ]
+      },
+      {
+        "name": "N=16 zkey hash current",
+        "pass": true,
+        "detail": "f540f166936e1c93f8ab90dba6b4419d6f2f04cc25c05c6fd9e52a82e1408691"
+      },
+      {
+        "name": "N=16 verification key hash current",
+        "pass": true,
+        "detail": "f2122515d8883fe4de60fb652541ea0fccfa271196074d6e153300848efca0e4"
+      },
+      {
+        "name": "N=16 matching verifier hash current",
+        "pass": true,
+        "detail": "4f3882bd55dd8b5f1237940213ce423552b7849d22d48558b8485e372560bdbe"
+      },
+      {
+        "name": "N=16 proof protocol",
+        "pass": true,
+        "detail": {
+          "warmups": 1,
+          "repetitions": 10
+        }
+      },
+      {
+        "name": "N=16 five public inputs",
+        "pass": true,
+        "detail": 5
+      },
+      {
+        "name": "N=16 ten end-to-end proving samples",
+        "pass": true,
+        "detail": {
+          "samples": 10,
+          "definition": "single cold child from immediately before wtns.calculate through Groth16 proof and proof/public JSON writes",
+          "endToEndMs": {
+            "samples": 10,
+            "values": [
+              2373.39,
+              2335.93,
+              2359.97,
+              2379.28,
+              2357.53,
+              2365.93,
+              2346.94,
+              2350.36,
+              2336.17,
+              2399.19
+            ],
+            "mean": 2360.47,
+            "sampleStandardDeviation": 19.82,
+            "median": 2358.75
+          },
+          "witnessSegmentMs": {
+            "samples": 10,
+            "values": [
+              58.67,
+              56.53,
+              56.55,
+              57.89,
+              57.51,
+              58.08,
+              54.7,
+              57.31,
+              57.92,
+              66.17
+            ],
+            "mean": 58.13,
+            "sampleStandardDeviation": 3.04,
+            "median": 57.7
+          },
+          "proveAndWriteSegmentMs": {
+            "samples": 10,
+            "values": [
+              2312.56,
+              2277.35,
+              2302.78,
+              2319.29,
+              2297.82,
+              2307.23,
+              2291.65,
+              2292.43,
+              2276.13,
+              2332.36
+            ],
+            "mean": 2300.96,
+            "sampleStandardDeviation": 17.77,
+            "median": 2300.3
+          },
+          "nodeProcessMaxRssMiB": {
+            "samples": 10,
+            "values": [
+              615.7,
+              611.46,
+              615.35,
+              612.18,
+              612.76,
+              613.6,
+              615.09,
+              611.82,
+              612.76,
+              614.77
+            ],
+            "mean": 613.55,
+            "sampleStandardDeviation": 1.57,
+            "median": 613.18
+          },
+          "externalGnuTimeMaxRssMiB": {
+            "available": true,
+            "source": "GNU /usr/bin/time -v Maximum resident set size; never mixed with Node maxRSS",
+            "samples": 10,
+            "values": [
+              616.01,
+              611.46,
+              615.35,
+              612.18,
+              612.76,
+              613.6,
+              615.09,
+              611.82,
+              612.76,
+              614.77
+            ],
+            "mean": 613.58,
+            "sampleStandardDeviation": 1.62,
+            "median": 613.18
+          }
+        }
+      },
+      {
+        "name": "N=16 proving distributions complete",
+        "pass": true,
+        "detail": {
+          "samples": 10,
+          "values": [
+            2373.39,
+            2335.93,
+            2359.97,
+            2379.28,
+            2357.53,
+            2365.93,
+            2346.94,
+            2350.36,
+            2336.17,
+            2399.19
+          ],
+          "mean": 2360.47,
+          "sampleStandardDeviation": 19.82,
+          "median": 2358.75
+        }
+      },
+      {
+        "name": "N=16 GNU time RSS captured",
+        "pass": true,
+        "detail": {
+          "available": true,
+          "source": "GNU /usr/bin/time -v Maximum resident set size; never mixed with Node maxRSS",
+          "samples": 10,
+          "values": [
+            616.01,
+            611.46,
+            615.35,
+            612.18,
+            612.76,
+            613.6,
+            615.09,
+            611.82,
+            612.76,
+            614.77
+          ],
+          "mean": 613.58,
+          "sampleStandardDeviation": 1.62,
+          "median": 613.18
+        }
+      },
+      {
+        "name": "N=16 ten native proof verifications",
+        "pass": true,
+        "detail": {
+          "elapsedMs": {
+            "samples": 10,
+            "values": [
+              1621.16,
+              1624.77,
+              1646.27,
+              1640.26,
+              1643.42,
+              1642.03,
+              1639.03,
+              1640.5,
+              1667.63,
+              1621.33
+            ],
+            "mean": 1638.64,
+            "sampleStandardDeviation": 13.89,
+            "median": 1640.38
+          },
+          "allVerified": true
+        }
+      },
+      {
+        "name": "N=16 all native proof verifications pass",
+        "pass": true,
+        "detail": {
+          "elapsedMs": {
+            "samples": 10,
+            "values": [
+              1621.16,
+              1624.77,
+              1646.27,
+              1640.26,
+              1643.42,
+              1642.03,
+              1639.03,
+              1640.5,
+              1667.63,
+              1621.33
+            ],
+            "mean": 1638.64,
+            "sampleStandardDeviation": 13.89,
+            "median": 1640.38
+          },
+          "allVerified": true
+        }
+      },
+      {
+        "name": "N=16 proving zkey matches setup",
+        "pass": true,
+        "detail": "f540f166936e1c93f8ab90dba6b4419d6f2f04cc25c05c6fd9e52a82e1408691"
+      },
+      {
+        "name": "N=16 bare verifier gas complete",
+        "pass": true,
+        "detail": [
+          242270,
+          242222,
+          242270,
+          242234,
+          242282
+        ]
+      },
+      {
+        "name": "N=16 valid public inputs return true",
+        "pass": true,
+        "detail": true
+      },
+      {
+        "name": "N=16 invalid public input returns false",
+        "pass": true,
+        "detail": false
+      },
+      {
+        "name": "N=16 raw receipt protocol",
+        "pass": true,
+        "detail": {
+          "warmups": 1,
+          "measured": 5
+        }
+      },
+      {
+        "name": "N=16 gas uses independent proofs",
+        "pass": true,
+        "detail": [
+          {
+            "phase": "measured",
+            "run": 1,
+            "proof": "results/proving/raw/auth_distance_16-measured-01-proof.json",
+            "proofSha256": "62d2c03fe94de814f44f08e0f5e732227f52580e18e05883f750ed0662d54433",
+            "publicSignals": "results/proving/raw/auth_distance_16-measured-01-public.json",
+            "publicSignalsSha256": "3993f423addd618f855eb1e38d93789dc3cb232404ad1f4b56133e1163082742"
+          },
+          {
+            "phase": "measured",
+            "run": 2,
+            "proof": "results/proving/raw/auth_distance_16-measured-02-proof.json",
+            "proofSha256": "8e7c7510dab3807752907b973a4233ff821f593cf2df16d20e9cf6d486d1a432",
+            "publicSignals": "results/proving/raw/auth_distance_16-measured-02-public.json",
+            "publicSignalsSha256": "3993f423addd618f855eb1e38d93789dc3cb232404ad1f4b56133e1163082742"
+          },
+          {
+            "phase": "measured",
+            "run": 3,
+            "proof": "results/proving/raw/auth_distance_16-measured-03-proof.json",
+            "proofSha256": "ff1f9096df6e9dd2aee3c2411c4ddf17f3a2710e302b7766f67b7f3f9e501b24",
+            "publicSignals": "results/proving/raw/auth_distance_16-measured-03-public.json",
+            "publicSignalsSha256": "3993f423addd618f855eb1e38d93789dc3cb232404ad1f4b56133e1163082742"
+          },
+          {
+            "phase": "measured",
+            "run": 4,
+            "proof": "results/proving/raw/auth_distance_16-measured-04-proof.json",
+            "proofSha256": "82b925743e19f47ed1381f6c6dbfeb0cef077f0a7c43814a591490425f25bf46",
+            "publicSignals": "results/proving/raw/auth_distance_16-measured-04-public.json",
+            "publicSignalsSha256": "3993f423addd618f855eb1e38d93789dc3cb232404ad1f4b56133e1163082742"
+          },
+          {
+            "phase": "measured",
+            "run": 5,
+            "proof": "results/proving/raw/auth_distance_16-measured-05-proof.json",
+            "proofSha256": "fcfe2d8cdc1adcb67046aca2c727343c02d6b39b102fc57ee95b355d4c3f6cb7",
+            "publicSignals": "results/proving/raw/auth_distance_16-measured-05-public.json",
+            "publicSignalsSha256": "3993f423addd618f855eb1e38d93789dc3cb232404ad1f4b56133e1163082742"
+          }
+        ]
+      },
+      {
+        "name": "N=16 all gas proof calls static-true",
+        "pass": true,
+        "detail": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ]
+      },
+      {
+        "name": "N=16 receipts successful",
+        "pass": true,
+        "detail": {
+          "deploymentSuccessful": true,
+          "validStaticTrue": true,
+          "fiveMeasuredReceiptsSuccessful": true,
+          "invalidStaticFalse": true,
+          "invalidTransactionSuccessful": true,
+          "runtimeMatchesCompiler": true,
+          "eip170Compliant": true
+        }
+      },
+      {
+        "name": "N=16 runtime matches compiler",
+        "pass": true,
+        "detail": {
+          "creation": "0x6080604052348015600e575f5ffd5b506106bc8061001c5f395ff3fe608060405234801561000f575f5ffd5b5060043610610029575f3560e01c806334baeab91461002d575b5f5ffd5b61004061003b366004610624565b610054565b604051901515815260200160405180910390f35b5f6105ac565b7f30644e72e131a029b85045b68181585d2833e84879b9709143e1f593f00000018110610089575f5f5260205ff35b50565b5f60405183815284602082015285604082015260408160608360076107d05a03fa9150816100bc575f5f5260205ff35b825160408201526020830151606082015260408360808360066107d05a03fa915050806100eb575f5f5260205ff35b5050505050565b7f1b1f44cbbccfda6aa36bf21371c6625915dfadbbf68212199fac039844c2c13a85527f1dcc5c409f149c548732e06121d7aca6db91213ea29ebdafa00534e13c2fc8d860208601525f608086018661018e87357f1db38392e1cea406e6446d71499f2676bf3dcb46a71cb7d960a08388d74d33d37f15b67e90915392914cc5d27473085213b8f4131b2ba43becedf68089d736de4f8461008c565b6101de60208801357f259509b7f9493f24089ff291e4b02e672d62bf171a8f63a3464d8733177516367f0cd2714914d6af00fec43d5b910a501661d8badcf6a242057b3d89cd1690cd8e8461008c565b61022e60408801357f0ee80cb470fbf333b68dd014f774b9dd40c32a587d9fcae491ea2ab475495aa07f084b4b5ac005e616526481d821dfacd4743554c5cffc2ad3bbc70a70accb73728461008c565b61027e60608801357f1bdcfc91350abea4931a6acab907206bf87f2cd77bbbe0486bf98383027b4bb67f112771379efcd3ee85f96d447ef6e1a84a29e94d059fc7a5b67ec2e86299f7f48461008c565b6102ce60808801357f054d20e6f842138a0a94b23db29b785dca4ba567dc5ce7cf407ac0844b8c9a577f2f627dca30b03b057ce356b359c5d1c6295b7142dbb9471ab567cee2c61056cd8461008c565b50823581527f30644e72e131a029b85045b68181585d97816a916871ca8d3c208c16d87cfd4760208401357f30644e72e131a029b85045b68181585d97816a916871ca8d3c208c16d87cfd4703066020820152833560408201526020840135606082015260408401356080820152606084013560a08201527f19abb60a829e03832713becf8583d4ddd5dbef24843e95a1100c202cb4357ff560c08201527f068d3a0f4372a0541ed28e24a01b298f6052e4c87716d3b22a96f35f6f31dd9b60e08201527f2bbfed1d9b8791c2f1332049e56301897c6341846b267b7c8f964c5bfb6d78906101008201527f26a4774af007d9cf06d63b621af6571e68952f3048f9fadecf18cc3211d85c5c6101208201527f12800c1409fb928c2562b758d05b3d1541685927cc73dbcf7a3cb7593590d1be6101408201527f0e9a62a77ad9caeac721572246a324ed0e7b72d1a3fb84ea0af169c09532fa426101608201525f87015161018082015260205f018701516101a08201527f198e9393920d483a7260bfb731fb5d25f1aa493335a9e71297e485b7aef312c26101c08201527f1800deef121f1e76426a00665e5c4479674322d4f75edadd46debd5cd992f6ed6101e08201527f090689d0585ff075ec9e99ad690c3395bc4b313370b38ef355acdadcd122975b6102008201527f12c85ea5db8c6deb4aab71808dcb408fe3d1e7690c43d37b4ce6cc0166fa7daa610220820152843561024082015260208501356102608201527f0ad53bb5c4483df7d00a0916eb426d9e756e798652199647ce635287f2678f786102808201527f180087c1878aeeb6ee7af2a4aede2a6d2bc15c67e21a3883ed4f2882dc8fde3e6102a08201527f2c73497c9487963fd7ba8f05999b73fcec382f64d4313201012ec756a31444c56102c08201527f11b0769fd9e57b09af099951c4590c76904d1b57cf611bf0a7ea7f2e050725676102e08201526020816103008360086107d05a03fa9051169695505050505050565b60405161038081016040526105c35f84013561005a565b6105d0602084013561005a565b6105dd604084013561005a565b6105ea606084013561005a565b6105f7608084013561005a565b610604818486888a6100f2565b9050805f5260205ff35b806040810183101561061e575f5ffd5b92915050565b5f5f5f5f6101a08587031215610638575f5ffd5b610642868661060e565b935060c0850186811115610654575f5ffd5b604086019350610664878261060e565b925050856101a086011115610677575f5ffd5b5091949093509091610100019056fea26469706673582212208786e882e01e4ea2dc05674929dc60e8f0d85e2c4b652980bb517ab3e832875764736f6c63430008210033",
+          "creationBytes": 1752,
+          "creationSha256": "c6406d89c95ce33668ddf2476c3508103d88f7ac3cf704bc20a8ca14053a0c94",
+          "compiledRuntime": "0x608060405234801561000f575f5ffd5b5060043610610029575f3560e01c806334baeab91461002d575b5f5ffd5b61004061003b366004610624565b610054565b604051901515815260200160405180910390f35b5f6105ac565b7f30644e72e131a029b85045b68181585d2833e84879b9709143e1f593f00000018110610089575f5f5260205ff35b50565b5f60405183815284602082015285604082015260408160608360076107d05a03fa9150816100bc575f5f5260205ff35b825160408201526020830151606082015260408360808360066107d05a03fa915050806100eb575f5f5260205ff35b5050505050565b7f1b1f44cbbccfda6aa36bf21371c6625915dfadbbf68212199fac039844c2c13a85527f1dcc5c409f149c548732e06121d7aca6db91213ea29ebdafa00534e13c2fc8d860208601525f608086018661018e87357f1db38392e1cea406e6446d71499f2676bf3dcb46a71cb7d960a08388d74d33d37f15b67e90915392914cc5d27473085213b8f4131b2ba43becedf68089d736de4f8461008c565b6101de60208801357f259509b7f9493f24089ff291e4b02e672d62bf171a8f63a3464d8733177516367f0cd2714914d6af00fec43d5b910a501661d8badcf6a242057b3d89cd1690cd8e8461008c565b61022e60408801357f0ee80cb470fbf333b68dd014f774b9dd40c32a587d9fcae491ea2ab475495aa07f084b4b5ac005e616526481d821dfacd4743554c5cffc2ad3bbc70a70accb73728461008c565b61027e60608801357f1bdcfc91350abea4931a6acab907206bf87f2cd77bbbe0486bf98383027b4bb67f112771379efcd3ee85f96d447ef6e1a84a29e94d059fc7a5b67ec2e86299f7f48461008c565b6102ce60808801357f054d20e6f842138a0a94b23db29b785dca4ba567dc5ce7cf407ac0844b8c9a577f2f627dca30b03b057ce356b359c5d1c6295b7142dbb9471ab567cee2c61056cd8461008c565b50823581527f30644e72e131a029b85045b68181585d97816a916871ca8d3c208c16d87cfd4760208401357f30644e72e131a029b85045b68181585d97816a916871ca8d3c208c16d87cfd4703066020820152833560408201526020840135606082015260408401356080820152606084013560a08201527f19abb60a829e03832713becf8583d4ddd5dbef24843e95a1100c202cb4357ff560c08201527f068d3a0f4372a0541ed28e24a01b298f6052e4c87716d3b22a96f35f6f31dd9b60e08201527f2bbfed1d9b8791c2f1332049e56301897c6341846b267b7c8f964c5bfb6d78906101008201527f26a4774af007d9cf06d63b621af6571e68952f3048f9fadecf18cc3211d85c5c6101208201527f12800c1409fb928c2562b758d05b3d1541685927cc73dbcf7a3cb7593590d1be6101408201527f0e9a62a77ad9caeac721572246a324ed0e7b72d1a3fb84ea0af169c09532fa426101608201525f87015161018082015260205f018701516101a08201527f198e9393920d483a7260bfb731fb5d25f1aa493335a9e71297e485b7aef312c26101c08201527f1800deef121f1e76426a00665e5c4479674322d4f75edadd46debd5cd992f6ed6101e08201527f090689d0585ff075ec9e99ad690c3395bc4b313370b38ef355acdadcd122975b6102008201527f12c85ea5db8c6deb4aab71808dcb408fe3d1e7690c43d37b4ce6cc0166fa7daa610220820152843561024082015260208501356102608201527f0ad53bb5c4483df7d00a0916eb426d9e756e798652199647ce635287f2678f786102808201527f180087c1878aeeb6ee7af2a4aede2a6d2bc15c67e21a3883ed4f2882dc8fde3e6102a08201527f2c73497c9487963fd7ba8f05999b73fcec382f64d4313201012ec756a31444c56102c08201527f11b0769fd9e57b09af099951c4590c76904d1b57cf611bf0a7ea7f2e050725676102e08201526020816103008360086107d05a03fa9051169695505050505050565b60405161038081016040526105c35f84013561005a565b6105d0602084013561005a565b6105dd604084013561005a565b6105ea606084013561005a565b6105f7608084013561005a565b610604818486888a6100f2565b9050805f5260205ff35b806040810183101561061e575f5ffd5b92915050565b5f5f5f5f6101a08587031215610638575f5ffd5b610642868661060e565b935060c0850186811115610654575f5ffd5b604086019350610664878261060e565b925050856101a086011115610677575f5ffd5b5091949093509091610100019056fea26469706673582212208786e882e01e4ea2dc05674929dc60e8f0d85e2c4b652980bb517ab3e832875764736f6c63430008210033",
+          "compiledRuntimeBytes": 1724,
+          "compiledRuntimeSha256": "8168b5074cf401b568409649ddce4c11fd7c9b78ddb1f04c5cbc33453fe3e0ca",
+          "onchainRuntime": "0x608060405234801561000f575f5ffd5b5060043610610029575f3560e01c806334baeab91461002d575b5f5ffd5b61004061003b366004610624565b610054565b604051901515815260200160405180910390f35b5f6105ac565b7f30644e72e131a029b85045b68181585d2833e84879b9709143e1f593f00000018110610089575f5f5260205ff35b50565b5f60405183815284602082015285604082015260408160608360076107d05a03fa9150816100bc575f5f5260205ff35b825160408201526020830151606082015260408360808360066107d05a03fa915050806100eb575f5f5260205ff35b5050505050565b7f1b1f44cbbccfda6aa36bf21371c6625915dfadbbf68212199fac039844c2c13a85527f1dcc5c409f149c548732e06121d7aca6db91213ea29ebdafa00534e13c2fc8d860208601525f608086018661018e87357f1db38392e1cea406e6446d71499f2676bf3dcb46a71cb7d960a08388d74d33d37f15b67e90915392914cc5d27473085213b8f4131b2ba43becedf68089d736de4f8461008c565b6101de60208801357f259509b7f9493f24089ff291e4b02e672d62bf171a8f63a3464d8733177516367f0cd2714914d6af00fec43d5b910a501661d8badcf6a242057b3d89cd1690cd8e8461008c565b61022e60408801357f0ee80cb470fbf333b68dd014f774b9dd40c32a587d9fcae491ea2ab475495aa07f084b4b5ac005e616526481d821dfacd4743554c5cffc2ad3bbc70a70accb73728461008c565b61027e60608801357f1bdcfc91350abea4931a6acab907206bf87f2cd77bbbe0486bf98383027b4bb67f112771379efcd3ee85f96d447ef6e1a84a29e94d059fc7a5b67ec2e86299f7f48461008c565b6102ce60808801357f054d20e6f842138a0a94b23db29b785dca4ba567dc5ce7cf407ac0844b8c9a577f2f627dca30b03b057ce356b359c5d1c6295b7142dbb9471ab567cee2c61056cd8461008c565b50823581527f30644e72e131a029b85045b68181585d97816a916871ca8d3c208c16d87cfd4760208401357f30644e72e131a029b85045b68181585d97816a916871ca8d3c208c16d87cfd4703066020820152833560408201526020840135606082015260408401356080820152606084013560a08201527f19abb60a829e03832713becf8583d4ddd5dbef24843e95a1100c202cb4357ff560c08201527f068d3a0f4372a0541ed28e24a01b298f6052e4c87716d3b22a96f35f6f31dd9b60e08201527f2bbfed1d9b8791c2f1332049e56301897c6341846b267b7c8f964c5bfb6d78906101008201527f26a4774af007d9cf06d63b621af6571e68952f3048f9fadecf18cc3211d85c5c6101208201527f12800c1409fb928c2562b758d05b3d1541685927cc73dbcf7a3cb7593590d1be6101408201527f0e9a62a77ad9caeac721572246a324ed0e7b72d1a3fb84ea0af169c09532fa426101608201525f87015161018082015260205f018701516101a08201527f198e9393920d483a7260bfb731fb5d25f1aa493335a9e71297e485b7aef312c26101c08201527f1800deef121f1e76426a00665e5c4479674322d4f75edadd46debd5cd992f6ed6101e08201527f090689d0585ff075ec9e99ad690c3395bc4b313370b38ef355acdadcd122975b6102008201527f12c85ea5db8c6deb4aab71808dcb408fe3d1e7690c43d37b4ce6cc0166fa7daa610220820152843561024082015260208501356102608201527f0ad53bb5c4483df7d00a0916eb426d9e756e798652199647ce635287f2678f786102808201527f180087c1878aeeb6ee7af2a4aede2a6d2bc15c67e21a3883ed4f2882dc8fde3e6102a08201527f2c73497c9487963fd7ba8f05999b73fcec382f64d4313201012ec756a31444c56102c08201527f11b0769fd9e57b09af099951c4590c76904d1b57cf611bf0a7ea7f2e050725676102e08201526020816103008360086107d05a03fa9051169695505050505050565b60405161038081016040526105c35f84013561005a565b6105d0602084013561005a565b6105dd604084013561005a565b6105ea606084013561005a565b6105f7608084013561005a565b610604818486888a6100f2565b9050805f5260205ff35b806040810183101561061e575f5ffd5b92915050565b5f5f5f5f6101a08587031215610638575f5ffd5b610642868661060e565b935060c0850186811115610654575f5ffd5b604086019350610664878261060e565b925050856101a086011115610677575f5ffd5b5091949093509091610100019056fea26469706673582212208786e882e01e4ea2dc05674929dc60e8f0d85e2c4b652980bb517ab3e832875764736f6c63430008210033",
+          "onchainRuntimeBytes": 1724,
+          "onchainRuntimeSha256": "8168b5074cf401b568409649ddce4c11fd7c9b78ddb1f04c5cbc33453fe3e0ca",
+          "onchainMatchesCompiled": true,
+          "eip170LimitBytes": 24576,
+          "eip170Compliant": true
+        }
+      },
+      {
+        "name": "N=16 EIP-170",
+        "pass": true,
+        "detail": {
+          "runtimeBytes": 1724,
+          "limit": 24576
+        }
+      },
+      {
+        "name": "N=16 raw evidence hash current",
+        "pass": true,
+        "detail": "92965dbc4f0c1c1b8aea90ad41b1174379a742a293b6d50b7c758749592a8ce7"
+      },
+      {
+        "name": "N=32 entry parameters",
+        "pass": true,
+        "detail": {
+          "dimension": 32,
+          "bits": 16,
+          "qSpan": 65535,
+          "packSize": 15,
+          "blocks": 3,
+          "paddedBlocks": 4,
+          "distanceBits": 48
+        }
+      },
+      {
+        "name": "N=32 setup artifact present",
+        "pass": true,
+        "detail": [
+          2,
+          4,
+          8,
+          16,
+          32,
+          64,
+          128
+        ]
+      },
+      {
+        "name": "N=32 zkey hash current",
+        "pass": true,
+        "detail": "39956756b84052ae84a79cb2df641d15271927552c623fe0ba883afa53063a53"
+      },
+      {
+        "name": "N=32 verification key hash current",
+        "pass": true,
+        "detail": "befb1173349910c63da93df90e33a591e343e78f270e2dff6dcce3207a078286"
+      },
+      {
+        "name": "N=32 matching verifier hash current",
+        "pass": true,
+        "detail": "e654b2d5beb820b2bf9a88ea854eae66ec6bb8f61006190412dc4ff6a6b6709a"
+      },
+      {
+        "name": "N=32 proof protocol",
+        "pass": true,
+        "detail": {
+          "warmups": 1,
+          "repetitions": 10
+        }
+      },
+      {
+        "name": "N=32 five public inputs",
+        "pass": true,
+        "detail": 5
+      },
+      {
+        "name": "N=32 ten end-to-end proving samples",
+        "pass": true,
+        "detail": {
+          "samples": 10,
+          "definition": "single cold child from immediately before wtns.calculate through Groth16 proof and proof/public JSON writes",
+          "endToEndMs": {
+            "samples": 10,
+            "values": [
+              2647.74,
+              2671.76,
+              2607.32,
+              2609.08,
+              2599.88,
+              2628.72,
+              2613.62,
+              2601.99,
+              2633.89,
+              2613.55
+            ],
+            "mean": 2622.76,
+            "sampleStandardDeviation": 22.93,
+            "median": 2613.59
+          },
+          "witnessSegmentMs": {
+            "samples": 10,
+            "values": [
+              60.85,
+              58.94,
+              58.07,
+              57.91,
+              62.23,
+              58.06,
+              64.2,
+              59.14,
+              59.51,
+              57.49
+            ],
+            "mean": 59.64,
+            "sampleStandardDeviation": 2.17,
+            "median": 59.04
+          },
+          "proveAndWriteSegmentMs": {
+            "samples": 10,
+            "values": [
+              2586.25,
+              2612.23,
+              2548.62,
+              2550.55,
+              2537.03,
+              2570.05,
+              2548.8,
+              2540.86,
+              2573.77,
+              2555.46
+            ],
+            "mean": 2562.36,
+            "sampleStandardDeviation": 23.36,
+            "median": 2553.01
+          },
+          "nodeProcessMaxRssMiB": {
+            "samples": 10,
+            "values": [
+              667.92,
+              672.18,
+              666.24,
+              664.7,
+              667.55,
+              665.21,
+              670.6,
+              670.75,
+              667.42,
+              670.56
+            ],
+            "mean": 668.31,
+            "sampleStandardDeviation": 2.58,
+            "median": 667.73
+          },
+          "externalGnuTimeMaxRssMiB": {
+            "available": true,
+            "source": "GNU /usr/bin/time -v Maximum resident set size; never mixed with Node maxRSS",
+            "samples": 10,
+            "values": [
+              667.92,
+              672.18,
+              666.55,
+              664.7,
+              667.86,
+              665.21,
+              670.6,
+              670.75,
+              667.42,
+              670.56
+            ],
+            "mean": 668.38,
+            "sampleStandardDeviation": 2.54,
+            "median": 667.89
+          }
+        }
+      },
+      {
+        "name": "N=32 proving distributions complete",
+        "pass": true,
+        "detail": {
+          "samples": 10,
+          "values": [
+            2647.74,
+            2671.76,
+            2607.32,
+            2609.08,
+            2599.88,
+            2628.72,
+            2613.62,
+            2601.99,
+            2633.89,
+            2613.55
+          ],
+          "mean": 2622.76,
+          "sampleStandardDeviation": 22.93,
+          "median": 2613.59
+        }
+      },
+      {
+        "name": "N=32 GNU time RSS captured",
+        "pass": true,
+        "detail": {
+          "available": true,
+          "source": "GNU /usr/bin/time -v Maximum resident set size; never mixed with Node maxRSS",
+          "samples": 10,
+          "values": [
+            667.92,
+            672.18,
+            666.55,
+            664.7,
+            667.86,
+            665.21,
+            670.6,
+            670.75,
+            667.42,
+            670.56
+          ],
+          "mean": 668.38,
+          "sampleStandardDeviation": 2.54,
+          "median": 667.89
+        }
+      },
+      {
+        "name": "N=32 ten native proof verifications",
+        "pass": true,
+        "detail": {
+          "elapsedMs": {
+            "samples": 10,
+            "values": [
+              1617.7,
+              1628.49,
+              1623.53,
+              1623.64,
+              1635.24,
+              1603.05,
+              1628.04,
+              1607.45,
+              1634.98,
+              1600.19
+            ],
+            "mean": 1620.23,
+            "sampleStandardDeviation": 12.74,
+            "median": 1623.59
+          },
+          "allVerified": true
+        }
+      },
+      {
+        "name": "N=32 all native proof verifications pass",
+        "pass": true,
+        "detail": {
+          "elapsedMs": {
+            "samples": 10,
+            "values": [
+              1617.7,
+              1628.49,
+              1623.53,
+              1623.64,
+              1635.24,
+              1603.05,
+              1628.04,
+              1607.45,
+              1634.98,
+              1600.19
+            ],
+            "mean": 1620.23,
+            "sampleStandardDeviation": 12.74,
+            "median": 1623.59
+          },
+          "allVerified": true
+        }
+      },
+      {
+        "name": "N=32 proving zkey matches setup",
+        "pass": true,
+        "detail": "39956756b84052ae84a79cb2df641d15271927552c623fe0ba883afa53063a53"
+      },
+      {
+        "name": "N=32 bare verifier gas complete",
+        "pass": true,
+        "detail": [
+          242270,
+          242258,
+          242270,
+          242258,
+          242258
+        ]
+      },
+      {
+        "name": "N=32 valid public inputs return true",
+        "pass": true,
+        "detail": true
+      },
+      {
+        "name": "N=32 invalid public input returns false",
+        "pass": true,
+        "detail": false
+      },
+      {
+        "name": "N=32 raw receipt protocol",
+        "pass": true,
+        "detail": {
+          "warmups": 1,
+          "measured": 5
+        }
+      },
+      {
+        "name": "N=32 gas uses independent proofs",
+        "pass": true,
+        "detail": [
+          {
+            "phase": "measured",
+            "run": 1,
+            "proof": "results/proving/raw/auth_distance_32-measured-01-proof.json",
+            "proofSha256": "ccfa8b88290100444f6d31367b16bd050203e120fe18f5a2f17544afb88022fd",
+            "publicSignals": "results/proving/raw/auth_distance_32-measured-01-public.json",
+            "publicSignalsSha256": "133cbaa0cf2e26cd99bf5a5b8f4404e4d8b0043285be9e72951280b997fb2aaa"
+          },
+          {
+            "phase": "measured",
+            "run": 2,
+            "proof": "results/proving/raw/auth_distance_32-measured-02-proof.json",
+            "proofSha256": "4db13891b1dc00e07cd1af3f5593a55cec8951e250be1deba34cb2aa1987c8dd",
+            "publicSignals": "results/proving/raw/auth_distance_32-measured-02-public.json",
+            "publicSignalsSha256": "133cbaa0cf2e26cd99bf5a5b8f4404e4d8b0043285be9e72951280b997fb2aaa"
+          },
+          {
+            "phase": "measured",
+            "run": 3,
+            "proof": "results/proving/raw/auth_distance_32-measured-03-proof.json",
+            "proofSha256": "01322fc7cec0d9d5eb57278fb57e60d6096282477494b38f8ed58462f911cb21",
+            "publicSignals": "results/proving/raw/auth_distance_32-measured-03-public.json",
+            "publicSignalsSha256": "133cbaa0cf2e26cd99bf5a5b8f4404e4d8b0043285be9e72951280b997fb2aaa"
+          },
+          {
+            "phase": "measured",
+            "run": 4,
+            "proof": "results/proving/raw/auth_distance_32-measured-04-proof.json",
+            "proofSha256": "86028fe5bada628c31c6cc384a5ac8bb974d0f254bbfee0ad986f74543bf5f74",
+            "publicSignals": "results/proving/raw/auth_distance_32-measured-04-public.json",
+            "publicSignalsSha256": "133cbaa0cf2e26cd99bf5a5b8f4404e4d8b0043285be9e72951280b997fb2aaa"
+          },
+          {
+            "phase": "measured",
+            "run": 5,
+            "proof": "results/proving/raw/auth_distance_32-measured-05-proof.json",
+            "proofSha256": "099faefe882c9cff21b67e0c5904f5b14d55348dcb6ea537745d7539cd7d612d",
+            "publicSignals": "results/proving/raw/auth_distance_32-measured-05-public.json",
+            "publicSignalsSha256": "133cbaa0cf2e26cd99bf5a5b8f4404e4d8b0043285be9e72951280b997fb2aaa"
+          }
+        ]
+      },
+      {
+        "name": "N=32 all gas proof calls static-true",
+        "pass": true,
+        "detail": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ]
+      },
+      {
+        "name": "N=32 receipts successful",
+        "pass": true,
+        "detail": {
+          "deploymentSuccessful": true,
+          "validStaticTrue": true,
+          "fiveMeasuredReceiptsSuccessful": true,
+          "invalidStaticFalse": true,
+          "invalidTransactionSuccessful": true,
+          "runtimeMatchesCompiler": true,
+          "eip170Compliant": true
+        }
+      },
+      {
+        "name": "N=32 runtime matches compiler",
+        "pass": true,
+        "detail": {
+          "creation": "0x6080604052348015600e575f5ffd5b506106bc8061001c5f395ff3fe608060405234801561000f575f5ffd5b5060043610610029575f3560e01c806334baeab91461002d575b5f5ffd5b61004061003b366004610624565b610054565b604051901515815260200160405180910390f35b5f6105ac565b7f30644e72e131a029b85045b68181585d2833e84879b9709143e1f593f00000018110610089575f5f5260205ff35b50565b5f60405183815284602082015285604082015260408160608360076107d05a03fa9150816100bc575f5f5260205ff35b825160408201526020830151606082015260408360808360066107d05a03fa915050806100eb575f5f5260205ff35b5050505050565b7f1a308d45970c2c94828bbf11b6baeb7c6c2960bf92ef9eea4a2c0ac3fb03b34285527f1c5f2ac41f42d521d3d8966312ad1c0db92ce2610cd9784008da59b8bb1991b860208601525f608086018661018e87357f1e53540582cd61ca7f360a5c2c2d695e0329731114bcb9908ae71e8f05abbfc37f05a6f8e11db3aa3973fa99855b3cc6c77142343f16d2346de44ed2824ea0b62f8461008c565b6101de60208801357f2ad5b57c8ab836f77ef030b26d022c24b5dce299276e9dfa9cde17c8b00256ae7f25dd1730ca30e0caf2b54edddc4a6f1e3b9df81473358c987e54fb5737954e0f8461008c565b61022e60408801357f1cc16457597e43a2b965b6769f016302dcc7b8ceac5a7866bdbe659b871e17e67f1d770d0c2afc6b462cfbafe03e79771ce99f835e4c842c314192fed615f77a698461008c565b61027e60608801357f2cc8a35b85696be3e8cc02c278dfb79b1e4f9d4fc311a9a9706f4e014412910c7f0e10ba0155cb0cd91c4c623e45af167e71b2701491332ca46533966768f914a68461008c565b6102ce60808801357f215a31eabd753ae795beab8211fb07b1d22f94269757c0ed7e28696598423a3e7f157746eea3478176dccd2fa5e60fe30d62deedf99a484ae5877bba6cd35fd92f8461008c565b50823581527f30644e72e131a029b85045b68181585d97816a916871ca8d3c208c16d87cfd4760208401357f30644e72e131a029b85045b68181585d97816a916871ca8d3c208c16d87cfd4703066020820152833560408201526020840135606082015260408401356080820152606084013560a08201527f19abb60a829e03832713becf8583d4ddd5dbef24843e95a1100c202cb4357ff560c08201527f068d3a0f4372a0541ed28e24a01b298f6052e4c87716d3b22a96f35f6f31dd9b60e08201527f2bbfed1d9b8791c2f1332049e56301897c6341846b267b7c8f964c5bfb6d78906101008201527f26a4774af007d9cf06d63b621af6571e68952f3048f9fadecf18cc3211d85c5c6101208201527f12800c1409fb928c2562b758d05b3d1541685927cc73dbcf7a3cb7593590d1be6101408201527f0e9a62a77ad9caeac721572246a324ed0e7b72d1a3fb84ea0af169c09532fa426101608201525f87015161018082015260205f018701516101a08201527f198e9393920d483a7260bfb731fb5d25f1aa493335a9e71297e485b7aef312c26101c08201527f1800deef121f1e76426a00665e5c4479674322d4f75edadd46debd5cd992f6ed6101e08201527f090689d0585ff075ec9e99ad690c3395bc4b313370b38ef355acdadcd122975b6102008201527f12c85ea5db8c6deb4aab71808dcb408fe3d1e7690c43d37b4ce6cc0166fa7daa610220820152843561024082015260208501356102608201527f2afac616e02b46400ce087d72ec271301ed2e22b64672597efa4751b98bc24986102808201527f2e8cac05930e56fcc90b020044e9cc91d3ed6c5bd9af963bf6be0e5638b312406102a08201527f157ab877e1029876521801403824ac7f0eff03e8ac82cfe79c166d6ecb0f99946102c08201527f154510b68609397d8f8869103117b932b0bd1492bd52aab1de8885da19001b306102e08201526020816103008360086107d05a03fa9051169695505050505050565b60405161038081016040526105c35f84013561005a565b6105d0602084013561005a565b6105dd604084013561005a565b6105ea606084013561005a565b6105f7608084013561005a565b610604818486888a6100f2565b9050805f5260205ff35b806040810183101561061e575f5ffd5b92915050565b5f5f5f5f6101a08587031215610638575f5ffd5b610642868661060e565b935060c0850186811115610654575f5ffd5b604086019350610664878261060e565b925050856101a086011115610677575f5ffd5b5091949093509091610100019056fea26469706673582212202b5fb259c6df0d11306b47d7089c17a740d7d627897a8380bf5860ba0660526264736f6c63430008210033",
+          "creationBytes": 1752,
+          "creationSha256": "ba9f36ac18746a53982691bd46e9e1137ff777505706507151d5332d29a4d0ea",
+          "compiledRuntime": "0x608060405234801561000f575f5ffd5b5060043610610029575f3560e01c806334baeab91461002d575b5f5ffd5b61004061003b366004610624565b610054565b604051901515815260200160405180910390f35b5f6105ac565b7f30644e72e131a029b85045b68181585d2833e84879b9709143e1f593f00000018110610089575f5f5260205ff35b50565b5f60405183815284602082015285604082015260408160608360076107d05a03fa9150816100bc575f5f5260205ff35b825160408201526020830151606082015260408360808360066107d05a03fa915050806100eb575f5f5260205ff35b5050505050565b7f1a308d45970c2c94828bbf11b6baeb7c6c2960bf92ef9eea4a2c0ac3fb03b34285527f1c5f2ac41f42d521d3d8966312ad1c0db92ce2610cd9784008da59b8bb1991b860208601525f608086018661018e87357f1e53540582cd61ca7f360a5c2c2d695e0329731114bcb9908ae71e8f05abbfc37f05a6f8e11db3aa3973fa99855b3cc6c77142343f16d2346de44ed2824ea0b62f8461008c565b6101de60208801357f2ad5b57c8ab836f77ef030b26d022c24b5dce299276e9dfa9cde17c8b00256ae7f25dd1730ca30e0caf2b54edddc4a6f1e3b9df81473358c987e54fb5737954e0f8461008c565b61022e60408801357f1cc16457597e43a2b965b6769f016302dcc7b8ceac5a7866bdbe659b871e17e67f1d770d0c2afc6b462cfbafe03e79771ce99f835e4c842c314192fed615f77a698461008c565b61027e60608801357f2cc8a35b85696be3e8cc02c278dfb79b1e4f9d4fc311a9a9706f4e014412910c7f0e10ba0155cb0cd91c4c623e45af167e71b2701491332ca46533966768f914a68461008c565b6102ce60808801357f215a31eabd753ae795beab8211fb07b1d22f94269757c0ed7e28696598423a3e7f157746eea3478176dccd2fa5e60fe30d62deedf99a484ae5877bba6cd35fd92f8461008c565b50823581527f30644e72e131a029b85045b68181585d97816a916871ca8d3c208c16d87cfd4760208401357f30644e72e131a029b85045b68181585d97816a916871ca8d3c208c16d87cfd4703066020820152833560408201526020840135606082015260408401356080820152606084013560a08201527f19abb60a829e03832713becf8583d4ddd5dbef24843e95a1100c202cb4357ff560c08201527f068d3a0f4372a0541ed28e24a01b298f6052e4c87716d3b22a96f35f6f31dd9b60e08201527f2bbfed1d9b8791c2f1332049e56301897c6341846b267b7c8f964c5bfb6d78906101008201527f26a4774af007d9cf06d63b621af6571e68952f3048f9fadecf18cc3211d85c5c6101208201527f12800c1409fb928c2562b758d05b3d1541685927cc73dbcf7a3cb7593590d1be6101408201527f0e9a62a77ad9caeac721572246a324ed0e7b72d1a3fb84ea0af169c09532fa426101608201525f87015161018082015260205f018701516101a08201527f198e9393920d483a7260bfb731fb5d25f1aa493335a9e71297e485b7aef312c26101c08201527f1800deef121f1e76426a00665e5c4479674322d4f75edadd46debd5cd992f6ed6101e08201527f090689d0585ff075ec9e99ad690c3395bc4b313370b38ef355acdadcd122975b6102008201527f12c85ea5db8c6deb4aab71808dcb408fe3d1e7690c43d37b4ce6cc0166fa7daa610220820152843561024082015260208501356102608201527f2afac616e02b46400ce087d72ec271301ed2e22b64672597efa4751b98bc24986102808201527f2e8cac05930e56fcc90b020044e9cc91d3ed6c5bd9af963bf6be0e5638b312406102a08201527f157ab877e1029876521801403824ac7f0eff03e8ac82cfe79c166d6ecb0f99946102c08201527f154510b68609397d8f8869103117b932b0bd1492bd52aab1de8885da19001b306102e08201526020816103008360086107d05a03fa9051169695505050505050565b60405161038081016040526105c35f84013561005a565b6105d0602084013561005a565b6105dd604084013561005a565b6105ea606084013561005a565b6105f7608084013561005a565b610604818486888a6100f2565b9050805f5260205ff35b806040810183101561061e575f5ffd5b92915050565b5f5f5f5f6101a08587031215610638575f5ffd5b610642868661060e565b935060c0850186811115610654575f5ffd5b604086019350610664878261060e565b925050856101a086011115610677575f5ffd5b5091949093509091610100019056fea26469706673582212202b5fb259c6df0d11306b47d7089c17a740d7d627897a8380bf5860ba0660526264736f6c63430008210033",
+          "compiledRuntimeBytes": 1724,
+          "compiledRuntimeSha256": "0e8c178d775a24bf7cb147c9cbfb9cb5f6c6abbf08e09e3e15a4f8dc688f9225",
+          "onchainRuntime": "0x608060405234801561000f575f5ffd5b5060043610610029575f3560e01c806334baeab91461002d575b5f5ffd5b61004061003b366004610624565b610054565b604051901515815260200160405180910390f35b5f6105ac565b7f30644e72e131a029b85045b68181585d2833e84879b9709143e1f593f00000018110610089575f5f5260205ff35b50565b5f60405183815284602082015285604082015260408160608360076107d05a03fa9150816100bc575f5f5260205ff35b825160408201526020830151606082015260408360808360066107d05a03fa915050806100eb575f5f5260205ff35b5050505050565b7f1a308d45970c2c94828bbf11b6baeb7c6c2960bf92ef9eea4a2c0ac3fb03b34285527f1c5f2ac41f42d521d3d8966312ad1c0db92ce2610cd9784008da59b8bb1991b860208601525f608086018661018e87357f1e53540582cd61ca7f360a5c2c2d695e0329731114bcb9908ae71e8f05abbfc37f05a6f8e11db3aa3973fa99855b3cc6c77142343f16d2346de44ed2824ea0b62f8461008c565b6101de60208801357f2ad5b57c8ab836f77ef030b26d022c24b5dce299276e9dfa9cde17c8b00256ae7f25dd1730ca30e0caf2b54edddc4a6f1e3b9df81473358c987e54fb5737954e0f8461008c565b61022e60408801357f1cc16457597e43a2b965b6769f016302dcc7b8ceac5a7866bdbe659b871e17e67f1d770d0c2afc6b462cfbafe03e79771ce99f835e4c842c314192fed615f77a698461008c565b61027e60608801357f2cc8a35b85696be3e8cc02c278dfb79b1e4f9d4fc311a9a9706f4e014412910c7f0e10ba0155cb0cd91c4c623e45af167e71b2701491332ca46533966768f914a68461008c565b6102ce60808801357f215a31eabd753ae795beab8211fb07b1d22f94269757c0ed7e28696598423a3e7f157746eea3478176dccd2fa5e60fe30d62deedf99a484ae5877bba6cd35fd92f8461008c565b50823581527f30644e72e131a029b85045b68181585d97816a916871ca8d3c208c16d87cfd4760208401357f30644e72e131a029b85045b68181585d97816a916871ca8d3c208c16d87cfd4703066020820152833560408201526020840135606082015260408401356080820152606084013560a08201527f19abb60a829e03832713becf8583d4ddd5dbef24843e95a1100c202cb4357ff560c08201527f068d3a0f4372a0541ed28e24a01b298f6052e4c87716d3b22a96f35f6f31dd9b60e08201527f2bbfed1d9b8791c2f1332049e56301897c6341846b267b7c8f964c5bfb6d78906101008201527f26a4774af007d9cf06d63b621af6571e68952f3048f9fadecf18cc3211d85c5c6101208201527f12800c1409fb928c2562b758d05b3d1541685927cc73dbcf7a3cb7593590d1be6101408201527f0e9a62a77ad9caeac721572246a324ed0e7b72d1a3fb84ea0af169c09532fa426101608201525f87015161018082015260205f018701516101a08201527f198e9393920d483a7260bfb731fb5d25f1aa493335a9e71297e485b7aef312c26101c08201527f1800deef121f1e76426a00665e5c4479674322d4f75edadd46debd5cd992f6ed6101e08201527f090689d0585ff075ec9e99ad690c3395bc4b313370b38ef355acdadcd122975b6102008201527f12c85ea5db8c6deb4aab71808dcb408fe3d1e7690c43d37b4ce6cc0166fa7daa610220820152843561024082015260208501356102608201527f2afac616e02b46400ce087d72ec271301ed2e22b64672597efa4751b98bc24986102808201527f2e8cac05930e56fcc90b020044e9cc91d3ed6c5bd9af963bf6be0e5638b312406102a08201527f157ab877e1029876521801403824ac7f0eff03e8ac82cfe79c166d6ecb0f99946102c08201527f154510b68609397d8f8869103117b932b0bd1492bd52aab1de8885da19001b306102e08201526020816103008360086107d05a03fa9051169695505050505050565b60405161038081016040526105c35f84013561005a565b6105d0602084013561005a565b6105dd604084013561005a565b6105ea606084013561005a565b6105f7608084013561005a565b610604818486888a6100f2565b9050805f5260205ff35b806040810183101561061e575f5ffd5b92915050565b5f5f5f5f6101a08587031215610638575f5ffd5b610642868661060e565b935060c0850186811115610654575f5ffd5b604086019350610664878261060e565b925050856101a086011115610677575f5ffd5b5091949093509091610100019056fea26469706673582212202b5fb259c6df0d11306b47d7089c17a740d7d627897a8380bf5860ba0660526264736f6c63430008210033",
+          "onchainRuntimeBytes": 1724,
+          "onchainRuntimeSha256": "0e8c178d775a24bf7cb147c9cbfb9cb5f6c6abbf08e09e3e15a4f8dc688f9225",
+          "onchainMatchesCompiled": true,
+          "eip170LimitBytes": 24576,
+          "eip170Compliant": true
+        }
+      },
+      {
+        "name": "N=32 EIP-170",
+        "pass": true,
+        "detail": {
+          "runtimeBytes": 1724,
+          "limit": 24576
+        }
+      },
+      {
+        "name": "N=32 raw evidence hash current",
+        "pass": true,
+        "detail": "e00cbc95776ac81071ad8c0ad28d03d18bf98d66c479739655225162bc365a53"
+      },
+      {
+        "name": "N=64 entry parameters",
+        "pass": true,
+        "detail": {
+          "dimension": 64,
+          "bits": 16,
+          "qSpan": 65535,
+          "packSize": 15,
+          "blocks": 5,
+          "paddedBlocks": 6,
+          "distanceBits": 48
+        }
+      },
+      {
+        "name": "N=64 setup artifact present",
+        "pass": true,
+        "detail": [
+          2,
+          4,
+          8,
+          16,
+          32,
+          64,
+          128
+        ]
+      },
+      {
+        "name": "N=64 zkey hash current",
+        "pass": true,
+        "detail": "480ef5591b0e420e33b11a2ac41b9074ba534b5cf344f9a77bb5e31b049a99f7"
+      },
+      {
+        "name": "N=64 verification key hash current",
+        "pass": true,
+        "detail": "6df24972c4cec7004ea0f359d03bba194e14fd9415da2d3430fc6bcfd8c41639"
+      },
+      {
+        "name": "N=64 matching verifier hash current",
+        "pass": true,
+        "detail": "ab306e92474019455e6891fc5d4b501cbe57ee07f35d28963a6bb249fc264fe6"
+      },
+      {
+        "name": "N=64 proof protocol",
+        "pass": true,
+        "detail": {
+          "warmups": 1,
+          "repetitions": 10
+        }
+      },
+      {
+        "name": "N=64 five public inputs",
+        "pass": true,
+        "detail": 5
+      },
+      {
+        "name": "N=64 ten end-to-end proving samples",
+        "pass": true,
+        "detail": {
+          "samples": 10,
+          "definition": "single cold child from immediately before wtns.calculate through Groth16 proof and proof/public JSON writes",
+          "endToEndMs": {
+            "samples": 10,
+            "values": [
+              2972.83,
+              2975.83,
+              2947.89,
+              2963.78,
+              2983.39,
+              2938.59,
+              3009.31,
+              2916.98,
+              2943.32,
+              2930.67
+            ],
+            "mean": 2958.26,
+            "sampleStandardDeviation": 27.83,
+            "median": 2955.84
+          },
+          "witnessSegmentMs": {
+            "samples": 10,
+            "values": [
+              62.44,
+              61.8,
+              61.98,
+              62.64,
+              63.69,
+              63.93,
+              62.6,
+              62.52,
+              63.12,
+              63.44
+            ],
+            "mean": 62.82,
+            "sampleStandardDeviation": 0.71,
+            "median": 62.62
+          },
+          "proveAndWriteSegmentMs": {
+            "samples": 10,
+            "values": [
+              2909.77,
+              2913.41,
+              2885.28,
+              2899.08,
+              2919.03,
+              2874.04,
+              2946.08,
+              2852.4,
+              2878.12,
+              2866.58
+            ],
+            "mean": 2894.38,
+            "sampleStandardDeviation": 28.28,
+            "median": 2892.18
+          },
+          "nodeProcessMaxRssMiB": {
+            "samples": 10,
+            "values": [
+              759.9,
+              758.78,
+              758.97,
+              759.59,
+              759.47,
+              764.84,
+              767.73,
+              760.26,
+              757.36,
+              759.27
+            ],
+            "mean": 760.62,
+            "sampleStandardDeviation": 3.16,
+            "median": 759.53
+          },
+          "externalGnuTimeMaxRssMiB": {
+            "available": true,
+            "source": "GNU /usr/bin/time -v Maximum resident set size; never mixed with Node maxRSS",
+            "samples": 10,
+            "values": [
+              759.9,
+              758.78,
+              758.97,
+              759.59,
+              759.47,
+              764.84,
+              767.73,
+              760.26,
+              757.36,
+              759.27
+            ],
+            "mean": 760.62,
+            "sampleStandardDeviation": 3.16,
+            "median": 759.53
+          }
+        }
+      },
+      {
+        "name": "N=64 proving distributions complete",
+        "pass": true,
+        "detail": {
+          "samples": 10,
+          "values": [
+            2972.83,
+            2975.83,
+            2947.89,
+            2963.78,
+            2983.39,
+            2938.59,
+            3009.31,
+            2916.98,
+            2943.32,
+            2930.67
+          ],
+          "mean": 2958.26,
+          "sampleStandardDeviation": 27.83,
+          "median": 2955.84
+        }
+      },
+      {
+        "name": "N=64 GNU time RSS captured",
+        "pass": true,
+        "detail": {
+          "available": true,
+          "source": "GNU /usr/bin/time -v Maximum resident set size; never mixed with Node maxRSS",
+          "samples": 10,
+          "values": [
+            759.9,
+            758.78,
+            758.97,
+            759.59,
+            759.47,
+            764.84,
+            767.73,
+            760.26,
+            757.36,
+            759.27
+          ],
+          "mean": 760.62,
+          "sampleStandardDeviation": 3.16,
+          "median": 759.53
+        }
+      },
+      {
+        "name": "N=64 ten native proof verifications",
+        "pass": true,
+        "detail": {
+          "elapsedMs": {
+            "samples": 10,
+            "values": [
+              1723.42,
+              1600.2,
+              1633.52,
+              1620.48,
+              1649.06,
+              1683.84,
+              1625.57,
+              1617.63,
+              1621.42,
+              1589.88
+            ],
+            "mean": 1636.5,
+            "sampleStandardDeviation": 40.02,
+            "median": 1623.49
+          },
+          "allVerified": true
+        }
+      },
+      {
+        "name": "N=64 all native proof verifications pass",
+        "pass": true,
+        "detail": {
+          "elapsedMs": {
+            "samples": 10,
+            "values": [
+              1723.42,
+              1600.2,
+              1633.52,
+              1620.48,
+              1649.06,
+              1683.84,
+              1625.57,
+              1617.63,
+              1621.42,
+              1589.88
+            ],
+            "mean": 1636.5,
+            "sampleStandardDeviation": 40.02,
+            "median": 1623.49
+          },
+          "allVerified": true
+        }
+      },
+      {
+        "name": "N=64 proving zkey matches setup",
+        "pass": true,
+        "detail": "480ef5591b0e420e33b11a2ac41b9074ba534b5cf344f9a77bb5e31b049a99f7"
+      },
+      {
+        "name": "N=64 bare verifier gas complete",
+        "pass": true,
+        "detail": [
+          242282,
+          242282,
+          242270,
+          242282,
+          242246
+        ]
+      },
+      {
+        "name": "N=64 valid public inputs return true",
+        "pass": true,
+        "detail": true
+      },
+      {
+        "name": "N=64 invalid public input returns false",
+        "pass": true,
+        "detail": false
+      },
+      {
+        "name": "N=64 raw receipt protocol",
+        "pass": true,
+        "detail": {
+          "warmups": 1,
+          "measured": 5
+        }
+      },
+      {
+        "name": "N=64 gas uses independent proofs",
+        "pass": true,
+        "detail": [
+          {
+            "phase": "measured",
+            "run": 1,
+            "proof": "results/proving/raw/auth_distance_64-measured-01-proof.json",
+            "proofSha256": "87e84c36efa30edf3e3b3225f1e0487cc4875b390b134d41dbe98b3c06c54f9b",
+            "publicSignals": "results/proving/raw/auth_distance_64-measured-01-public.json",
+            "publicSignalsSha256": "196b836208e754dcacea70323dd5cf001132d028f2e9d8b96e07e8a96756132b"
+          },
+          {
+            "phase": "measured",
+            "run": 2,
+            "proof": "results/proving/raw/auth_distance_64-measured-02-proof.json",
+            "proofSha256": "077845a4d5e28f0ab6f4f58493363a0b09b11d576db5c88fa775b3372e13b208",
+            "publicSignals": "results/proving/raw/auth_distance_64-measured-02-public.json",
+            "publicSignalsSha256": "196b836208e754dcacea70323dd5cf001132d028f2e9d8b96e07e8a96756132b"
+          },
+          {
+            "phase": "measured",
+            "run": 3,
+            "proof": "results/proving/raw/auth_distance_64-measured-03-proof.json",
+            "proofSha256": "ada948a2e1c6d038d09db50378301606179b557d8e0ff55d2fc2a2efcbeada47",
+            "publicSignals": "results/proving/raw/auth_distance_64-measured-03-public.json",
+            "publicSignalsSha256": "196b836208e754dcacea70323dd5cf001132d028f2e9d8b96e07e8a96756132b"
+          },
+          {
+            "phase": "measured",
+            "run": 4,
+            "proof": "results/proving/raw/auth_distance_64-measured-04-proof.json",
+            "proofSha256": "0cf27f3f1c3bbbdc123f9e496656ab0ab2186be641b0303c5f7add2e892d2ec5",
+            "publicSignals": "results/proving/raw/auth_distance_64-measured-04-public.json",
+            "publicSignalsSha256": "196b836208e754dcacea70323dd5cf001132d028f2e9d8b96e07e8a96756132b"
+          },
+          {
+            "phase": "measured",
+            "run": 5,
+            "proof": "results/proving/raw/auth_distance_64-measured-05-proof.json",
+            "proofSha256": "2e852817eabce19038e06f94f2453deb65aefd9b0ef9228cf6f90c19b950f001",
+            "publicSignals": "results/proving/raw/auth_distance_64-measured-05-public.json",
+            "publicSignalsSha256": "196b836208e754dcacea70323dd5cf001132d028f2e9d8b96e07e8a96756132b"
+          }
+        ]
+      },
+      {
+        "name": "N=64 all gas proof calls static-true",
+        "pass": true,
+        "detail": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ]
+      },
+      {
+        "name": "N=64 receipts successful",
+        "pass": true,
+        "detail": {
+          "deploymentSuccessful": true,
+          "validStaticTrue": true,
+          "fiveMeasuredReceiptsSuccessful": true,
+          "invalidStaticFalse": true,
+          "invalidTransactionSuccessful": true,
+          "runtimeMatchesCompiler": true,
+          "eip170Compliant": true
+        }
+      },
+      {
+        "name": "N=64 runtime matches compiler",
+        "pass": true,
+        "detail": {
+          "creation": "0x6080604052348015600e575f5ffd5b506106bb8061001c5f395ff3fe608060405234801561000f575f5ffd5b5060043610610029575f3560e01c806334baeab91461002d575b5f5ffd5b61004061003b366004610623565b610054565b604051901515815260200160405180910390f35b5f6105ab565b7f30644e72e131a029b85045b68181585d2833e84879b9709143e1f593f00000018110610089575f5f5260205ff35b50565b5f60405183815284602082015285604082015260408160608360076107d05a03fa9150816100bc575f5f5260205ff35b825160408201526020830151606082015260408360808360066107d05a03fa915050806100eb575f5f5260205ff35b5050505050565b7e57d5a488b604f94a72c745cff7ba9a1ecd47602f34d0aeb55e8ebd1cae56e985527f249df6f9550d2cad0b95dee3c0cc00599ab502caafa292bc2d3754597885bb3c60208601525f608086018661018d87357f09d69f4f11b5ffa93e57c02f591c520f3969475dbcc16b527904e2d5150eac127f03a2a9e05ceed782204537468303c5291e99e44d643cade6ce4137fc233d46f98461008c565b6101dd60208801357f1e71f4ba9cc8448b7410bc13a67ed9e6146c13190a1bfb07b3df0c737c0b366a7f0de646eaf2685004875cc046fe4160a31f016feaf49daab17dcc5dc07630d71e8461008c565b61022d60408801357f1fa582223c2e59af30614bea8d8a1802a91963d9035eb96b92e960e8efbceecf7f1050eee08b9f62f840b135f83fb3ea09396c61ac54db585be16a5ee0e8e6d8888461008c565b61027d60608801357f07a66221b1e5f76fb2984936a76a95cfe9447d0d5446ed608941d5a1048496ad7f13333839cb8c5ceeb556932f3b254ba9c2e8951520db8b65d6c1869493a6b4228461008c565b6102cd60808801357f2d74d6c19bcc6f9b337e8d019d93dadf1e21e294be693a82ddd8875eea20c7df7f29108c08fe12db210764c2da5182977ca506309f7a090b1b2f3dafe92620599e8461008c565b50823581527f30644e72e131a029b85045b68181585d97816a916871ca8d3c208c16d87cfd4760208401357f30644e72e131a029b85045b68181585d97816a916871ca8d3c208c16d87cfd4703066020820152833560408201526020840135606082015260408401356080820152606084013560a08201527f19abb60a829e03832713becf8583d4ddd5dbef24843e95a1100c202cb4357ff560c08201527f068d3a0f4372a0541ed28e24a01b298f6052e4c87716d3b22a96f35f6f31dd9b60e08201527f2bbfed1d9b8791c2f1332049e56301897c6341846b267b7c8f964c5bfb6d78906101008201527f26a4774af007d9cf06d63b621af6571e68952f3048f9fadecf18cc3211d85c5c6101208201527f12800c1409fb928c2562b758d05b3d1541685927cc73dbcf7a3cb7593590d1be6101408201527f0e9a62a77ad9caeac721572246a324ed0e7b72d1a3fb84ea0af169c09532fa426101608201525f87015161018082015260205f018701516101a08201527f198e9393920d483a7260bfb731fb5d25f1aa493335a9e71297e485b7aef312c26101c08201527f1800deef121f1e76426a00665e5c4479674322d4f75edadd46debd5cd992f6ed6101e08201527f090689d0585ff075ec9e99ad690c3395bc4b313370b38ef355acdadcd122975b6102008201527f12c85ea5db8c6deb4aab71808dcb408fe3d1e7690c43d37b4ce6cc0166fa7daa610220820152843561024082015260208501356102608201527f14663b4e15d3d92c551ed04bb8fa44b69b67d8170381bab26d09257cb8bb90016102808201527f2a7389ed41225683e81c857967158d594c719ff8076f2873343e99c871c7713a6102a08201527f179e53d3cee4557c2238a2f9c26361ad4dd489d73db5f07524a11865aee0bf996102c08201527f12b40bb2c99e5e6072933f34a1ad7bf17d1a675e8faaf8e20d2dda5f682a6e476102e08201526020816103008360086107d05a03fa9051169695505050505050565b60405161038081016040526105c25f84013561005a565b6105cf602084013561005a565b6105dc604084013561005a565b6105e9606084013561005a565b6105f6608084013561005a565b610603818486888a6100f2565b9050805f5260205ff35b806040810183101561061d575f5ffd5b92915050565b5f5f5f5f6101a08587031215610637575f5ffd5b610641868661060d565b935060c0850186811115610653575f5ffd5b604086019350610663878261060d565b925050856101a086011115610676575f5ffd5b5091949093509091610100019056fea26469706673582212206aa6549ae43934e47c29ececab3d74a994299d845ffa7afc36ad52a5a01a2f5764736f6c63430008210033",
+          "creationBytes": 1751,
+          "creationSha256": "bf73b583ef1abd1aea6dfbd338e06652c13f2c0908ea5ef40bc133b3e9bff6ad",
+          "compiledRuntime": "0x608060405234801561000f575f5ffd5b5060043610610029575f3560e01c806334baeab91461002d575b5f5ffd5b61004061003b366004610623565b610054565b604051901515815260200160405180910390f35b5f6105ab565b7f30644e72e131a029b85045b68181585d2833e84879b9709143e1f593f00000018110610089575f5f5260205ff35b50565b5f60405183815284602082015285604082015260408160608360076107d05a03fa9150816100bc575f5f5260205ff35b825160408201526020830151606082015260408360808360066107d05a03fa915050806100eb575f5f5260205ff35b5050505050565b7e57d5a488b604f94a72c745cff7ba9a1ecd47602f34d0aeb55e8ebd1cae56e985527f249df6f9550d2cad0b95dee3c0cc00599ab502caafa292bc2d3754597885bb3c60208601525f608086018661018d87357f09d69f4f11b5ffa93e57c02f591c520f3969475dbcc16b527904e2d5150eac127f03a2a9e05ceed782204537468303c5291e99e44d643cade6ce4137fc233d46f98461008c565b6101dd60208801357f1e71f4ba9cc8448b7410bc13a67ed9e6146c13190a1bfb07b3df0c737c0b366a7f0de646eaf2685004875cc046fe4160a31f016feaf49daab17dcc5dc07630d71e8461008c565b61022d60408801357f1fa582223c2e59af30614bea8d8a1802a91963d9035eb96b92e960e8efbceecf7f1050eee08b9f62f840b135f83fb3ea09396c61ac54db585be16a5ee0e8e6d8888461008c565b61027d60608801357f07a66221b1e5f76fb2984936a76a95cfe9447d0d5446ed608941d5a1048496ad7f13333839cb8c5ceeb556932f3b254ba9c2e8951520db8b65d6c1869493a6b4228461008c565b6102cd60808801357f2d74d6c19bcc6f9b337e8d019d93dadf1e21e294be693a82ddd8875eea20c7df7f29108c08fe12db210764c2da5182977ca506309f7a090b1b2f3dafe92620599e8461008c565b50823581527f30644e72e131a029b85045b68181585d97816a916871ca8d3c208c16d87cfd4760208401357f30644e72e131a029b85045b68181585d97816a916871ca8d3c208c16d87cfd4703066020820152833560408201526020840135606082015260408401356080820152606084013560a08201527f19abb60a829e03832713becf8583d4ddd5dbef24843e95a1100c202cb4357ff560c08201527f068d3a0f4372a0541ed28e24a01b298f6052e4c87716d3b22a96f35f6f31dd9b60e08201527f2bbfed1d9b8791c2f1332049e56301897c6341846b267b7c8f964c5bfb6d78906101008201527f26a4774af007d9cf06d63b621af6571e68952f3048f9fadecf18cc3211d85c5c6101208201527f12800c1409fb928c2562b758d05b3d1541685927cc73dbcf7a3cb7593590d1be6101408201527f0e9a62a77ad9caeac721572246a324ed0e7b72d1a3fb84ea0af169c09532fa426101608201525f87015161018082015260205f018701516101a08201527f198e9393920d483a7260bfb731fb5d25f1aa493335a9e71297e485b7aef312c26101c08201527f1800deef121f1e76426a00665e5c4479674322d4f75edadd46debd5cd992f6ed6101e08201527f090689d0585ff075ec9e99ad690c3395bc4b313370b38ef355acdadcd122975b6102008201527f12c85ea5db8c6deb4aab71808dcb408fe3d1e7690c43d37b4ce6cc0166fa7daa610220820152843561024082015260208501356102608201527f14663b4e15d3d92c551ed04bb8fa44b69b67d8170381bab26d09257cb8bb90016102808201527f2a7389ed41225683e81c857967158d594c719ff8076f2873343e99c871c7713a6102a08201527f179e53d3cee4557c2238a2f9c26361ad4dd489d73db5f07524a11865aee0bf996102c08201527f12b40bb2c99e5e6072933f34a1ad7bf17d1a675e8faaf8e20d2dda5f682a6e476102e08201526020816103008360086107d05a03fa9051169695505050505050565b60405161038081016040526105c25f84013561005a565b6105cf602084013561005a565b6105dc604084013561005a565b6105e9606084013561005a565b6105f6608084013561005a565b610603818486888a6100f2565b9050805f5260205ff35b806040810183101561061d575f5ffd5b92915050565b5f5f5f5f6101a08587031215610637575f5ffd5b610641868661060d565b935060c0850186811115610653575f5ffd5b604086019350610663878261060d565b925050856101a086011115610676575f5ffd5b5091949093509091610100019056fea26469706673582212206aa6549ae43934e47c29ececab3d74a994299d845ffa7afc36ad52a5a01a2f5764736f6c63430008210033",
+          "compiledRuntimeBytes": 1723,
+          "compiledRuntimeSha256": "de81be3288c2c2450afeb0437c53377b065bf91020314cdd9883bf513b175f75",
+          "onchainRuntime": "0x608060405234801561000f575f5ffd5b5060043610610029575f3560e01c806334baeab91461002d575b5f5ffd5b61004061003b366004610623565b610054565b604051901515815260200160405180910390f35b5f6105ab565b7f30644e72e131a029b85045b68181585d2833e84879b9709143e1f593f00000018110610089575f5f5260205ff35b50565b5f60405183815284602082015285604082015260408160608360076107d05a03fa9150816100bc575f5f5260205ff35b825160408201526020830151606082015260408360808360066107d05a03fa915050806100eb575f5f5260205ff35b5050505050565b7e57d5a488b604f94a72c745cff7ba9a1ecd47602f34d0aeb55e8ebd1cae56e985527f249df6f9550d2cad0b95dee3c0cc00599ab502caafa292bc2d3754597885bb3c60208601525f608086018661018d87357f09d69f4f11b5ffa93e57c02f591c520f3969475dbcc16b527904e2d5150eac127f03a2a9e05ceed782204537468303c5291e99e44d643cade6ce4137fc233d46f98461008c565b6101dd60208801357f1e71f4ba9cc8448b7410bc13a67ed9e6146c13190a1bfb07b3df0c737c0b366a7f0de646eaf2685004875cc046fe4160a31f016feaf49daab17dcc5dc07630d71e8461008c565b61022d60408801357f1fa582223c2e59af30614bea8d8a1802a91963d9035eb96b92e960e8efbceecf7f1050eee08b9f62f840b135f83fb3ea09396c61ac54db585be16a5ee0e8e6d8888461008c565b61027d60608801357f07a66221b1e5f76fb2984936a76a95cfe9447d0d5446ed608941d5a1048496ad7f13333839cb8c5ceeb556932f3b254ba9c2e8951520db8b65d6c1869493a6b4228461008c565b6102cd60808801357f2d74d6c19bcc6f9b337e8d019d93dadf1e21e294be693a82ddd8875eea20c7df7f29108c08fe12db210764c2da5182977ca506309f7a090b1b2f3dafe92620599e8461008c565b50823581527f30644e72e131a029b85045b68181585d97816a916871ca8d3c208c16d87cfd4760208401357f30644e72e131a029b85045b68181585d97816a916871ca8d3c208c16d87cfd4703066020820152833560408201526020840135606082015260408401356080820152606084013560a08201527f19abb60a829e03832713becf8583d4ddd5dbef24843e95a1100c202cb4357ff560c08201527f068d3a0f4372a0541ed28e24a01b298f6052e4c87716d3b22a96f35f6f31dd9b60e08201527f2bbfed1d9b8791c2f1332049e56301897c6341846b267b7c8f964c5bfb6d78906101008201527f26a4774af007d9cf06d63b621af6571e68952f3048f9fadecf18cc3211d85c5c6101208201527f12800c1409fb928c2562b758d05b3d1541685927cc73dbcf7a3cb7593590d1be6101408201527f0e9a62a77ad9caeac721572246a324ed0e7b72d1a3fb84ea0af169c09532fa426101608201525f87015161018082015260205f018701516101a08201527f198e9393920d483a7260bfb731fb5d25f1aa493335a9e71297e485b7aef312c26101c08201527f1800deef121f1e76426a00665e5c4479674322d4f75edadd46debd5cd992f6ed6101e08201527f090689d0585ff075ec9e99ad690c3395bc4b313370b38ef355acdadcd122975b6102008201527f12c85ea5db8c6deb4aab71808dcb408fe3d1e7690c43d37b4ce6cc0166fa7daa610220820152843561024082015260208501356102608201527f14663b4e15d3d92c551ed04bb8fa44b69b67d8170381bab26d09257cb8bb90016102808201527f2a7389ed41225683e81c857967158d594c719ff8076f2873343e99c871c7713a6102a08201527f179e53d3cee4557c2238a2f9c26361ad4dd489d73db5f07524a11865aee0bf996102c08201527f12b40bb2c99e5e6072933f34a1ad7bf17d1a675e8faaf8e20d2dda5f682a6e476102e08201526020816103008360086107d05a03fa9051169695505050505050565b60405161038081016040526105c25f84013561005a565b6105cf602084013561005a565b6105dc604084013561005a565b6105e9606084013561005a565b6105f6608084013561005a565b610603818486888a6100f2565b9050805f5260205ff35b806040810183101561061d575f5ffd5b92915050565b5f5f5f5f6101a08587031215610637575f5ffd5b610641868661060d565b935060c0850186811115610653575f5ffd5b604086019350610663878261060d565b925050856101a086011115610676575f5ffd5b5091949093509091610100019056fea26469706673582212206aa6549ae43934e47c29ececab3d74a994299d845ffa7afc36ad52a5a01a2f5764736f6c63430008210033",
+          "onchainRuntimeBytes": 1723,
+          "onchainRuntimeSha256": "de81be3288c2c2450afeb0437c53377b065bf91020314cdd9883bf513b175f75",
+          "onchainMatchesCompiled": true,
+          "eip170LimitBytes": 24576,
+          "eip170Compliant": true
+        }
+      },
+      {
+        "name": "N=64 EIP-170",
+        "pass": true,
+        "detail": {
+          "runtimeBytes": 1723,
+          "limit": 24576
+        }
+      },
+      {
+        "name": "N=64 raw evidence hash current",
+        "pass": true,
+        "detail": "376f8e2805b28645d28f912d0d33a1e811657cdc89129a4755010bf515574677"
+      },
+      {
+        "name": "N=128 entry parameters",
+        "pass": true,
+        "detail": {
+          "dimension": 128,
+          "bits": 16,
+          "qSpan": 65535,
+          "packSize": 15,
+          "blocks": 9,
+          "paddedBlocks": 10,
+          "distanceBits": 48
+        }
+      },
+      {
+        "name": "N=128 setup artifact present",
+        "pass": true,
+        "detail": [
+          2,
+          4,
+          8,
+          16,
+          32,
+          64,
+          128
+        ]
+      },
+      {
+        "name": "N=128 zkey hash current",
+        "pass": true,
+        "detail": "55c6847f2cb41d30cab35e07177da37a7eb0f7bf75a4efb19823f4ec1584adbf"
+      },
+      {
+        "name": "N=128 verification key hash current",
+        "pass": true,
+        "detail": "f89cce0c682cf51bad64568ca1ff9d1174657c46b39eac14582ae16985eb5905"
+      },
+      {
+        "name": "N=128 matching verifier hash current",
+        "pass": true,
+        "detail": "8a7ceb549979107feb5adb3f4d2fb0038fb9c72429624d769da13d0731729aca"
+      },
+      {
+        "name": "N=128 proof protocol",
+        "pass": true,
+        "detail": {
+          "warmups": 1,
+          "repetitions": 10
+        }
+      },
+      {
+        "name": "N=128 five public inputs",
+        "pass": true,
+        "detail": 5
+      },
+      {
+        "name": "N=128 ten end-to-end proving samples",
+        "pass": true,
+        "detail": {
+          "samples": 10,
+          "definition": "single cold child from immediately before wtns.calculate through Groth16 proof and proof/public JSON writes",
+          "endToEndMs": {
+            "samples": 10,
+            "values": [
+              3271.12,
+              3239.14,
+              3213.65,
+              3277.51,
+              3217.12,
+              3288.65,
+              3301.05,
+              3242.29,
+              3290.72,
+              3292.4
+            ],
+            "mean": 3263.37,
+            "sampleStandardDeviation": 32.58,
+            "median": 3274.32
+          },
+          "witnessSegmentMs": {
+            "samples": 10,
+            "values": [
+              72.26,
+              71.42,
+              71.71,
+              70.84,
+              69.85,
+              69.62,
+              69.42,
+              70.88,
+              69.39,
+              69.42
+            ],
+            "mean": 70.48,
+            "sampleStandardDeviation": 1.08,
+            "median": 70.34
+          },
+          "proveAndWriteSegmentMs": {
+            "samples": 10,
+            "values": [
+              3196.78,
+              3167.06,
+              3139.83,
+              3206.04,
+              3146.64,
+              3218.41,
+              3231,
+              3170.74,
+              3220.66,
+              3222.35
+            ],
+            "mean": 3191.95,
+            "sampleStandardDeviation": 33.39,
+            "median": 3201.41
+          },
+          "nodeProcessMaxRssMiB": {
+            "samples": 10,
+            "values": [
+              848.69,
+              843.14,
+              835.48,
+              844.98,
+              842.11,
+              837.75,
+              836.98,
+              835.99,
+              831.84,
+              839.97
+            ],
+            "mean": 839.69,
+            "sampleStandardDeviation": 5.07,
+            "median": 838.86
+          },
+          "externalGnuTimeMaxRssMiB": {
+            "available": true,
+            "source": "GNU /usr/bin/time -v Maximum resident set size; never mixed with Node maxRSS",
+            "samples": 10,
+            "values": [
+              848.69,
+              843.14,
+              835.48,
+              844.98,
+              842.11,
+              837.75,
+              836.98,
+              835.99,
+              831.84,
+              839.97
+            ],
+            "mean": 839.69,
+            "sampleStandardDeviation": 5.07,
+            "median": 838.86
+          }
+        }
+      },
+      {
+        "name": "N=128 proving distributions complete",
+        "pass": true,
+        "detail": {
+          "samples": 10,
+          "values": [
+            3271.12,
+            3239.14,
+            3213.65,
+            3277.51,
+            3217.12,
+            3288.65,
+            3301.05,
+            3242.29,
+            3290.72,
+            3292.4
+          ],
+          "mean": 3263.37,
+          "sampleStandardDeviation": 32.58,
+          "median": 3274.32
+        }
+      },
+      {
+        "name": "N=128 GNU time RSS captured",
+        "pass": true,
+        "detail": {
+          "available": true,
+          "source": "GNU /usr/bin/time -v Maximum resident set size; never mixed with Node maxRSS",
+          "samples": 10,
+          "values": [
+            848.69,
+            843.14,
+            835.48,
+            844.98,
+            842.11,
+            837.75,
+            836.98,
+            835.99,
+            831.84,
+            839.97
+          ],
+          "mean": 839.69,
+          "sampleStandardDeviation": 5.07,
+          "median": 838.86
+        }
+      },
+      {
+        "name": "N=128 ten native proof verifications",
+        "pass": true,
+        "detail": {
+          "elapsedMs": {
+            "samples": 10,
+            "values": [
+              1637.94,
+              1612.92,
+              1620.02,
+              1620.55,
+              1598.87,
+              1616.07,
+              1595.11,
+              1595.88,
+              1605.5,
+              1615.92
+            ],
+            "mean": 1611.88,
+            "sampleStandardDeviation": 13.34,
+            "median": 1614.42
+          },
+          "allVerified": true
+        }
+      },
+      {
+        "name": "N=128 all native proof verifications pass",
+        "pass": true,
+        "detail": {
+          "elapsedMs": {
+            "samples": 10,
+            "values": [
+              1637.94,
+              1612.92,
+              1620.02,
+              1620.55,
+              1598.87,
+              1616.07,
+              1595.11,
+              1595.88,
+              1605.5,
+              1615.92
+            ],
+            "mean": 1611.88,
+            "sampleStandardDeviation": 13.34,
+            "median": 1614.42
+          },
+          "allVerified": true
+        }
+      },
+      {
+        "name": "N=128 proving zkey matches setup",
+        "pass": true,
+        "detail": "55c6847f2cb41d30cab35e07177da37a7eb0f7bf75a4efb19823f4ec1584adbf"
+      },
+      {
+        "name": "N=128 bare verifier gas complete",
+        "pass": true,
+        "detail": [
+          242282,
+          242282,
+          242282,
+          242282,
+          242270
+        ]
+      },
+      {
+        "name": "N=128 valid public inputs return true",
+        "pass": true,
+        "detail": true
+      },
+      {
+        "name": "N=128 invalid public input returns false",
+        "pass": true,
+        "detail": false
+      },
+      {
+        "name": "N=128 raw receipt protocol",
+        "pass": true,
+        "detail": {
+          "warmups": 1,
+          "measured": 5
+        }
+      },
+      {
+        "name": "N=128 gas uses independent proofs",
+        "pass": true,
+        "detail": [
+          {
+            "phase": "measured",
+            "run": 1,
+            "proof": "results/proving/raw/auth_distance_128-measured-01-proof.json",
+            "proofSha256": "c830b81c305a9b7cba35b0d78ebb9a556a3987bafc620d3b448f920f6aeccd80",
+            "publicSignals": "results/proving/raw/auth_distance_128-measured-01-public.json",
+            "publicSignalsSha256": "6d5d0e27f5d80f36007bfb50693a62a1d1306a9aaa696b73b2f40e49b86ff18b"
+          },
+          {
+            "phase": "measured",
+            "run": 2,
+            "proof": "results/proving/raw/auth_distance_128-measured-02-proof.json",
+            "proofSha256": "dc6622b9d755b5025fabe99f162fc989fe40452c4db34856e6973e5d75494bd7",
+            "publicSignals": "results/proving/raw/auth_distance_128-measured-02-public.json",
+            "publicSignalsSha256": "6d5d0e27f5d80f36007bfb50693a62a1d1306a9aaa696b73b2f40e49b86ff18b"
+          },
+          {
+            "phase": "measured",
+            "run": 3,
+            "proof": "results/proving/raw/auth_distance_128-measured-03-proof.json",
+            "proofSha256": "a51afd38f90f1c41b16f4b0c27629ea7a9d976b1e4737aa300b97e582b1d8570",
+            "publicSignals": "results/proving/raw/auth_distance_128-measured-03-public.json",
+            "publicSignalsSha256": "6d5d0e27f5d80f36007bfb50693a62a1d1306a9aaa696b73b2f40e49b86ff18b"
+          },
+          {
+            "phase": "measured",
+            "run": 4,
+            "proof": "results/proving/raw/auth_distance_128-measured-04-proof.json",
+            "proofSha256": "eab011c4a0671b62e7c11347312f768e4bed3c0e65e6fa9102ae04f018466ebb",
+            "publicSignals": "results/proving/raw/auth_distance_128-measured-04-public.json",
+            "publicSignalsSha256": "6d5d0e27f5d80f36007bfb50693a62a1d1306a9aaa696b73b2f40e49b86ff18b"
+          },
+          {
+            "phase": "measured",
+            "run": 5,
+            "proof": "results/proving/raw/auth_distance_128-measured-05-proof.json",
+            "proofSha256": "6a706daf644fd321057ed090b873d3ce0231527f9cb27af3fd712ba466274607",
+            "publicSignals": "results/proving/raw/auth_distance_128-measured-05-public.json",
+            "publicSignalsSha256": "6d5d0e27f5d80f36007bfb50693a62a1d1306a9aaa696b73b2f40e49b86ff18b"
+          }
+        ]
+      },
+      {
+        "name": "N=128 all gas proof calls static-true",
+        "pass": true,
+        "detail": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ]
+      },
+      {
+        "name": "N=128 receipts successful",
+        "pass": true,
+        "detail": {
+          "deploymentSuccessful": true,
+          "validStaticTrue": true,
+          "fiveMeasuredReceiptsSuccessful": true,
+          "invalidStaticFalse": true,
+          "invalidTransactionSuccessful": true,
+          "runtimeMatchesCompiler": true,
+          "eip170Compliant": true
+        }
+      },
+      {
+        "name": "N=128 runtime matches compiler",
+        "pass": true,
+        "detail": {
+          "creation": "0x6080604052348015600e575f5ffd5b506106bc8061001c5f395ff3fe608060405234801561000f575f5ffd5b5060043610610029575f3560e01c806334baeab91461002d575b5f5ffd5b61004061003b366004610624565b610054565b604051901515815260200160405180910390f35b5f6105ac565b7f30644e72e131a029b85045b68181585d2833e84879b9709143e1f593f00000018110610089575f5f5260205ff35b50565b5f60405183815284602082015285604082015260408160608360076107d05a03fa9150816100bc575f5f5260205ff35b825160408201526020830151606082015260408360808360066107d05a03fa915050806100eb575f5f5260205ff35b5050505050565b7f190251ba5d57d156799c9a62a4a6503da19a751480bcf9c9abe9cc0a4321d1e685527f09090bcf85dd418cc937c0829bdfe94aec3929b8340d2146ce25af279494b0e260208601525f608086018661018e87357f06e68e89217b89c68ae87ea30401a50612ec8ec9d46ad7b39168639cec6ee93e7f06a193f9939ed11c32082843d060137878e0b6c01e974c277dee46cd6f25f2d38461008c565b6101de60208801357f238c33a7b8bba3c036511e2aa55121ec6fe34383c7c1c89cfe0693300ed8902f7f1a43ed26b8602766c2610a0fe539715bbeacc3d34095c2b678b8c73415eb493b8461008c565b61022e60408801357f0ba4769f93081b17ff2639d7769f278f71800efd05f6b346afabfb31684039387f01002dfa4cc1b587e0c3489e400a093010f73b938998a25f1542c9aa1066af2f8461008c565b61027e60608801357f141838c30d4f1cb0d945e442222e18d2c9a47faaf8cabd5eb0526e316603dcf17f18c88042fb73003570c3f3b7a818cc30883c1166528533f4529c132cc1ed66498461008c565b6102ce60808801357f261bca769a84618fadb80d24c5127b02630a8f55874f59b4c416244a69b46cc57f2230d10f4ce7c80a4fe62aa921b08442f7b619fc415ff4e2e033639b18b790488461008c565b50823581527f30644e72e131a029b85045b68181585d97816a916871ca8d3c208c16d87cfd4760208401357f30644e72e131a029b85045b68181585d97816a916871ca8d3c208c16d87cfd4703066020820152833560408201526020840135606082015260408401356080820152606084013560a08201527f19abb60a829e03832713becf8583d4ddd5dbef24843e95a1100c202cb4357ff560c08201527f068d3a0f4372a0541ed28e24a01b298f6052e4c87716d3b22a96f35f6f31dd9b60e08201527f2bbfed1d9b8791c2f1332049e56301897c6341846b267b7c8f964c5bfb6d78906101008201527f26a4774af007d9cf06d63b621af6571e68952f3048f9fadecf18cc3211d85c5c6101208201527f12800c1409fb928c2562b758d05b3d1541685927cc73dbcf7a3cb7593590d1be6101408201527f0e9a62a77ad9caeac721572246a324ed0e7b72d1a3fb84ea0af169c09532fa426101608201525f87015161018082015260205f018701516101a08201527f198e9393920d483a7260bfb731fb5d25f1aa493335a9e71297e485b7aef312c26101c08201527f1800deef121f1e76426a00665e5c4479674322d4f75edadd46debd5cd992f6ed6101e08201527f090689d0585ff075ec9e99ad690c3395bc4b313370b38ef355acdadcd122975b6102008201527f12c85ea5db8c6deb4aab71808dcb408fe3d1e7690c43d37b4ce6cc0166fa7daa610220820152843561024082015260208501356102608201527f16f19a7a25c7202a498cdcb9033c7665aea0bf8c1993fead153770413e9fccf86102808201527f232d717f17a0023044bb89be9952bfbf898e1134cc9e019d09995a96e56613536102a08201527f16bf465e11c6ad35b9c38164b3f6e26f6405e261b36df8b868aade074b1f0d086102c08201527f2d9d95cebfb2da0796c70be98ff8f636d2041ef9e2501f54636b467281f37f4b6102e08201526020816103008360086107d05a03fa9051169695505050505050565b60405161038081016040526105c35f84013561005a565b6105d0602084013561005a565b6105dd604084013561005a565b6105ea606084013561005a565b6105f7608084013561005a565b610604818486888a6100f2565b9050805f5260205ff35b806040810183101561061e575f5ffd5b92915050565b5f5f5f5f6101a08587031215610638575f5ffd5b610642868661060e565b935060c0850186811115610654575f5ffd5b604086019350610664878261060e565b925050856101a086011115610677575f5ffd5b5091949093509091610100019056fea264697066735822122008bf9d7a58f8801324056a8f900d9a21d2e5eb4ce254777d86b37d23af98996764736f6c63430008210033",
+          "creationBytes": 1752,
+          "creationSha256": "8deb2cdff97c4bc34f751403199e8cd3c658e59c682823b103b79744a043b143",
+          "compiledRuntime": "0x608060405234801561000f575f5ffd5b5060043610610029575f3560e01c806334baeab91461002d575b5f5ffd5b61004061003b366004610624565b610054565b604051901515815260200160405180910390f35b5f6105ac565b7f30644e72e131a029b85045b68181585d2833e84879b9709143e1f593f00000018110610089575f5f5260205ff35b50565b5f60405183815284602082015285604082015260408160608360076107d05a03fa9150816100bc575f5f5260205ff35b825160408201526020830151606082015260408360808360066107d05a03fa915050806100eb575f5f5260205ff35b5050505050565b7f190251ba5d57d156799c9a62a4a6503da19a751480bcf9c9abe9cc0a4321d1e685527f09090bcf85dd418cc937c0829bdfe94aec3929b8340d2146ce25af279494b0e260208601525f608086018661018e87357f06e68e89217b89c68ae87ea30401a50612ec8ec9d46ad7b39168639cec6ee93e7f06a193f9939ed11c32082843d060137878e0b6c01e974c277dee46cd6f25f2d38461008c565b6101de60208801357f238c33a7b8bba3c036511e2aa55121ec6fe34383c7c1c89cfe0693300ed8902f7f1a43ed26b8602766c2610a0fe539715bbeacc3d34095c2b678b8c73415eb493b8461008c565b61022e60408801357f0ba4769f93081b17ff2639d7769f278f71800efd05f6b346afabfb31684039387f01002dfa4cc1b587e0c3489e400a093010f73b938998a25f1542c9aa1066af2f8461008c565b61027e60608801357f141838c30d4f1cb0d945e442222e18d2c9a47faaf8cabd5eb0526e316603dcf17f18c88042fb73003570c3f3b7a818cc30883c1166528533f4529c132cc1ed66498461008c565b6102ce60808801357f261bca769a84618fadb80d24c5127b02630a8f55874f59b4c416244a69b46cc57f2230d10f4ce7c80a4fe62aa921b08442f7b619fc415ff4e2e033639b18b790488461008c565b50823581527f30644e72e131a029b85045b68181585d97816a916871ca8d3c208c16d87cfd4760208401357f30644e72e131a029b85045b68181585d97816a916871ca8d3c208c16d87cfd4703066020820152833560408201526020840135606082015260408401356080820152606084013560a08201527f19abb60a829e03832713becf8583d4ddd5dbef24843e95a1100c202cb4357ff560c08201527f068d3a0f4372a0541ed28e24a01b298f6052e4c87716d3b22a96f35f6f31dd9b60e08201527f2bbfed1d9b8791c2f1332049e56301897c6341846b267b7c8f964c5bfb6d78906101008201527f26a4774af007d9cf06d63b621af6571e68952f3048f9fadecf18cc3211d85c5c6101208201527f12800c1409fb928c2562b758d05b3d1541685927cc73dbcf7a3cb7593590d1be6101408201527f0e9a62a77ad9caeac721572246a324ed0e7b72d1a3fb84ea0af169c09532fa426101608201525f87015161018082015260205f018701516101a08201527f198e9393920d483a7260bfb731fb5d25f1aa493335a9e71297e485b7aef312c26101c08201527f1800deef121f1e76426a00665e5c4479674322d4f75edadd46debd5cd992f6ed6101e08201527f090689d0585ff075ec9e99ad690c3395bc4b313370b38ef355acdadcd122975b6102008201527f12c85ea5db8c6deb4aab71808dcb408fe3d1e7690c43d37b4ce6cc0166fa7daa610220820152843561024082015260208501356102608201527f16f19a7a25c7202a498cdcb9033c7665aea0bf8c1993fead153770413e9fccf86102808201527f232d717f17a0023044bb89be9952bfbf898e1134cc9e019d09995a96e56613536102a08201527f16bf465e11c6ad35b9c38164b3f6e26f6405e261b36df8b868aade074b1f0d086102c08201527f2d9d95cebfb2da0796c70be98ff8f636d2041ef9e2501f54636b467281f37f4b6102e08201526020816103008360086107d05a03fa9051169695505050505050565b60405161038081016040526105c35f84013561005a565b6105d0602084013561005a565b6105dd604084013561005a565b6105ea606084013561005a565b6105f7608084013561005a565b610604818486888a6100f2565b9050805f5260205ff35b806040810183101561061e575f5ffd5b92915050565b5f5f5f5f6101a08587031215610638575f5ffd5b610642868661060e565b935060c0850186811115610654575f5ffd5b604086019350610664878261060e565b925050856101a086011115610677575f5ffd5b5091949093509091610100019056fea264697066735822122008bf9d7a58f8801324056a8f900d9a21d2e5eb4ce254777d86b37d23af98996764736f6c63430008210033",
+          "compiledRuntimeBytes": 1724,
+          "compiledRuntimeSha256": "6455ea8e27582d3336510550d50c1a8d7e82741467e097ac1848adb3f1a42b04",
+          "onchainRuntime": "0x608060405234801561000f575f5ffd5b5060043610610029575f3560e01c806334baeab91461002d575b5f5ffd5b61004061003b366004610624565b610054565b604051901515815260200160405180910390f35b5f6105ac565b7f30644e72e131a029b85045b68181585d2833e84879b9709143e1f593f00000018110610089575f5f5260205ff35b50565b5f60405183815284602082015285604082015260408160608360076107d05a03fa9150816100bc575f5f5260205ff35b825160408201526020830151606082015260408360808360066107d05a03fa915050806100eb575f5f5260205ff35b5050505050565b7f190251ba5d57d156799c9a62a4a6503da19a751480bcf9c9abe9cc0a4321d1e685527f09090bcf85dd418cc937c0829bdfe94aec3929b8340d2146ce25af279494b0e260208601525f608086018661018e87357f06e68e89217b89c68ae87ea30401a50612ec8ec9d46ad7b39168639cec6ee93e7f06a193f9939ed11c32082843d060137878e0b6c01e974c277dee46cd6f25f2d38461008c565b6101de60208801357f238c33a7b8bba3c036511e2aa55121ec6fe34383c7c1c89cfe0693300ed8902f7f1a43ed26b8602766c2610a0fe539715bbeacc3d34095c2b678b8c73415eb493b8461008c565b61022e60408801357f0ba4769f93081b17ff2639d7769f278f71800efd05f6b346afabfb31684039387f01002dfa4cc1b587e0c3489e400a093010f73b938998a25f1542c9aa1066af2f8461008c565b61027e60608801357f141838c30d4f1cb0d945e442222e18d2c9a47faaf8cabd5eb0526e316603dcf17f18c88042fb73003570c3f3b7a818cc30883c1166528533f4529c132cc1ed66498461008c565b6102ce60808801357f261bca769a84618fadb80d24c5127b02630a8f55874f59b4c416244a69b46cc57f2230d10f4ce7c80a4fe62aa921b08442f7b619fc415ff4e2e033639b18b790488461008c565b50823581527f30644e72e131a029b85045b68181585d97816a916871ca8d3c208c16d87cfd4760208401357f30644e72e131a029b85045b68181585d97816a916871ca8d3c208c16d87cfd4703066020820152833560408201526020840135606082015260408401356080820152606084013560a08201527f19abb60a829e03832713becf8583d4ddd5dbef24843e95a1100c202cb4357ff560c08201527f068d3a0f4372a0541ed28e24a01b298f6052e4c87716d3b22a96f35f6f31dd9b60e08201527f2bbfed1d9b8791c2f1332049e56301897c6341846b267b7c8f964c5bfb6d78906101008201527f26a4774af007d9cf06d63b621af6571e68952f3048f9fadecf18cc3211d85c5c6101208201527f12800c1409fb928c2562b758d05b3d1541685927cc73dbcf7a3cb7593590d1be6101408201527f0e9a62a77ad9caeac721572246a324ed0e7b72d1a3fb84ea0af169c09532fa426101608201525f87015161018082015260205f018701516101a08201527f198e9393920d483a7260bfb731fb5d25f1aa493335a9e71297e485b7aef312c26101c08201527f1800deef121f1e76426a00665e5c4479674322d4f75edadd46debd5cd992f6ed6101e08201527f090689d0585ff075ec9e99ad690c3395bc4b313370b38ef355acdadcd122975b6102008201527f12c85ea5db8c6deb4aab71808dcb408fe3d1e7690c43d37b4ce6cc0166fa7daa610220820152843561024082015260208501356102608201527f16f19a7a25c7202a498cdcb9033c7665aea0bf8c1993fead153770413e9fccf86102808201527f232d717f17a0023044bb89be9952bfbf898e1134cc9e019d09995a96e56613536102a08201527f16bf465e11c6ad35b9c38164b3f6e26f6405e261b36df8b868aade074b1f0d086102c08201527f2d9d95cebfb2da0796c70be98ff8f636d2041ef9e2501f54636b467281f37f4b6102e08201526020816103008360086107d05a03fa9051169695505050505050565b60405161038081016040526105c35f84013561005a565b6105d0602084013561005a565b6105dd604084013561005a565b6105ea606084013561005a565b6105f7608084013561005a565b610604818486888a6100f2565b9050805f5260205ff35b806040810183101561061e575f5ffd5b92915050565b5f5f5f5f6101a08587031215610638575f5ffd5b610642868661060e565b935060c0850186811115610654575f5ffd5b604086019350610664878261060e565b925050856101a086011115610677575f5ffd5b5091949093509091610100019056fea264697066735822122008bf9d7a58f8801324056a8f900d9a21d2e5eb4ce254777d86b37d23af98996764736f6c63430008210033",
+          "onchainRuntimeBytes": 1724,
+          "onchainRuntimeSha256": "6455ea8e27582d3336510550d50c1a8d7e82741467e097ac1848adb3f1a42b04",
+          "onchainMatchesCompiled": true,
+          "eip170LimitBytes": 24576,
+          "eip170Compliant": true
+        }
+      },
+      {
+        "name": "N=128 EIP-170",
+        "pass": true,
+        "detail": {
+          "runtimeBytes": 1724,
+          "limit": 24576
+        }
+      },
+      {
+        "name": "N=128 raw evidence hash current",
+        "pass": true,
+        "detail": "4ef89b596441e7383905d42901731388a87c5e01d42d3bdcabc1667da76ddb0a"
+      }
+    ]
+  },
+  "manifest_checked_files": 476,
+  "protocol": {
+    "warmups": 1,
+    "measuredRuns": 10,
+    "execution": "one cold Node child for witness+prove+write, followed by one cold verification child",
+    "provingTimeDefinition": "endToEndMs, not prove-only: begins before witness calculation and ends after proof/public JSON writes",
+    "rss": {
+      "node": "process.resourceUsage().maxRSS, labelled separately",
+      "external": "GNU /usr/bin/time -v Maximum resident set size captured per cold child"
+    }
+  },
+  "gas_protocol": {
+    "compiler": "solc-js 0.8.33, optimizer 200, Shanghai",
+    "chain": "Ganache 7.9.2, Shanghai, chain id 31337, standard EIP-170 size limit",
+    "client": "ethers 6.16.0",
+    "warmups": 1,
+    "measuredTransactions": 5
+  },
+  "timing_scope": "cold Node child, witness calculation through proof/public JSON writes; excludes child startup",
+  "size_scope": "sum of original pretty-printed proof and public JSON file sizes; not binary Groth16 proof size",
+  "source_hashes": {
+    "results/proving.json": "02c8195537148a7d05b1ba6c1026b91987218fa1b3754a2d453864e432412ebf",
+    "results/verifier-gas.json": "7d582b4e06c26246d1a4a81123742d2a18e5fcab46f6942674bde5ae8db2e4cf",
+    "results/manifest.json": "2a986df1230ccf8a27350e4ce0a9b5c565f46811acfac4cd935a1339a4194851",
+    "results/verification.json": "68382bb076bfd8b4dc4073b034431bf736d80d0030912223c16b9e493e43be81",
+    "metadata/environment.before.txt": "4b4360df067f01b7858c3643c48de2976d48cb421eee9e7c3c79cfbc3f064a5e"
+  },
+  "results": [
+    {
+      "dimension": 2,
+      "proof_ms": [
+        2365.66,
+        2295.05,
+        2311.45,
+        2360.55,
+        2406.33,
+        2351.1,
+        2458.28,
+        2339.5,
+        2384.29,
+        2399.05
+      ],
+      "proof_public_json_bytes": [
+        1085,
+        1086,
+        1084,
+        1086,
+        1084,
+        1085,
+        1084,
+        1083,
+        1083,
+        1087
+      ],
+      "gas": [
+        242282,
+        242282,
+        242246,
+        242258,
+        242270
+      ],
+      "deployment_gas": 425912,
+      "creation_bytes": 1752,
+      "runtime_bytes": 1724,
+      "constraints": 1414,
+      "public_inputs": 5
+    },
+    {
+      "dimension": 4,
+      "proof_ms": [
+        2356.26,
+        2380.89,
+        2468.24,
+        2405.24,
+        2405.03,
+        2356.64,
+        2424.65,
+        2346.2,
+        2338.1,
+        2351.08
+      ],
+      "proof_public_json_bytes": [
+        1082,
+        1085,
+        1084,
+        1085,
+        1083,
+        1085,
+        1083,
+        1083,
+        1079,
+        1083
+      ],
+      "gas": [
+        242282,
+        242282,
+        242270,
+        242270,
+        242258
+      ],
+      "deployment_gas": 425720,
+      "creation_bytes": 1751,
+      "runtime_bytes": 1723,
+      "constraints": 1480,
+      "public_inputs": 5
+    },
+    {
+      "dimension": 8,
+      "proof_ms": [
+        2347.8,
+        2343.73,
+        2394.24,
+        2397.14,
+        2334.21,
+        2379.56,
+        2381.65,
+        2389.8,
+        2369.2,
+        2398.43
+      ],
+      "proof_public_json_bytes": [
+        1086,
+        1080,
+        1082,
+        1087,
+        1082,
+        1085,
+        1084,
+        1087,
+        1082,
+        1083
+      ],
+      "gas": [
+        242258,
+        242270,
+        242282,
+        242258,
+        242270
+      ],
+      "deployment_gas": 425924,
+      "creation_bytes": 1752,
+      "runtime_bytes": 1724,
+      "constraints": 1612,
+      "public_inputs": 5
+    },
+    {
+      "dimension": 16,
+      "proof_ms": [
+        2373.39,
+        2335.93,
+        2359.97,
+        2379.28,
+        2357.53,
+        2365.93,
+        2346.94,
+        2350.36,
+        2336.17,
+        2399.19
+      ],
+      "proof_public_json_bytes": [
+        1084,
+        1082,
+        1086,
+        1087,
+        1083,
+        1084,
+        1084,
+        1084,
+        1083,
+        1083
+      ],
+      "gas": [
+        242270,
+        242222,
+        242270,
+        242234,
+        242282
+      ],
+      "deployment_gas": 425924,
+      "creation_bytes": 1752,
+      "runtime_bytes": 1724,
+      "constraints": 1882,
+      "public_inputs": 5
+    },
+    {
+      "dimension": 32,
+      "proof_ms": [
+        2647.74,
+        2671.76,
+        2607.32,
+        2609.08,
+        2599.88,
+        2628.72,
+        2613.62,
+        2601.99,
+        2633.89,
+        2613.55
+      ],
+      "proof_public_json_bytes": [
+        1084,
+        1085,
+        1082,
+        1085,
+        1082,
+        1085,
+        1083,
+        1082,
+        1080,
+        1084
+      ],
+      "gas": [
+        242270,
+        242258,
+        242270,
+        242258,
+        242258
+      ],
+      "deployment_gas": 425924,
+      "creation_bytes": 1752,
+      "runtime_bytes": 1724,
+      "constraints": 2926,
+      "public_inputs": 5
+    },
+    {
+      "dimension": 64,
+      "proof_ms": [
+        2972.83,
+        2975.83,
+        2947.89,
+        2963.78,
+        2983.39,
+        2938.59,
+        3009.31,
+        2916.98,
+        2943.32,
+        2930.67
+      ],
+      "proof_public_json_bytes": [
+        1083,
+        1086,
+        1087,
+        1085,
+        1079,
+        1082,
+        1085,
+        1087,
+        1084,
+        1081
+      ],
+      "gas": [
+        242282,
+        242282,
+        242270,
+        242282,
+        242246
+      ],
+      "deployment_gas": 425720,
+      "creation_bytes": 1751,
+      "runtime_bytes": 1723,
+      "constraints": 4504,
+      "public_inputs": 5
+    },
+    {
+      "dimension": 128,
+      "proof_ms": [
+        3271.12,
+        3239.14,
+        3213.65,
+        3277.51,
+        3217.12,
+        3288.65,
+        3301.05,
+        3242.29,
+        3290.72,
+        3292.4
+      ],
+      "proof_public_json_bytes": [
+        1083,
+        1084,
+        1084,
+        1084,
+        1084,
+        1083,
+        1087,
+        1079,
+        1085,
+        1083
+      ],
+      "gas": [
+        242282,
+        242282,
+        242282,
+        242282,
+        242270
+      ],
+      "deployment_gas": 425924,
+      "creation_bytes": 1752,
+      "runtime_bytes": 1724,
+      "constraints": 7660,
+      "public_inputs": 5
+    }
+  ]
+}
