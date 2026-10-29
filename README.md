@@ -1,5 +1,7 @@
 # BIOZERO: Verifiable On-Chain Biometric Authentication
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23758484.svg)](https://doi.org/10.5281/zenodo.23758484)
+
 This repository contains the experiment code and compact evidence used to reproduce the BioZERO evaluation. It includes the quantization experiments, Circom/Groth16 protocol benchmarks, the complete-verifier gas experiments, the seven-size CircuitCheck/Vanilla sweep, and the scripts that assemble and verify the paper tables and Fig. 3.
 
 ## Repository layout
@@ -69,3 +71,5 @@ This is research benchmark code. The local trusted setups, stand-in circuits, de
 ## Licensing
 
 BioZERO original code is distributed under the GNU General Public License v3.0 only (`GPL-3.0-only`); see the root `LICENSE` and `NOTICE`. Files and subdirectories carrying their own notices remain under those terms. In particular, the quantization component contains code derived from `facenet-pytorch`; its preserved MIT notice is in `experiments/quantization/LICENSE.md`. Dependencies remain subject to their respective licenses.
+
+Version `v1.0.0` is permanently archived at [Zenodo DOI 10.5281/zenodo.23758484](https://doi.org/10.5281/zenodo.23758484).
