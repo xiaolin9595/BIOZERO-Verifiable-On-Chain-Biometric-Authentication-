@@ -68,4 +68,4 @@ This is research benchmark code. The local trusted setups, stand-in circuits, de
 
 ## Licensing
 
-No repository-wide license has been declared. The quantization component contains code derived from `facenet-pytorch`; its preserved MIT notice is in `experiments/quantization/LICENSE.md`. Other dependencies remain subject to their respective licenses.
+BioZERO original code is distributed under the GNU General Public License v3.0 only (`GPL-3.0-only`); see the root `LICENSE` and `NOTICE`. Files and subdirectories carrying their own notices remain under those terms. In particular, the quantization component contains code derived from `facenet-pytorch`; its preserved MIT notice is in `experiments/quantization/LICENSE.md`. Dependencies remain subject to their respective licenses.

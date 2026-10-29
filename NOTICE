@@ -1,0 +1,12 @@
+BioZERO reproducibility package licensing notice
+
+Unless a file or subdirectory carries a different licence notice, original
+BioZERO source code in this repository is licensed under GPL-3.0-only.  The
+complete licence text is in the repository-root LICENSE file.
+
+The quantization component includes material derived from facenet-pytorch and
+retains Timothy Esler's MIT notice at experiments/quantization/LICENSE.md.
+Generated Groth16 verifier contracts carry their own GPL-3.0 SPDX notices.
+Third-party dependencies, external datasets, model weights, and tools remain
+subject to their respective terms.  This repository does not redistribute the
+restricted biometric datasets or model weights used in the evaluation.
