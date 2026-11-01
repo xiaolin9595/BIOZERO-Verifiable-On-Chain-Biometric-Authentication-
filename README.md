@@ -15,6 +15,7 @@ This repository contains the experiment code and compact evidence used to reprod
 | `experiments/fig3-full/` | Fig. 3 aggregation, verification scripts, and final summary data |
 | `paper/analysis/` | Scripts that verify claims and generate paper tables/Fig. 3 |
 | `paper/data/` | Compact machine-readable reproduced measurements |
+| `paper/figures/` | Figures regenerated directly from the frozen reproduced measurements |
 
 ## Quick starts
 
@@ -57,6 +58,20 @@ python3 -m json.tool results/summary.json
 This public package keeps the aggregate results and verification record. The
 original full-bundle verifier is retained for audit documentation, but its raw
 process logs, proof material, and host snapshots are deliberately omitted.
+
+To regenerate the complete Fig. 3 comparison, including all seven
+CircuitCheck dimensions, and run the finite-field review regressions:
+
+```bash
+python3 -m pip install -r paper/requirements.txt
+python3 paper/analysis/make_fig3_comparison.py
+python3 paper/analysis/verify_author_check_algebra.py
+python3 paper/analysis/verify_crypto_review_boundaries.py
+```
+
+The figure command writes `paper/figures/fig3_with_circuitcheck.pdf` and
+`paper/figures/fig3_with_circuitcheck.png`. The two regression commands fail
+immediately if a checked algebraic or boundary condition does not hold.
 
 See each experiment directory's README or runbook for its pinned toolchain, measurement protocol, and expected outputs.
 

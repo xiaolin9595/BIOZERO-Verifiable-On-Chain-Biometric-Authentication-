@@ -160,7 +160,8 @@ def main() -> None:
     d.set_ylim(0, 48); d.legend(loc='upper left', ncol=2, frameon=False, columnspacing=0.6, handlelength=1.5)
     fig.tight_layout(pad=0.7, h_pad=1.1, w_pad=1.0)
     output = ROOT / 'figures/fig3_with_circuitcheck.pdf'
-    fig.savefig(output)
+    # Exclude wall-clock timestamps so independently regenerated PDFs hash identically.
+    fig.savefig(output, metadata={'CreationDate': None, 'ModDate': None})
     fig.savefig(output.with_suffix('.png'), dpi=180)
     plt.close(fig)
     report = {'overall': 'PASS', 'dimensions': DIMS, 'series': series,

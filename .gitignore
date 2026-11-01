@@ -52,6 +52,7 @@ tmp/
 results/raw/
 results/**/raw/
 results/packed-proving/
+paper/analysis/out/
 
 # Raw remote process/environment snapshots (may expose command-line secrets)
 paper/data/hom-complete-enine-2026-10-28-environment.txt
